@@ -1,0 +1,2772 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="Recurso educativo digital sobre la construccion historica de las infancias. Curso Infancias: Historias y Perspectivas, Escuela de Ciencias de la Educacion (ECEDU), UNAD.">
+  <meta name="author" content="Grupo Colaborativo - UNAD ECEDU">
+  <title>Construcción Histórica de las Infancias | UNAD - ECEDU</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Top Institutional Bar -->
+  <aside class="institution-bar" aria-label="Barra institucional UNAD">
+    <div class="container institution-bar-inner">
+      <div class="institution-meta">
+        <span class="institution-name">Universidad Nacional Abierta y a Distancia &mdash; UNAD</span>
+        <span class="institution-separator">|</span>
+        <span class="institution-faculty">Escuela de Ciencias de la Educación (ECEDU)</span>
+      </div>
+      <div class="course-meta">
+        <span class="course-code">Código: 514517</span>
+        <span class="course-tag">Periodo Académico 2026</span>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Global Reading Scroll Progress Bar -->
+  <div class="reading-progress-track" aria-hidden="true">
+    <div class="reading-progress-bar" id="readingProgressBar"></div>
+  </div>
+
+  <!-- Main Navigation Bar -->
+  <header class="navbar-wrapper" id="topHeader">
+    <div class="container navbar-container">
+      <a href="#inicio" class="navbar-brand" aria-label="Ir a la página de inicio">
+        <div class="brand-logo-container">
+          <svg class="brand-logo-svg" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <circle cx="22" cy="22" r="20" fill="#003366" stroke="#E67E22" stroke-width="2"/>
+            <path d="M22 8L26 18H37L28 24L31 34L22 28L13 34L16 24L7 18H18L22 8Z" fill="#E67E22"/>
+            <circle cx="22" cy="22" r="7" fill="#FFFFFF"/>
+            <path d="M18 22C18 19.7909 19.7909 18 22 18C24.2091 18 26 19.7909 26 22C26 24.2091 24.2091 26 22 26C19.7909 26 18 24.2091 18 22Z" fill="#003366"/>
+          </svg>
+        </div>
+        <div class="brand-text">
+          <span class="brand-title">Infancias: Historias y Perspectivas</span>
+          <span class="brand-subtitle">Entorno Digital de Aprendizaje e Investigación</span>
+        </div>
+      </a>
+
+      <!-- Mobile Navigation Hamburger Toggle -->
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú de navegación principal" aria-expanded="false" aria-controls="primaryNavigation">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+
+      <!-- Navigation Links -->
+      <nav class="primary-nav" id="primaryNavigation" aria-label="Navegación principal">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="#inicio" class="nav-link active" data-tab="inicio">
+              <svg class="nav-icon" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"/>
+              </svg>
+              <span>Inicio</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#construccion-historica" class="nav-link" data-tab="construccion-historica">
+              <svg class="nav-icon" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clip-rule="evenodd"/>
+              </svg>
+              <span>Construcción Histórica</span>
+              <span class="badge badge-accent">Reto 2</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#infancias-perspectiva" class="nav-link" data-tab="infancias-perspectiva">
+              <svg class="nav-icon" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                <path d="M9 4.804A7.968 7.968 0 005.5 4c-1.255 0-2.443.29-3.5.804v10A7.969 7.969 0 015.5 14c1.669 0 3.218.51 4.5 1.385A7.962 7.962 0 0114.5 14c1.255 0 2.443.29 3.5.804v-10A7.968 7.968 0 0014.5 4c-1.255 0-2.443.29-3.5.804V12a1 1 0 11-2 0V4.804z"/>
+              </svg>
+              <span>Perspectivas</span>
+              <span class="badge badge-muted">Reto 3</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#realidades-desafios" class="nav-link" data-tab="realidades-desafios">
+              <svg class="nav-icon" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                <path fill-rule="evenodd" d="M3 6a3 3 0 013-3h10a1 1 0 01.8 1.6L14.25 8l2.55 3.4A1 1 0 0116 13H6a1 1 0 00-1 1v3a1 1 0 11-2 0V6z" clip-rule="evenodd"/>
+              </svg>
+              <span>Realidades y Desafíos</span>
+              <span class="badge badge-muted">Reto 4</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#voces-transformacion" class="nav-link" data-tab="voces-transformacion">
+              <svg class="nav-icon" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                <path fill-rule="evenodd" d="M18 13V5a2 2 0 00-2-2H4a2 2 0 00-2 2v8a2 2 0 002 2h3l3 3 3-3h3a2 2 0 002-2zM5 7a1 1 0 011-1h8a1 1 0 110 2H6a1 1 0 01-1-1zm1 3a1 1 0 100 2h6a1 1 0 100-2H6z" clip-rule="evenodd"/>
+              </svg>
+              <span>Transformación</span>
+              <span class="badge badge-muted">Reto 5</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#referencias" class="nav-link" data-tab="referencias">
+              <svg class="nav-icon" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                <path fill-rule="evenodd" d="M4 4a2 2 0 012-2h4.586A2 2 0 0112 2.586L15.414 6A2 2 0 0116 7.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4zm2 6a1 1 0 011-1h6a1 1 0 110 2H7a1 1 0 01-1-1zm1 3a1 1 0 100 2h6a1 1 0 100-2H7z" clip-rule="evenodd"/>
+              </svg>
+              <span>Referencias</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Quick Interactive Actions (Search, Sound FX, Dark/Light Theme) -->
+      <div class="navbar-actions">
+        <button class="nav-action-btn" id="btnOpenSearch" title="Buscar autores o conceptos (Ctrl + K)" aria-label="Abrir buscador">
+          <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" class="action-svg">
+            <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd"/>
+          </svg>
+          <span class="search-kbd-badge">Ctrl K</span>
+        </button>
+        <button class="nav-action-btn" id="btnToggleSound" title="Efectos de sonido interactivos" aria-label="Sonido activado" data-sound="true">
+          <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" class="action-svg sound-on-icon">
+            <path fill-rule="evenodd" d="M9.383 3.076A1 1 0 0110 4v12a1 1 0 01-1.707.707L4.586 13H2a1 1 0 01-1-1V8a1 1 0 011-1h2.586l3.707-3.707a1 1 0 011.09-.217zM14.657 2.929a1 1 0 011.414 0A9.972 9.972 0 0119 10a9.972 9.972 0 01-2.929 7.071 1 1 0 01-1.414-1.414A7.971 7.971 0 0017 10c0-2.21-.894-4.208-2.343-5.657a1 1 0 010-1.414zm-2.829 2.828a1 1 0 011.415 0A5.983 5.983 0 0115 10a5.984 5.984 0 01-1.757 4.243 1 1 0 01-1.415-1.415A3.984 3.984 0 0013 10a3.983 3.983 0 00-1.172-2.828 1 1 0 010-1.415z" clip-rule="evenodd"/>
+          </svg>
+          <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" class="action-svg sound-off-icon" style="display:none;">
+            <path fill-rule="evenodd" d="M9.383 3.076A1 1 0 0110 4v12a1 1 0 01-1.707.707L4.586 13H2a1 1 0 01-1-1V8a1 1 0 011-1h2.586l3.707-3.707a1 1 0 011.09-.217zM12.293 7.293a1 1 0 011.414 0L15 8.586l1.293-1.293a1 1 0 111.414 1.414L16.414 10l1.293 1.293a1 1 0 01-1.414 1.414L15 11.414l-1.293 1.293a1 1 0 01-1.414-1.414L13.586 10l-1.293-1.293a1 1 0 010-1.414z" clip-rule="evenodd"/>
+          </svg>
+        </button>
+        <button class="nav-action-btn theme-toggle-btn" id="btnToggleTheme" title="Alternar Modo Oscuro / Claro" aria-label="Cambiar a modo oscuro">
+          <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" class="action-svg theme-moon-icon">
+            <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"/>
+          </svg>
+          <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" class="action-svg theme-sun-icon" style="display:none;">
+            <path fill-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" clip-rule="evenodd"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content Container with Tabs -->
+  <main class="main-content" id="mainContent">
+
+    <!-- ==========================================
+         TAB 1: INICIO
+         ========================================== -->
+    <section class="tab-panel active" id="tab-inicio" role="tabpanel" aria-labelledby="tab-inicio-label">
+      
+      <!-- Hero Section -->
+      <section class="hero-section">
+        <div class="container hero-grid">
+          <div class="hero-content">
+            <div class="hero-pill">
+              <span class="hero-pill-dot"></span>
+              <span class="hero-pill-text">Licenciatura en Pedagogía Infantil &bull; ECEDU</span>
+            </div>
+            <h1 class="hero-title">Construcción Histórica de las Infancias</h1>
+            <p class="hero-subtitle">Comprender el pasado para resignificar el presente y transformar el porvenir educativo</p>
+            <p class="hero-lead">
+              La infancia no es un dato biológico natural e inmutable, sino una construcción sociohistórica, cultural y política que ha experimentado profundas transformaciones a través del tiempo. Desde su invisibilización en las civilizaciones clásicas hasta su reconocimiento como sujeto pleno de derechos, este entorno digital examina los paradigmas, tensiones y autores cardinales que forjaron la concepción contemporánea de la niñez.
+            </p>
+            <div class="hero-actions">
+              <button class="btn btn-primary" id="btnExploreTimeline">
+                <span>Explorar Línea de Tiempo</span>
+                <svg class="btn-icon" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"/>
+                </svg>
+              </button>
+              <button class="btn btn-accent" id="btnHeroTrivia">
+                <span>🎮 Desafío Trivia</span>
+              </button>
+              <button class="btn btn-outline" id="btnHeroFlashcards">
+                <span>🃏 Fichas 3D</span>
+              </button>
+            </div>
+          </div>
+          
+          <div class="hero-media">
+            <div class="hero-illustration-card">
+              <svg class="hero-svg" viewBox="0 0 480 380" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Ilustración conceptual de la evolución pedagógica e histórica de la infancia">
+                <rect width="480" height="380" rx="16" fill="#F8FAFC"/>
+                <!-- Background decorative geometry -->
+                <circle cx="240" cy="190" r="140" fill="#EBF3FB"/>
+                <circle cx="240" cy="190" r="100" stroke="#1D70B8" stroke-width="1.5" stroke-dasharray="4 4"/>
+                
+                <!-- Classical Base / Pedestal -->
+                <rect x="140" y="290" width="200" height="20" rx="4" fill="#003366"/>
+                <rect x="160" y="275" width="160" height="15" fill="#0B2545"/>
+                
+                <!-- Historical Epoch Markers on Arc -->
+                <!-- Ancient: Scroll & Column -->
+                <g transform="translate(100, 150)">
+                  <circle cx="24" cy="24" r="28" fill="#FFFFFF" stroke="#003366" stroke-width="2"/>
+                  <path d="M16 14H32V34H16V14Z" fill="#EBF3FB" stroke="#003366" stroke-width="1.5"/>
+                  <line x1="20" y1="18" x2="28" y2="18" stroke="#003366" stroke-width="1.5"/>
+                  <line x1="20" y1="23" x2="28" y2="23" stroke="#003366" stroke-width="1.5"/>
+                  <line x1="20" y1="28" x2="26" y2="28" stroke="#003366" stroke-width="1.5"/>
+                  <text x="24" y="66" text-anchor="middle" font-family="'Outfit', sans-serif" font-size="11" font-weight="600" fill="#003366">Edad Antigua</text>
+                </g>
+
+                <!-- Medieval: Cathedral / Script -->
+                <g transform="translate(216, 70)">
+                  <circle cx="24" cy="24" r="28" fill="#FFFFFF" stroke="#E67E22" stroke-width="2"/>
+                  <path d="M24 12L14 26H34L24 12Z" fill="#FDF3E7" stroke="#E67E22" stroke-width="1.5"/>
+                  <rect x="18" y="26" width="12" height="12" fill="#FDF3E7" stroke="#E67E22" stroke-width="1.5"/>
+                  <path d="M21 38V31C21 29.3431 22.3431 28 24 28C25.6569 28 27 29.3431 27 31V38" stroke="#E67E22" stroke-width="1.5"/>
+                  <text x="24" y="66" text-anchor="middle" font-family="'Outfit', sans-serif" font-size="11" font-weight="600" fill="#E67E22">Edad Media</text>
+                </g>
+
+                <!-- Modern: Book, Sun & Education -->
+                <g transform="translate(332, 150)">
+                  <circle cx="24" cy="24" r="28" fill="#FFFFFF" stroke="#1D70B8" stroke-width="2"/>
+                  <path d="M12 28C16 26 20 26 24 28C28 26 32 26 36 28V16C32 14 28 14 24 16C20 14 16 14 12 16V28Z" fill="#EBF3FB" stroke="#1D70B8" stroke-width="1.5"/>
+                  <line x1="24" y1="16" x2="24" y2="28" stroke="#1D70B8" stroke-width="1.5"/>
+                  <circle cx="24" cy="11" r="3" fill="#E67E22"/>
+                  <text x="24" y="66" text-anchor="middle" font-family="'Outfit', sans-serif" font-size="11" font-weight="600" fill="#1D70B8">Edad Moderna</text>
+                </g>
+
+                <!-- Central Connecting Flow Line -->
+                <path d="M152 174C180 140 216 98 240 98C264 98 300 140 328 174" stroke="#003366" stroke-width="2" stroke-dasharray="3 3"/>
+                
+                <!-- Central Icon: Awakening Child / Education -->
+                <g transform="translate(216, 175)">
+                  <rect x="-30" y="0" width="108" height="65" rx="8" fill="#FFFFFF" stroke="#003366" stroke-width="1.5"/>
+                  <circle cx="24" cy="22" r="10" fill="#E67E22"/>
+                  <path d="M12 45C12 36 17 33 24 33C31 33 36 36 36 45" stroke="#003366" stroke-width="2.5" stroke-linecap="round"/>
+                  <text x="24" y="58" text-anchor="middle" font-family="'Outfit', sans-serif" font-size="10" font-weight="700" fill="#003366">Sujeto de Derechos</text>
+                </g>
+
+                <!-- Institutional Seal Text Badge -->
+                <rect x="20" y="20" width="140" height="26" rx="13" fill="#003366"/>
+                <text x="90" y="37" text-anchor="middle" font-family="'Outfit', sans-serif" font-size="11" font-weight="600" fill="#FFFFFF">UNAD ECEDU 2026</text>
+              </svg>
+            </div>
+          </div>
+        </div>
+
+        <!-- Live Academic Stats Banner -->
+        <div class="hero-stats-banner">
+          <div class="container">
+            <div class="stats-grid">
+              <div class="stat-card">
+                <div class="stat-icon-wrapper icon-era">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                </div>
+                <div class="stat-content">
+                  <div class="stat-number"><span class="counter" data-target="3">0</span></div>
+                  <div class="stat-label">Eras Históricas</div>
+                  <div class="stat-sub">Antigua &bull; Media &bull; Moderna</div>
+                </div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-icon-wrapper icon-author">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                </div>
+                <div class="stat-content">
+                  <div class="stat-number"><span class="counter" data-target="8">0</span>+</div>
+                  <div class="stat-label">Pensadores Clave</div>
+                  <div class="stat-sub">Platón, Comenio, Rousseau...</div>
+                </div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-icon-wrapper icon-milestone">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                </div>
+                <div class="stat-content">
+                  <div class="stat-number"><span class="counter" data-target="15">0</span>+</div>
+                  <div class="stat-label">Hitos Históricos</div>
+                  <div class="stat-sub">Leyes, Códigos y Didáctica</div>
+                </div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-icon-wrapper icon-interactive">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+                </div>
+                <div class="stat-content">
+                  <div class="stat-number"><span class="counter" data-target="100">0</span>%</div>
+                  <div class="stat-label">Recurso Interactivo</div>
+                  <div class="stat-sub">Audio, Fichas 3D y Trivia</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==========================================
+           SECCIÓN INTERACTIVA: EL PROBADOR DEL TIEMPO (MUÑEQUITO INTERACTIVO)
+           ========================================== -->
+      <section class="wardrobe-section" id="seccion-probador-tiempo">
+        <div class="container">
+          <div class="wardrobe-card-container">
+            <div class="wardrobe-header">
+              <span class="section-badge">✨ Experiencia Lúdica Interactiva</span>
+              <h2 class="wardrobe-title">El Probador del Tiempo de la Infancia</h2>
+              <p class="wardrobe-subtitle">
+                ¡Conoce a <strong>Tomi</strong>, nuestro viajero del tiempo! Vístelo y transfórmalo a través de las diferentes épocas para descubrir cómo vivían, vestían, jugaban y qué sentían los niños y niñas a lo largo de la historia.
+              </p>
+            </div>
+
+            <div class="wardrobe-stage-grid">
+              <!-- Escenario del Muñequito -->
+              <div class="character-stage">
+                <!-- Globo de diálogo cómico del muñequito -->
+                <div class="character-speech-bubble" id="wardrobeBubble" role="status" aria-live="polite">
+                  <span class="speech-speaker" id="wardrobeSpeaker">Tomi en la Edad Antigua</span>
+                  <p class="speech-content" id="wardrobeSpeechText">
+                    «¡Por los dioses del Olimpo! En la Antigua Roma dependemos por completo del <em>pater familias</em>. ¡Tócame o cámbiame de época para ver cómo me transformo!»
+                  </p>
+                </div>
+
+                <!-- Muñequito de cuerpo completo SVG interactivo -->
+                <div class="character-doll-wrapper" id="characterDoll" title="¡Haz clic sobre mí para hacerme cosquillas o escucharme!" tabindex="0" role="button" aria-label="Muñequito interactivo Tomi. Haz clic para interactuar">
+                  <svg class="character-doll-svg" viewBox="0 0 240 320" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Muñequito animado ilustrado de Tomi">
+                    <!-- Base: Cuerpo, piel y cabeza -->
+                    <g id="dollBaseBody">
+                      <!-- Piernas y pies base -->
+                      <rect x="94" y="195" width="18" height="60" rx="9" fill="#F8D3B7"/>
+                      <rect x="128" y="195" width="18" height="60" rx="9" fill="#F8D3B7"/>
+                      <!-- Manos base -->
+                      <circle cx="56" cy="180" r="11" fill="#F8D3B7"/>
+                      <circle cx="184" cy="180" r="11" fill="#F8D3B7"/>
+                      <!-- Cuello -->
+                      <rect x="110" y="112" width="20" height="20" rx="6" fill="#EDB694"/>
+                      <!-- Cabeza -->
+                      <ellipse cx="120" cy="74" rx="36" ry="38" fill="#F8D3B7"/>
+                      <!-- Orejas -->
+                      <circle cx="82" cy="75" r="9" fill="#F8D3B7"/>
+                      <circle cx="158" cy="75" r="9" fill="#F8D3B7"/>
+                      <circle cx="82" cy="75" r="5" fill="#EDB694"/>
+                      <circle cx="158" cy="75" r="5" fill="#EDB694"/>
+                      <!-- Cabello base -->
+                      <path d="M84 66C84 42 98 28 120 28C142 28 156 42 156 66C156 70 152 70 148 64C140 54 134 56 120 54C106 56 100 54 92 64C88 70 84 70 84 66Z" fill="#5C3A21"/>
+                      <!-- Ojos expresivos -->
+                      <g class="doll-eyes">
+                        <ellipse cx="106" cy="72" rx="6.5" ry="7.5" fill="#1E293B"/>
+                        <circle cx="104" cy="69.5" r="2.5" fill="#FFFFFF"/>
+                        <circle cx="108" cy="74.5" r="1" fill="#FFFFFF"/>
+                        
+                        <ellipse cx="134" cy="72" rx="6.5" ry="7.5" fill="#1E293B"/>
+                        <circle cx="132" cy="69.5" r="2.5" fill="#FFFFFF"/>
+                        <circle cx="136" cy="74.5" r="1" fill="#FFFFFF"/>
+                      </g>
+                      <!-- Mejillas sonrojadas -->
+                      <ellipse cx="98" cy="84" rx="6" ry="3.5" fill="#FF8A80" opacity="0.65"/>
+                      <ellipse cx="142" cy="84" rx="6" ry="3.5" fill="#FF8A80" opacity="0.65"/>
+                      <!-- Sonrisa -->
+                      <path id="dollMouth" d="M 112 85 Q 120 94 128 85" stroke="#B91C1C" stroke-width="2.5" fill="#FECACA" stroke-linecap="round"/>
+                    </g>
+
+                    <!-- CAPA 1: Época Antigua (Grecia / Roma) -->
+                    <g id="costumeAntigua" class="costume-layer">
+                      <!-- Corona de laurel / cinta dorada -->
+                      <path d="M86 52C94 44 110 40 120 40C130 40 146 44 154 52" stroke="#F59E0B" stroke-width="4.5" stroke-linecap="round"/>
+                      <circle cx="100" cy="45" r="3.5" fill="#FBBF24"/>
+                      <circle cx="120" cy="40" r="4" fill="#FBBF24"/>
+                      <circle cx="140" cy="45" r="3.5" fill="#FBBF24"/>
+                      <!-- Túnica blanca (Quitón) -->
+                      <path d="M88 126L80 196L160 196L152 126L134 124L120 134L106 124Z" fill="#FFFFFF" stroke="#003366" stroke-width="2"/>
+                      <!-- Broche dorado en hombro -->
+                      <circle cx="94" cy="128" r="4" fill="#F59E0B"/>
+                      <circle cx="146" cy="128" r="4" fill="#F59E0B"/>
+                      <!-- Cenefa griega en el borde de la túnica -->
+                      <path d="M84 186H156" stroke="#D97706" stroke-width="3" stroke-dasharray="4 3"/>
+                      <path d="M82 196H158" stroke="#003366" stroke-width="3"/>
+                      <!-- Sandalias romanas de tiras cruzadas -->
+                      <path d="M92 235H114M92 243H114M90 252H116" stroke="#78350F" stroke-width="2.5" stroke-linecap="round"/>
+                      <path d="M126 235H148M126 243H148M124 252H150" stroke="#78350F" stroke-width="2.5" stroke-linecap="round"/>
+                      <!-- Accesorio en mano: Tablilla de cera escolar (Tabula) y juego de tabas -->
+                      <g transform="translate(166, 160)">
+                        <rect x="0" y="0" width="22" height="28" rx="3" fill="#78350F" stroke="#451A03" stroke-width="1.5"/>
+                        <rect x="3" y="3" width="16" height="22" rx="1.5" fill="#FDE68A"/>
+                        <line x1="6" y1="8" x2="16" y2="8" stroke="#92400E" stroke-width="1.5"/>
+                        <line x1="6" y1="13" x2="14" y2="13" stroke="#92400E" stroke-width="1.5"/>
+                      </g>
+                    </g>
+
+                    <!-- CAPA 2: Época Medieval (El Pequeño Adulto / Homúnculo) -->
+                    <g id="costumeMedia" class="costume-layer" style="display:none;">
+                      <!-- Cofia / Birrete medieval sobrio -->
+                      <path d="M82 54C82 34 100 24 120 24C140 24 158 34 158 54L156 64H84Z" fill="#4B5563" stroke="#1F2937" stroke-width="2"/>
+                      <!-- Jubón ajustado de adulto pequeño -->
+                      <path d="M86 124L78 200L162 200L154 124L120 128Z" fill="#4A1D24" stroke="#1F2937" stroke-width="2"/>
+                      <!-- Cuello rígido alto -->
+                      <path d="M106 122H134V134H106Z" fill="#E5E7EB" stroke="#1F2937" stroke-width="1.5"/>
+                      <!-- Botonadura frontal apretada -->
+                      <circle cx="120" cy="144" r="2.5" fill="#F59E0B"/>
+                      <circle cx="120" cy="158" r="2.5" fill="#F59E0B"/>
+                      <circle cx="120" cy="172" r="2.5" fill="#F59E0B"/>
+                      <!-- Cinto de cuero con bolsa de aprendiz/trabajo -->
+                      <rect x="80" y="178" width="80" height="8" rx="2" fill="#1F2937"/>
+                      <rect x="114" y="176" width="12" height="12" rx="2" fill="#F59E0B"/>
+                      <path d="M136 186C136 195 146 195 146 186Z" fill="#78350F" stroke="#451A03" stroke-width="1.5"/>
+                      <!-- Botas medievales puntiagudas -->
+                      <path d="M92 242L92 254L82 256C82 250 86 244 92 242Z" fill="#1F2937"/>
+                      <path d="M128 242L128 254L118 256C118 250 122 244 128 242Z" fill="#1F2937"/>
+                      <!-- Accesorio en mano: Herramienta de trabajo / escoba de taller -->
+                      <g transform="translate(40, 140)">
+                        <line x1="16" y1="0" x2="16" y2="80" stroke="#78350F" stroke-width="3"/>
+                        <path d="M8 80L24 80L20 100L12 100Z" fill="#D97706" stroke="#92400E" stroke-width="1.5"/>
+                      </g>
+                    </g>
+
+                    <!-- CAPA 3: Época Moderna (Rousseau, Locke y Comenio) -->
+                    <g id="costumeModerna" class="costume-layer" style="display:none;">
+                      <!-- Sombrero de paja roussoniano al aire libre -->
+                      <ellipse cx="120" cy="46" rx="46" ry="12" fill="#FDE68A" stroke="#D97706" stroke-width="2"/>
+                      <path d="M96 46C96 28 106 20 120 20C134 20 144 28 144 46Z" fill="#FDE68A" stroke="#D97706" stroke-width="1.5"/>
+                      <path d="M98 42C106 38 134 38 142 42" stroke="#1D70B8" stroke-width="4"/>
+                      <!-- Camisa blanca campestre cómoda y chaleco azul -->
+                      <path d="M84 126L76 192L164 192L156 126Z" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.5"/>
+                      <path d="M90 128L84 186L108 186L112 144Z" fill="#1D70B8"/>
+                      <path d="M150 128L156 186L132 186L128 144Z" fill="#1D70B8"/>
+                      <!-- Pantalón corto cómodo (culotte infantil) -->
+                      <rect x="88" y="190" width="30" height="26" rx="4" fill="#92400E"/>
+                      <rect x="122" y="190" width="30" height="26" rx="4" fill="#92400E"/>
+                      <!-- Zapatos con hebilla dorada -->
+                      <rect x="92" y="248" width="22" height="10" rx="3" fill="#1E293B"/>
+                      <rect x="98" y="249" width="10" height="6" fill="#F59E0B"/>
+                      <rect x="126" y="248" width="22" height="10" rx="3" fill="#1E293B"/>
+                      <rect x="132" y="249" width="10" height="6" fill="#F59E0B"/>
+                      <!-- Accesorio en mano: Cometa colorida para jugar en la naturaleza -->
+                      <g transform="translate(170, 110)">
+                        <polygon points="18,0 36,22 18,44 0,22" fill="#EF4444" stroke="#B91C1C" stroke-width="1.5"/>
+                        <polygon points="18,0 36,22 18,22" fill="#F59E0B"/>
+                        <polygon points="0,22 18,22 18,44" fill="#10B981"/>
+                        <path d="M18 44Q24 60 16 75" stroke="#D97706" stroke-width="1.5" stroke-dasharray="2 2"/>
+                      </g>
+                    </g>
+
+                    <!-- CAPA 4: Época Contemporánea (Sujeto Pleno de Derechos) -->
+                    <g id="costumeContemporanea" class="costume-layer" style="display:none;">
+                      <!-- Gorra juvenil moderna con visera lateral -->
+                      <path d="M86 52C86 32 102 24 120 24C138 24 154 32 154 52Z" fill="#003366"/>
+                      <path d="M140 46L176 54L150 62Z" fill="#E67E22"/>
+                      <circle cx="120" cy="24" r="3" fill="#F39C12"/>
+                      <!-- Camiseta moderna estampada con estrella -->
+                      <path d="M86 124L78 195L162 195L154 124Z" fill="#E67E22" stroke="#C2410C" stroke-width="1.5"/>
+                      <polygon points="120,146 124,158 136,158 126,166 130,178 120,170 110,178 114,166 104,158 116,158" fill="#FFFFFF"/>
+                      <!-- Jean moderno con bolsillos -->
+                      <rect x="88" y="195" width="28" height="52" rx="5" fill="#1D4ED8"/>
+                      <rect x="124" y="195" width="28" height="52" rx="5" fill="#1D4ED8"/>
+                      <line x1="90" y1="210" x2="114" y2="210" stroke="#60A5FA" stroke-width="1.5"/>
+                      <line x1="126" y1="210" x2="150" y2="210" stroke="#60A5FA" stroke-width="1.5"/>
+                      <!-- Zapatillas deportivas modernas tipo sneakers -->
+                      <rect x="88" y="247" width="28" height="11" rx="4" fill="#FFFFFF" stroke="#003366" stroke-width="1.5"/>
+                      <rect x="124" y="247" width="28" height="11" rx="4" fill="#FFFFFF" stroke="#003366" stroke-width="1.5"/>
+                      <path d="M90 252H114M126 252H150" stroke="#E67E22" stroke-width="2"/>
+                      <!-- Accesorio en mano: Pancarta de ¡Mis Derechos! -->
+                      <g transform="translate(164, 120)">
+                        <line x1="12" y1="20" x2="12" y2="80" stroke="#475569" stroke-width="3"/>
+                        <rect x="-10" y="0" width="46" height="24" rx="4" fill="#10B981" stroke="#047857" stroke-width="1.5"/>
+                        <text x="13" y="15" text-anchor="middle" font-family="'Outfit', sans-serif" font-size="7.5" font-weight="800" fill="#FFFFFF">DERECHOS</text>
+                      </g>
+                    </g>
+                  </svg>
+                </div>
+
+                <!-- Sombra en el suelo -->
+                <div class="character-floor-shadow"></div>
+
+                <!-- Indicación divertida -->
+                <button class="character-stage-hint" id="btnTickleDoll" aria-label="Hacer cosquillas al muñequito">
+                  👆 ¡Hazme clic o cosquillas para verme saltar!
+                </button>
+              </div>
+
+              <!-- Panel de Control y Selección de Épocas -->
+              <div class="wardrobe-controls-panel">
+                <div class="era-selector-title">
+                  <span>⏳ Elige la Época Histórica:</span>
+                </div>
+
+                <div class="era-buttons-grid">
+                  <!-- Botón 1: Antigua -->
+                  <button class="wardrobe-era-btn active" data-era="antigua" id="btnEraAntigua">
+                    <span class="era-btn-icon">🏺</span>
+                    <div>
+                      <span class="era-btn-label">Edad Antigua</span>
+                      <span class="era-btn-sub">Quitón y Pater Familias</span>
+                    </div>
+                  </button>
+
+                  <!-- Botón 2: Media -->
+                  <button class="wardrobe-era-btn" data-era="media" id="btnEraMedia">
+                    <span class="era-btn-icon">🏰</span>
+                    <div>
+                      <span class="era-btn-label">Edad Media</span>
+                      <span class="era-btn-sub">El Pequeño Homúnculo</span>
+                    </div>
+                  </button>
+
+                  <!-- Botón 3: Moderna -->
+                  <button class="wardrobe-era-btn" data-era="moderna" id="btnEraModerna">
+                    <span class="era-btn-icon">📖</span>
+                    <div>
+                      <span class="era-btn-label">Edad Moderna</span>
+                      <span class="era-btn-sub">Rousseau y la Naturaleza</span>
+                    </div>
+                  </button>
+
+                  <!-- Botón 4: Contemporánea -->
+                  <button class="wardrobe-era-btn" data-era="contemporanea" id="btnEraContemporanea">
+                    <span class="era-btn-icon">🌟</span>
+                    <div>
+                      <span class="era-btn-label">Sujeto de Derechos</span>
+                      <span class="era-btn-sub">Ley 1098 &bull; Voz y Libertad</span>
+                    </div>
+                  </button>
+                </div>
+
+                <!-- Tarjeta Dinámica de Datos y Curiosidades de la Época -->
+                <div class="wardrobe-details-card" id="wardrobeDetailsCard">
+                  <div class="wardrobe-details-grid">
+                    <div class="wardrobe-fact-item">
+                      <span class="wardrobe-fact-title">👗 ¿Cómo vestía?</span>
+                      <p class="wardrobe-fact-desc" id="factClothing">Túnica ligera de lino blanco (quitón) y sandalias de tiras de cuero. No había ropa diferenciada por edad.</p>
+                    </div>
+                    <div class="wardrobe-fact-item">
+                      <span class="wardrobe-fact-title">🎲 ¿A qué jugaba?</span>
+                      <p class="wardrobe-fact-desc" id="factGames">A las tabas (huesecillos), muñecas de terracota, peonzas y aros de bronce.</p>
+                    </div>
+                    <div class="wardrobe-fact-item">
+                      <span class="wardrobe-fact-title">🧠 Mirada social</span>
+                      <p class="wardrobe-fact-desc" id="factPerception">Propiedad del <em>pater familias</em> y del Estado. Su vida dependía de la aceptación del padre.</p>
+                    </div>
+                    <div class="wardrobe-fact-item">
+                      <span class="wardrobe-fact-title">📜 Hito Pedagógico</span>
+                      <p class="wardrobe-fact-desc" id="factMilestone">Platón y Quintiliano: formación moral e inicio del debate sobre la disciplina del futuro ciudadano.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Acciones Interactivas Inferiores -->
+                <div class="wardrobe-footer-actions">
+                  <button class="wardrobe-action-btn btn-magic-tour" id="btnMagicWardrobeTour">
+                    <span>✨ Viaje Mágico por el Tiempo</span>
+                  </button>
+                  <button class="wardrobe-action-btn btn-speak-wardrobe" id="btnSpeakWardrobe">
+                    <svg viewBox="0 0 20 20" fill="currentColor" width="16" height="16" aria-hidden="true">
+                      <path fill-rule="evenodd" d="M9.383 3.076A1 1 0 0110 4v12a1 1 0 01-1.707.707L4.586 13H2a1 1 0 01-1-1V8a1 1 0 011-1h2.586l3.707-3.707a1 1 0 011.09-.217zM14.657 2.929a1 1 0 011.414 0A9.972 9.972 0 0119 10a9.972 9.972 0 01-2.929 7.071 1 1 0 01-1.414-1.414A7.971 7.971 0 0017 10c0-2.21-.894-4.208-2.343-5.657a1 1 0 010-1.414z" clip-rule="evenodd"/>
+                    </svg>
+                    <span>🎙️ Escuchar a Tomi hablar</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section: Un recorrido a través del tiempo -->
+      <section class="section journey-section">
+        <div class="container">
+          <div class="section-header text-center">
+            <span class="section-badge">Trayectoria Histórica</span>
+            <h2 class="section-title">Un recorrido a través del tiempo</h2>
+            <p class="section-desc">Tres grandes etapas que transformaron radicalmente la mirada sobre los niños y niñas en Occidente.</p>
+          </div>
+
+          <div class="journey-grid">
+            <!-- Card 1: Antigua -->
+            <article class="journey-card">
+              <div class="journey-card-badge">Periodo 1</div>
+              <div class="journey-card-icon">
+                <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <circle cx="20" cy="20" r="18" fill="#EBF3FB" stroke="#003366" stroke-width="1.5"/>
+                  <path d="M12 14H28M14 14V26M26 14V26M11 26H29M10 29H30" stroke="#003366" stroke-width="1.8" stroke-linecap="round"/>
+                </svg>
+              </div>
+              <h3 class="journey-card-title">Edad Antigua</h3>
+              <p class="journey-card-range">Aprox. Siglo VIII a.C. &mdash; Siglo V d.C.</p>
+              <p class="journey-card-text">
+                Marcada por la sumisión a la patria potestad absoluta del <em>pater familias</em>, el infanticidio tolerado y la educación selectiva orientada a la defensa de la polis o la continuidad dinástica.
+              </p>
+              <ul class="journey-card-points">
+                <li>Propiedad familiar y del Estado</li>
+                <li>Invisibilidad jurídica individual</li>
+                <li>Pedagogía cívica y filosófica elitista</li>
+              </ul>
+              <button class="journey-card-btn" data-jump-era="antigua">
+                <span>Ver detalles de esta etapa</span>
+                <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M1 8a.5.5 0 01.5-.5h11.793l-3.147-3.146a.5.5 0 01.708-.708l4 4a.5.5 0 010 .708l-4 4a.5.5 0 01-.708-.708L13.293 8.5H1.5A.5.5 0 011 8z"/></svg>
+              </button>
+            </article>
+
+            <!-- Card 2: Media -->
+            <article class="journey-card highlight-card">
+              <div class="journey-card-badge">Periodo 2</div>
+              <div class="journey-card-icon">
+                <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <circle cx="20" cy="20" r="18" fill="#FDF3E7" stroke="#E67E22" stroke-width="1.5"/>
+                  <path d="M20 10L13 22H27L20 10Z" fill="#FDF3E7" stroke="#E67E22" stroke-width="1.8"/>
+                  <path d="M16 22V29H24V22" stroke="#E67E22" stroke-width="1.8"/>
+                  <path d="M18 29V25H22V29" stroke="#E67E22" stroke-width="1.5"/>
+                </svg>
+              </div>
+              <h3 class="journey-card-title">Edad Media</h3>
+              <p class="journey-card-range">Siglo V &mdash; Siglo XV d.C.</p>
+              <p class="journey-card-text">
+                El niño concebido como un "adulto en miniatura" (homúnculo) sin estatuto psicosocial diferenciado. La doctrina del pecado original exigía domesticación moral y disciplina correctiva severa.
+              </p>
+              <ul class="journey-card-points">
+                <li>Ausencia del "sentimiento de infancia"</li>
+                <li>Alta mortandad y desapego afectivo</li>
+                <li>Inserción prematura al trabajo gremial</li>
+              </ul>
+              <button class="journey-card-btn" data-jump-era="media">
+                <span>Ver detalles de esta etapa</span>
+                <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M1 8a.5.5 0 01.5-.5h11.793l-3.147-3.146a.5.5 0 01.708-.708l4 4a.5.5 0 010 .708l-4 4a.5.5 0 01-.708-.708L13.293 8.5H1.5A.5.5 0 011 8z"/></svg>
+              </button>
+            </article>
+
+            <!-- Card 3: Moderna -->
+            <article class="journey-card">
+              <div class="journey-card-badge">Periodo 3</div>
+              <div class="journey-card-icon">
+                <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <circle cx="20" cy="20" r="18" fill="#EBF3FB" stroke="#1D70B8" stroke-width="1.5"/>
+                  <path d="M12 25C15 23 18 23 20 25C22 23 25 23 28 25V15C25 13 22 13 20 15C18 13 15 13 12 15V25Z" fill="#FFFFFF" stroke="#1D70B8" stroke-width="1.8"/>
+                  <line x1="20" y1="15" x2="20" y2="25" stroke="#1D70B8" stroke-width="1.8"/>
+                  <circle cx="20" cy="11" r="2" fill="#E67E22"/>
+                </svg>
+              </div>
+              <h3 class="journey-card-title">Edad Moderna</h3>
+              <p class="journey-card-range">Siglo XV &mdash; Siglo XVIII d.C.</p>
+              <p class="journey-card-text">
+                Nacimiento del sentimiento moderno de infancia. Surge la escolarización sistemática (Comenio), la comprensión del desarrollo cognitivo (Locke) y el valor intrínseco de la niñez (Rousseau).
+              </p>
+              <ul class="journey-card-points">
+                <li>Institucionalización escolar obligatoria</li>
+                <li>Concepción de la "tabula rasa" y bondad</li>
+                <li>Protección y pedagogía del afecto</li>
+              </ul>
+              <button class="journey-card-btn" data-jump-era="moderna">
+                <span>Ver detalles de esta etapa</span>
+                <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M1 8a.5.5 0 01.5-.5h11.793l-3.147-3.146a.5.5 0 01.708-.708l4 4a.5.5 0 010 .708l-4 4a.5.5 0 01-.708-.708L13.293 8.5H1.5A.5.5 0 011 8z"/></svg>
+              </button>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section: Propósito del proyecto -->
+      <section class="section purpose-section" id="proposito-proyecto">
+        <div class="container purpose-grid">
+          <div class="purpose-text">
+            <span class="section-badge">Horizonte Formativo</span>
+            <h2 class="section-title">Propósito del proyecto integrador</h2>
+            <p class="purpose-lead">
+              El curso <strong>Infancias: Historias y Perspectivas</strong> busca formar pedagogos infantiles críticos, con capacidad de analizar cómo las representaciones hegemónicas de la niñez impactan hoy las políticas públicas, el currículo y las relaciones familiares en Colombia y el mundo.
+            </p>
+            <div class="purpose-features">
+              <div class="purpose-feature-item">
+                <div class="purpose-feature-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <polyline points="12 6 12 12 16 14"></polyline>
+                  </svg>
+                </div>
+                <div class="purpose-feature-body">
+                  <h3 class="purpose-feature-title">Desnaturalización epistemológica</h3>
+                  <p class="purpose-feature-desc">Reconocer que la niñez no responde a un patrón único universal, sino a condicionamientos históricos, económicos y geopolíticos.</p>
+                </div>
+              </div>
+
+              <div class="purpose-feature-item">
+                <div class="purpose-feature-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                    <polyline points="14 2 14 8 20 8"></polyline>
+                    <line x1="16" y1="13" x2="8" y2="13"></line>
+                    <line x1="16" y1="17" x2="8" y2="17"></line>
+                    <polyline points="10 9 9 9 8 9"></polyline>
+                  </svg>
+                </div>
+                <div class="purpose-feature-body">
+                  <h3 class="purpose-feature-title">Apropiación de categorías teóricas</h3>
+                  <p class="purpose-feature-desc">Manejo conceptual riguroso de nociones como <em>adultocentrismo</em>, <em>homúnculo</em>, <em>tabula rasa</em>, <em>sujeto de derechos</em> y <em>agencia infantil</em>.</p>
+                </div>
+              </div>
+
+              <div class="purpose-feature-item">
+                <div class="purpose-feature-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                  </svg>
+                </div>
+                <div class="purpose-feature-body">
+                  <h3 class="purpose-feature-title">Transformación de la praxis docente</h3>
+                  <p class="purpose-feature-desc">Construir ambientes de aprendizaje liberadores que superen la domesticación pasiva y promuevan la participación genuina de las infancias.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="purpose-diagram">
+            <div class="diagram-container">
+              <h3 class="diagram-title">Tránsito paradigmático de las infancias</h3>
+              <div class="paradigm-flow">
+                
+                <div class="paradigm-node paradigm-antigua">
+                  <div class="paradigm-node-header">
+                    <span class="paradigm-era">Edad Antigua</span>
+                    <span class="paradigm-concept">Objeto de Dominación</span>
+                  </div>
+                  <p class="paradigm-node-text">Sujeto a la <em>patria potestas</em>; valor utilitario y militar.</p>
+                </div>
+
+                <div class="paradigm-arrow">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="#003366" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <line x1="12" y1="5" x2="12" y2="19"></line>
+                    <polyline points="19 12 12 19 5 12"></polyline>
+                  </svg>
+                </div>
+
+                <div class="paradigm-node paradigm-media">
+                  <div class="paradigm-node-header">
+                    <span class="paradigm-era">Edad Media</span>
+                    <span class="paradigm-concept">Adulto en Miniatura</span>
+                  </div>
+                  <p class="paradigm-node-text">Invisibilidad de la etapa; redención moral frente al pecado.</p>
+                </div>
+
+                <div class="paradigm-arrow">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="#003366" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <line x1="12" y1="5" x2="12" y2="19"></line>
+                    <polyline points="19 12 12 19 5 12"></polyline>
+                  </svg>
+                </div>
+
+                <div class="paradigm-node paradigm-moderna">
+                  <div class="paradigm-node-header">
+                    <span class="paradigm-era">Edad Moderna</span>
+                    <span class="paradigm-concept">Sujeto Escolarizado</span>
+                  </div>
+                  <p class="paradigm-node-text">Emergencia del sentimiento de infancia; protección y educación.</p>
+                </div>
+
+                <div class="paradigm-arrow">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="#003366" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <line x1="12" y1="5" x2="12" y2="19"></line>
+                    <polyline points="19 12 12 19 5 12"></polyline>
+                  </svg>
+                </div>
+
+                <div class="paradigm-node paradigm-actual">
+                  <div class="paradigm-node-header">
+                    <span class="paradigm-era">Contemporaneidad (CDN 1989)</span>
+                    <span class="paradigm-concept">Sujeto Pleno de Derechos</span>
+                  </div>
+                  <p class="paradigm-node-text">Ciudadanía, agencia, participación y diversidad de infancias.</p>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section: Nuestro equipo colaborativo -->
+      <section class="section team-section">
+        <div class="container">
+          <div class="section-header text-center">
+            <span class="section-badge">Trabajo Colaborativo</span>
+            <h2 class="section-title">Nuestro equipo de investigación</h2>
+            <p class="section-desc">Estudiantes de la Licenciatura en Pedagogía Infantil comprometidos con el rigor académico y la construcción colectiva del conocimiento.</p>
+          </div>
+
+          <div class="team-grid">
+            <!-- Member 1: María del Pilar -->
+            <article class="team-card">
+              <div class="team-avatar-wrapper">
+                <div class="team-avatar-placeholder">
+                  <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Avatar pedagógico ilustrado de María del Pilar">
+                    <!-- Fondo degradado cálido con borde -->
+                    <circle cx="50" cy="50" r="48" fill="url(#gradPilar)" stroke="#D97706" stroke-width="2.5"/>
+                    <defs>
+                      <linearGradient id="gradPilar" x1="0" y1="0" x2="100" y2="100" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#FEF3C7"/>
+                        <stop offset="1" stop-color="#BAE6FD"/>
+                      </linearGradient>
+                    </defs>
+                    <!-- Estrella dorada de mérito académico -->
+                    <polygon points="82,18 84,23 89,23 85,26 87,31 82,28 77,31 79,26 75,23 80,23" fill="#F59E0B"/>
+                    <!-- Cuello y hombros -->
+                    <rect x="42" y="66" width="16" height="12" rx="4" fill="#EDB694"/>
+                    <!-- Chaqueta universitaria UNAD -->
+                    <path d="M20 96C20 74 32 68 50 68C68 68 80 74 80 96Z" fill="#003366"/>
+                    <path d="M44 68L50 84L56 68Z" fill="#D97706"/>
+                    <path d="M46 78L50 86L54 78Z" fill="#FFFFFF"/>
+                    <!-- Cabeza y rostro -->
+                    <ellipse cx="50" cy="46" rx="22" ry="24" fill="#F8D3B7"/>
+                    <!-- Cabello largo con diadema azul -->
+                    <path d="M26 46C26 22 36 18 50 18C64 18 74 22 74 46C74 54 70 54 68 46C64 34 58 30 50 30C42 30 36 34 32 46C30 54 26 54 26 46Z" fill="#5C3A21"/>
+                    <path d="M28 38C34 26 66 26 72 38" stroke="#0284C7" stroke-width="3.5" stroke-linecap="round"/>
+                    <!-- Mechones laterales -->
+                    <path d="M25 44C23 56 26 72 30 76C32 74 30 60 28 46Z" fill="#5C3A21"/>
+                    <path d="M75 44C77 56 74 72 70 76C68 74 70 60 72 46Z" fill="#5C3A21"/>
+                    <!-- Ojos amables y sonrientes -->
+                    <circle cx="40" cy="46" r="2.5" fill="#0F172A"/>
+                    <circle cx="60" cy="46" r="2.5" fill="#0F172A"/>
+                    <circle cx="39" cy="45" r="0.8" fill="#FFFFFF"/>
+                    <circle cx="59" cy="45" r="0.8" fill="#FFFFFF"/>
+                    <!-- Pestañas sutiles -->
+                    <path d="M37 43L39 41M43 43L42 41" stroke="#0F172A" stroke-width="1.2" stroke-linecap="round"/>
+                    <path d="M57 43L58 41M63 43L61 41" stroke="#0F172A" stroke-width="1.2" stroke-linecap="round"/>
+                    <!-- Mejillas sonrojadas -->
+                    <ellipse cx="34" cy="53" rx="4.5" ry="2.5" fill="#FF8A80" opacity="0.6"/>
+                    <ellipse cx="66" cy="53" rx="4.5" ry="2.5" fill="#FF8A80" opacity="0.6"/>
+                    <!-- Sonrisa cálida -->
+                    <path d="M43 54Q50 61 57 54" stroke="#B91C1C" stroke-width="2" fill="#FECACA" stroke-linecap="round"/>
+                    <!-- Tabla de investigación en mano -->
+                    <rect x="66" y="70" width="18" height="22" rx="2.5" fill="#FEF3C7" stroke="#003366" stroke-width="1.3"/>
+                    <rect x="71" y="67" width="8" height="4" rx="1" fill="#003366"/>
+                    <line x1="70" y1="76" x2="80" y2="76" stroke="#0284C7" stroke-width="1.2"/>
+                    <line x1="70" y1="81" x2="80" y2="81" stroke="#0284C7" stroke-width="1.2"/>
+                    <line x1="70" y1="86" x2="77" y2="86" stroke="#0284C7" stroke-width="1.2"/>
+                  </svg>
+                </div>
+                <span class="team-role-tag role-leader">Investigadora Principal</span>
+              </div>
+              <h3 class="team-name">María del Pilar</h3>
+              <p class="team-id">Licenciatura en Pedagogía Infantil &bull; ECEDU</p>
+              <p class="team-role-desc">
+                Investigación pedagógica, análisis crítico de las concepciones de niñez, contraste de marcos normativos y consolidación epistemológica del entorno formativo sobre la construcción histórica de las infancias.
+              </p>
+              <div class="team-badge-footer">Escuela ECEDU &bull; UNAD</div>
+            </article>
+
+            <!-- Member 2: Fernanda -->
+            <article class="team-card">
+              <div class="team-avatar-wrapper">
+                <div class="team-avatar-placeholder">
+                  <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Avatar pedagógico ilustrado de Fernanda">
+                    <!-- Fondo degradado celeste con borde -->
+                    <circle cx="50" cy="50" r="48" fill="url(#gradFernanda)" stroke="#0284C7" stroke-width="2.5"/>
+                    <defs>
+                      <linearGradient id="gradFernanda" x1="0" y1="0" x2="100" y2="100" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#E0F2FE"/>
+                        <stop offset="1" stop-color="#BAE6FD"/>
+                      </linearGradient>
+                    </defs>
+                    <!-- Estrellita dorada -->
+                    <polygon points="80,18 82,23 87,23 83,26 85,31 80,28 75,31 77,26 73,23 78,23" fill="#F59E0B"/>
+                    <!-- Cuello y hombros -->
+                    <rect x="42" y="66" width="16" height="12" rx="4" fill="#EDB694"/>
+                    <!-- Chaqueta universitaria UNAD -->
+                    <path d="M22 96C22 74 34 68 50 68C66 68 78 74 78 96Z" fill="#003366"/>
+                    <path d="M44 68L50 84L56 68Z" fill="#E67E22"/>
+                    <path d="M46 78L50 86L54 78Z" fill="#FFFFFF"/>
+                    <!-- Cabeza y rostro -->
+                    <ellipse cx="50" cy="46" rx="22" ry="24" fill="#F8D3B7"/>
+                    <!-- Cabello moderno castaño con lazo -->
+                    <path d="M26 44C26 24 36 18 50 18C64 18 74 24 74 44C74 50 70 52 68 46C64 36 60 32 50 32C40 32 36 36 32 46C30 52 26 50 26 44Z" fill="#451A03"/>
+                    <circle cx="70" cy="24" r="5" fill="#E67E22"/>
+                    <!-- Gafas modernas universitarias -->
+                    <rect x="33" y="41" width="14" height="11" rx="3" fill="none" stroke="#003366" stroke-width="1.8"/>
+                    <rect x="53" y="41" width="14" height="11" rx="3" fill="none" stroke="#003366" stroke-width="1.8"/>
+                    <line x1="47" y1="46" x2="53" y2="46" stroke="#003366" stroke-width="1.8"/>
+                    <!-- Ojos amables y sonrientes -->
+                    <circle cx="40" cy="46" r="2.5" fill="#0F172A"/>
+                    <circle cx="60" cy="46" r="2.5" fill="#0F172A"/>
+                    <circle cx="39" cy="45" r="0.8" fill="#FFFFFF"/>
+                    <circle cx="59" cy="45" r="0.8" fill="#FFFFFF"/>
+                    <!-- Mejillas sonrojadas -->
+                    <ellipse cx="34" cy="53" rx="4" ry="2.2" fill="#FF8A80" opacity="0.6"/>
+                    <ellipse cx="66" cy="53" rx="4" ry="2.2" fill="#FF8A80" opacity="0.6"/>
+                    <!-- Sonrisa -->
+                    <path d="M43 54Q50 61 57 54" stroke="#B91C1C" stroke-width="2" fill="#FECACA" stroke-linecap="round"/>
+                    <!-- Cuaderno pedagógico en mano -->
+                    <rect x="68" y="72" width="16" height="20" rx="2" fill="#FFFFFF" stroke="#003366" stroke-width="1.2"/>
+                    <line x1="72" y1="77" x2="80" y2="77" stroke="#0284C7" stroke-width="1.2"/>
+                    <line x1="72" y1="82" x2="80" y2="82" stroke="#0284C7" stroke-width="1.2"/>
+                    <circle cx="74" cy="87" r="1.5" fill="#E67E22"/>
+                  </svg>
+                </div>
+                <span class="team-role-tag role-compiler">Investigadora y Compiladora</span>
+              </div>
+              <h3 class="team-name">Fernanda</h3>
+              <p class="team-id">Licenciatura en Pedagogía Infantil &bull; ECEDU</p>
+              <p class="team-role-desc">
+                Liderazgo investigativo, coordinación temática y sistematización epistemológica del recurso digital sobre la construcción histórica y las perspectivas contemporáneas de las infancias.
+              </p>
+              <div class="team-badge-footer">Escuela ECEDU &bull; UNAD</div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+    </section>
+
+    <!-- ==========================================
+         TAB 2: CONSTRUCCIÓN HISTÓRICA (RETO 2)
+         ========================================== -->
+    <section class="tab-panel" id="tab-construccion-historica" role="tabpanel" aria-labelledby="tab-construccion-historica-label">
+      
+      <!-- Reto 2 Header -->
+      <section class="challenge-header-section">
+        <div class="container">
+          <div class="challenge-breadcrumb">
+            <a href="#inicio" class="breadcrumb-link">Inicio</a>
+            <span class="breadcrumb-separator">/</span>
+            <span class="breadcrumb-current">Reto 2: Construcción histórica de las infancias</span>
+          </div>
+          <div class="challenge-title-block">
+            <span class="badge badge-accent challenge-badge">Actividad Colaborativa &bull; Reto 2</span>
+            <h1 class="challenge-title">Construcción Histórica de las Infancias</h1>
+            <p class="challenge-subtitle">De la invisibilidad y el adultocentrismo al reconocimiento de la subjetividad infantil</p>
+            <div class="challenge-intro-box">
+              <p>
+                La categoría <em>infancia</em> no ha existido siempre con el sentido de protección, ternura y derechos que hoy le atribuimos en la sociedad occidental. Como demostró el célebre historiador Philippe Ariès (1960), en la mayor parte de la historia no existía un "sentimiento de infancia": los niños eran percibidos como réplicas imperfectas de los adultos, objetos de propiedad familiar o recursos de mano de obra. A través de este análisis historiográfico, exploramos cómo la Antigüedad, la Edad Media y la Edad Moderna configuraron discursos, normas y prácticas de crianza que sentaron las bases y contradicciones de la pedagogía actual.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Interactive Timeline Controller -->
+      <section class="section timeline-section">
+        <div class="container">
+          
+          <div class="timeline-navigation-header">
+            <h2 class="timeline-nav-title">Línea de tiempo interactiva</h2>
+            <p class="timeline-nav-subtitle">Selecciona una etapa histórica para desplegar el análisis contextual, autores e hitos pedagógicos</p>
+          </div>
+
+          <!-- Timeline Stepper Track -->
+          <nav class="timeline-stepper" aria-label="Línea de tiempo de etapas históricas">
+            <div class="timeline-progress-bar" id="timelineProgressBar"></div>
+            
+            <!-- Step 1: Edad Antigua -->
+            <button class="timeline-step active" data-era="antigua" id="step-antigua" aria-controls="panel-antigua" aria-selected="true" role="tab">
+              <span class="step-marker">
+                <span class="step-number">1</span>
+              </span>
+              <span class="step-content">
+                <span class="step-era-title">Edad Antigua</span>
+                <span class="step-era-dates">Siglo VIII a.C. &mdash; Siglo V d.C.</span>
+              </span>
+            </button>
+
+            <!-- Step 2: Edad Media -->
+            <button class="timeline-step" data-era="media" id="step-media" aria-controls="panel-media" aria-selected="false" role="tab">
+              <span class="step-marker">
+                <span class="step-number">2</span>
+              </span>
+              <span class="step-content">
+                <span class="step-era-title">Edad Media</span>
+                <span class="step-era-dates">Siglo V &mdash; Siglo XV d.C.</span>
+              </span>
+            </button>
+
+            <!-- Step 3: Edad Moderna -->
+            <button class="timeline-step" data-era="moderna" id="step-moderna" aria-controls="panel-moderna" aria-selected="false" role="tab">
+              <span class="step-marker">
+                <span class="step-number">3</span>
+              </span>
+              <span class="step-content">
+                <span class="step-era-title">Edad Moderna</span>
+                <span class="step-era-dates">Siglo XV &mdash; Siglo XVIII d.C.</span>
+              </span>
+            </button>
+          </nav>
+
+          <!-- ==========================================
+               EPOCH PANELS CONTAINER
+               ========================================== -->
+          <div class="era-panels-container">
+
+            <!-- ----------------------------------------
+                 PANEL 1: EDAD ANTIGUA
+                 ---------------------------------------- -->
+            <article class="era-panel active" id="panel-antigua" role="tabpanel" aria-labelledby="step-antigua">
+              <div class="era-panel-header">
+                <div class="era-header-content">
+                  <div class="era-tag">Periodo Histórico &bull; Civilizaciones Clásicas</div>
+                  <h3 class="era-name">Edad Antigua: La infancia entre la sumisión familiar y la formación de la polis</h3>
+                  <p class="era-dates-highlight">Aproximadamente desde la consolidación griega (Siglo VIII a.C.) hasta la caída de Roma (476 d.C.)</p>
+                  <p class="era-summary">
+                    En Grecia y Roma, la infancia estaba subordinada a los intereses colectivos de la ciudad-estado y al dominio absoluto del cabeza de familia. El niño no poseía valor intrínseco por sí mismo, sino potencial en tanto futuro guerrero, ciudadano o continuador de la estirpe. El infanticidio y la exposición de recién nacidos con malformaciones o de sexo femenino eran prácticas ampliamente naturalizadas.
+                  </p>
+                  <div class="era-audio-widget">
+                    <button class="btn-audio-narrate" data-tts-era="antigua" aria-label="Escuchar síntesis de la Edad Antigua en voz alta">
+                      <span class="audio-btn-icon">
+                        <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" class="icon-play"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd"/></svg>
+                        <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" class="icon-stop" style="display:none;"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8 7a1 1 0 00-1 1v4a1 1 0 001 1h4a1 1 0 001-1V8a1 1 0 00-1-1H8z" clip-rule="evenodd"/></svg>
+                      </span>
+                      <span class="audio-btn-text">Escuchar Síntesis (Audio)</span>
+                      <div class="soundwave-bars" aria-hidden="true">
+                        <span class="bar bar-1"></span>
+                        <span class="bar bar-2"></span>
+                        <span class="bar bar-3"></span>
+                        <span class="bar bar-4"></span>
+                      </div>
+                    </button>
+                    <span class="audio-status-tag">Voz en español &bull; Accesible</span>
+                  </div>
+                </div>
+                <div class="era-header-illustration">
+                  <svg viewBox="0 0 240 180" fill="none" xmlns="http://www.w3.org/2000/svg" class="era-illustration-svg" aria-hidden="true">
+                    <rect width="240" height="180" rx="12" fill="#EBF3FB"/>
+                    <!-- Greek Column and Temple Graphic -->
+                    <path d="M40 140H200M45 130H195" stroke="#003366" stroke-width="2"/>
+                    <rect x="65" y="60" width="16" height="70" fill="#FFFFFF" stroke="#003366" stroke-width="1.5"/>
+                    <rect x="112" y="60" width="16" height="70" fill="#FFFFFF" stroke="#003366" stroke-width="1.5"/>
+                    <rect x="159" y="60" width="16" height="70" fill="#FFFFFF" stroke="#003366" stroke-width="1.5"/>
+                    <path d="M50 60H190L120 25L50 60Z" fill="#FFFFFF" stroke="#003366" stroke-width="2"/>
+                    <circle cx="120" cy="45" r="7" fill="#E67E22"/>
+                    <!-- Scroll / Papyrus -->
+                    <path d="M85 150C95 146 145 146 155 150" stroke="#003366" stroke-width="2"/>
+                  </svg>
+                </div>
+              </div>
+
+              <!-- Subtabs Navigation for Antiquity -->
+              <div class="subtabs-wrapper">
+                <div class="subtabs-nav" role="tablist" aria-label="Aspectos temáticos de la Edad Antigua">
+                  <button class="subtab-btn active" data-subtab="antigua-social" role="tab" aria-selected="true">
+                    <svg class="subtab-icon" viewBox="0 0 20 20" fill="currentColor"><path d="M9 6a3 3 0 11-6 0 3 3 0 016 0zM17 6a3 3 0 11-6 0 3 3 0 016 0zM12.93 17c.046-.327.07-.66.07-1a6.97 6.97 0 00-1.5-4.33A5 5 0 0119 16v1h-6.07zM6 11a5 5 0 015 5v1H1v-1a5 5 0 015-5z"/></svg>
+                    <span>Contexto Social</span>
+                  </button>
+                  <button class="subtab-btn" data-subtab="antigua-cultural" role="tab" aria-selected="false">
+                    <svg class="subtab-icon" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd"/></svg>
+                    <span>Contexto Cultural</span>
+                  </button>
+                  <button class="subtab-btn" data-subtab="antigua-concepcion" role="tab" aria-selected="false">
+                    <svg class="subtab-icon" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-6-3a2 2 0 11-4 0 2 2 0 014 0zm-2 4a5 5 0 00-4.546 2.916A5.986 5.986 0 0010 16a5.986 5.986 0 004.546-2.084A5 5 0 0010 11z" clip-rule="evenodd"/></svg>
+                    <span>Concepción de Niñez</span>
+                  </button>
+                  <button class="subtab-btn" data-subtab="antigua-autores" role="tab" aria-selected="false">
+                    <svg class="subtab-icon" viewBox="0 0 20 20" fill="currentColor"><path d="M13.586 3.586a2 2 0 112.828 2.828l-.793.793-2.828-2.828.793-.793zM11.379 5.793L3 14.172V17h2.828l8.38-8.379-2.83-2.828z"/></svg>
+                    <span>Autores y Aportes</span>
+                  </button>
+                  <button class="subtab-btn" data-subtab="antigua-hitos" role="tab" aria-selected="false">
+                    <svg class="subtab-icon" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd"/></svg>
+                    <span>Transformaciones e Hitos</span>
+                  </button>
+                </div>
+
+                <!-- Cápsula de Debate Historiográfico (Reemplazo del Teatro) -->
+                <div class="epistemic-capsule-card capsule-antigua">
+                  <div class="capsule-header">
+                    <div class="capsule-tag">
+                      <span class="capsule-dot"></span>
+                      <span>Eje de Análisis Pedagógico &bull; Edad Antigua</span>
+                    </div>
+                    <button class="capsule-audio-btn" data-audio-capsule="antigua" aria-label="Escuchar síntesis del análisis histórico de la Edad Antigua">
+                      <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd"/></svg>
+                      <span>Escuchar Análisis</span>
+                    </button>
+                  </div>
+                  <h4 class="capsule-title">🏛️ La Tensión Clásica: Formación para la Polis vs. Invisibilización de la Niñez</h4>
+                  <p class="capsule-question"><strong>Pregunta orientadora:</strong> ¿Cómo determinó el ideal de ciudadano grecorromano el destino del niño y qué huellas perviven en las concepciones actuales de obediencia escolar?</p>
+                  
+                  <div class="capsule-perspectives-grid">
+                    <div class="perspective-box">
+                      <div class="perspective-badge">Mirada del Estado &bull; La Paideia</div>
+                      <div class="perspective-speaker"><strong>El Filósofo y Magistrado:</strong></div>
+                      <p class="perspective-quote">«A los 7 años la polis toma las riendas formativas. El fin supremo no es el afecto doméstico, sino forjar la templanza cívica y la disciplina del futuro ciudadano o guerrero.»</p>
+                    </div>
+                    <div class="perspective-box">
+                      <div class="perspective-badge badge-warm">Realidad Infantil &bull; El Gineceo</div>
+                      <div class="perspective-speaker"><strong>La Condición de la Niñez:</strong></div>
+                      <p class="perspective-quote">«Relegados a los espacios domésticos invisibles con nodrizas y madres; jugando con tabas y peonzas mientras su derecho a la vida dependía de la aceptación ritual paterna (<em>tollere liberum</em>).»</p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Subtab Contents for Antiquity -->
+                <div class="subtab-content-area">
+                  
+                  <!-- 1. Contexto Social -->
+                  <div class="subtab-panel active" id="subtab-antigua-social">
+                    <h4 class="subtab-heading">Estructura social y condiciones de vida en el mundo clásico</h4>
+                    <p>
+                      En las sociedades grecorromanas, la estructura social era profundamente jerárquica y patriarcal. La natalidad estaba condicionada por una altísima tasa de mortalidad infantil (cercana al 40-50% en los primeros cinco años de vida), lo que generaba una relación de distancia emocional preventiva por parte de los progenitores.
+                    </p>
+                    <div class="content-cards-grid">
+                      <div class="info-card">
+                        <h5 class="info-card-title">Patria potestas y autoridad paterna</h5>
+                        <p>En el derecho romano, el <em>pater familias</em> gozaba de la potestad civil de vida y muerte (<em>ius vitae ac necis</em>) sobre sus hijos. El recién nacido no era legalmente hijo hasta que el padre lo levantaba del suelo en el ritual del <em>tollere liberum</em>; si no era aceptado, se ordenaba su abandono.</p>
+                      </div>
+                      <div class="info-card">
+                        <h5 class="info-card-title">Diferenciación de género y clase</h5>
+                        <p>Los hijos varones de ciudadanos libres recibían formación para la vida pública, el ejército o la filosofía. Las niñas permanecían recluidas en el gineceo o el ámbito doméstico, siendo casadas en la pubertad temprana (12-14 años). Los hijos de esclavos carecían de cualquier derecho y eran considerados cosas comerciables.</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- 2. Contexto Cultural -->
+                  <div class="subtab-panel" id="subtab-antigua-cultural">
+                    <h4 class="subtab-heading">Cosmovisión, mitología y el ideal de la Paideia</h4>
+                    <p>
+                      La cultura griega concebía la educación como <em>Paideia</em>: el proceso de cultivo y modelamiento del ser humano para alcanzar la virtud cívica y moral (<em>areté</em>). Sin embargo, esta aspiración no partía del respeto a los ritmos infantiles, sino de una exigencia de perfeccionamiento que buscaba extirpar la imperfección de la niñez lo antes posible.
+                    </p>
+                    <div class="content-cards-grid">
+                      <div class="info-card">
+                        <h5 class="info-card-title">La visión espartana vs. ateniense</h5>
+                        <p>En Esparta, el recién nacido era examinado por los ancianos en el Lesque; si era débil, era arrojado por el monte Taigeto. A los siete años pasaba al Estado en la <em>agoge</em> militar. En Atenas primaba la retórica, las letras, la música y la gimnasia, pero siempre bajo un estricto principio de autoridad adulta.</p>
+                      </div>
+                      <div class="info-card">
+                        <h5 class="info-card-title">Prácticas de crianza y nodrizas</h5>
+                        <p>En las familias acomodadas de Roma y Grecia, los primeros años de crianza se delegaban casi por completo a nodrizas (<em>nutrices</em>) y esclavos pedagogos (<em>paidagogos</em>), quienes cuidaban y conducían al niño a la escuela, evidenciando una separación afectiva entre los padres y los infantes.</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- 3. Concepción de Niñez -->
+                  <div class="subtab-panel" id="subtab-antigua-concepcion">
+                    <h4 class="subtab-heading">La niñez como estadio imperfecto y transitorio</h4>
+                    <p>
+                      La palabra latina <em>infans</em> proviene etimológicamente de <em>in-fans</em>: "el que no habla", el que carece de voz propia o capacidad discursiva. En este marco, el niño no era valorado por lo que era en su presente, sino exclusivamente por lo que llegaría a ser cuando alcanzara la madurez racional.
+                    </p>
+                    <div class="highlight-quote-box">
+                      <p class="quote-text">
+                        "El niño es, de todos los animales salvajes, el más difícil de tratar; en la medida en que posee una fuente de inteligencia aún no encauzada, es insolente, astuto y el más insumiso de los seres."
+                      </p>
+                      <span class="quote-author">&mdash; Platón, Las Leyes (Libro VII)</span>
+                    </div>
+                    <ul class="analytic-list">
+                      <li><strong>Cosificación utilitaria:</strong> El infante era valorado en función de la continuidad del linaje, el culto a los antepasados y la defensa militar del territorio.</li>
+                      <li><strong>Normalización del castigo físico:</strong> La vara, la férula y el azote eran instrumentos pedagógicos incuestionables para doblegar la voluntad infantil y corregir su debilidad natural.</li>
+                    </ul>
+                  </div>
+
+                  <!-- 4. Autores y Aportes -->
+                  <div class="subtab-panel" id="subtab-antigua-autores">
+                    <h4 class="subtab-heading">Pensadores cardinales y sus postulados sobre la educación</h4>
+                    <div class="authors-grid">
+                      <!-- Platón -->
+                      <div class="author-card">
+                        <div class="author-header">
+                          <div class="author-avatar-badge" title="Platón">
+                            <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                              <circle cx="18" cy="18" r="16" fill="#e0f2fe"/>
+                              <path d="M10 16L18 10L26 16H10Z" fill="#003366"/>
+                              <rect x="12" y="17" width="2.5" height="9" rx="0.5" fill="#155e9e"/>
+                              <rect x="16.75" y="17" width="2.5" height="9" rx="0.5" fill="#155e9e"/>
+                              <rect x="21.5" y="17" width="2.5" height="9" rx="0.5" fill="#155e9e"/>
+                              <rect x="9" y="26" width="18" height="2" rx="0.5" fill="#003366"/>
+                              <path d="M7 20C7 16 9 12 11 10" stroke="#b45309" stroke-width="1.5" stroke-linecap="round"/>
+                              <path d="M29 20C29 16 27 12 25 10" stroke="#b45309" stroke-width="1.5" stroke-linecap="round"/>
+                            </svg>
+                          </div>
+                          <div>
+                            <h5 class="author-name">Platón (427 &mdash; 347 a.C.)</h5>
+                            <span class="author-role">Filósofo griego &bull; La República y Las Leyes</span>
+                          </div>
+                        </div>
+                        <p class="author-bio">
+                          Propuso que la educación de los niños debía ser asumida por el Estado desde la primera infancia para garantizar la justicia en la República. Reconoció el valor del juego regulado (<em>paidiá</em>) en la primera infancia, aunque siempre subordinado a moldear el carácter cívico y apartar al niño de malas influencias míticas.
+                        </p>
+                      </div>
+
+                      <!-- Aristóteles -->
+                      <div class="author-card">
+                        <div class="author-header">
+                          <div class="author-avatar-badge" title="Aristóteles">
+                            <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                              <circle cx="18" cy="18" r="16" fill="#fef3c7"/>
+                              <rect x="10" y="12" width="16" height="13" rx="2" fill="#ffffff" stroke="#b45309" stroke-width="1.5"/>
+                              <line x1="13" y1="16" x2="23" y2="16" stroke="#003366" stroke-width="1.5" stroke-linecap="round"/>
+                              <line x1="13" y1="19" x2="21" y2="19" stroke="#155e9e" stroke-width="1.5" stroke-linecap="round"/>
+                              <line x1="13" y1="22" x2="19" y2="22" stroke="#b45309" stroke-width="1.5" stroke-linecap="round"/>
+                              <path d="M18 6V9" stroke="#d97706" stroke-width="1.5" stroke-linecap="round"/>
+                              <path d="M25 8L23 10.5" stroke="#d97706" stroke-width="1.5" stroke-linecap="round"/>
+                              <path d="M11 8L13 10.5" stroke="#d97706" stroke-width="1.5" stroke-linecap="round"/>
+                            </svg>
+                          </div>
+                          <div>
+                            <h5 class="author-name">Aristóteles (384 &mdash; 322 a.C.)</h5>
+                            <span class="author-role">Filósofo y biólogo &bull; Política y Ética a Nicómaco</span>
+                          </div>
+                        </div>
+                        <p class="author-bio">
+                          Dividió el desarrollo humano en periodos septenarios (0 a 7 años, 7 a la pubertad, pubertad a los 21). Señaló que hasta los 5 años no se debía exigir estudio formal ni fatiga física para no frenar el crecimiento, recomendando el movimiento, el juego imitativo y el endurecimiento progresivo frente al clima.
+                        </p>
+                      </div>
+
+                      <!-- Quintiliano -->
+                      <div class="author-card">
+                        <div class="author-header">
+                          <div class="author-avatar-badge" title="Quintiliano">
+                            <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                              <circle cx="18" cy="18" r="16" fill="#f0fdf4"/>
+                              <path d="M25 9C22 9 17 14 15 19L14 26L21 25C26 23 27 12 25 9Z" fill="#155e9e" stroke="#002b55" stroke-width="1.2"/>
+                              <path d="M15 19L24 10" stroke="#bae6fd" stroke-width="1.2"/>
+                              <circle cx="12" cy="14" r="3" fill="#b45309"/>
+                              <path d="M9 22C9 19.5 11 18 13.5 18C15 18 16 18.5 16.5 19" stroke="#b45309" stroke-width="1.5" stroke-linecap="round"/>
+                            </svg>
+                          </div>
+                          <div>
+                            <h5 class="author-name">Marco Fabio Quintiliano (35 &mdash; 96 d.C.)</h5>
+                            <span class="author-role">Retórico romano &bull; Institutio Oratoria</span>
+                          </div>
+                        </div>
+                        <p class="author-bio">
+                          Pionero en rechazar abiertamente los castigos corporales en las escuelas romanas, argumentando que envilecen el espíritu y engendran servilismo. Defendió la estimulación temprana, la selección cuidadosa del pedagogo y de la nodriza, y propuso que el aprendizaje inicial fuera lúdico y motivador.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- 5. Hitos -->
+                  <div class="subtab-panel" id="subtab-antigua-hitos">
+                    <h4 class="subtab-heading">Transformaciones e hitos históricos de la Edad Antigua</h4>
+                    <div class="milestones-timeline">
+                      <div class="milestone-item">
+                        <span class="milestone-year">Siglo V a.C.</span>
+                        <div class="milestone-text">
+                          <strong>Institucionalización de la Paideia ateniense:</strong> Separación formal entre el hogar doméstico y las escuelas de gramática, música (citarista) y gimnasia (palestra).
+                        </div>
+                      </div>
+                      <div class="milestone-item">
+                        <span class="milestone-year">450 a.C.</span>
+                        <div class="milestone-text">
+                          <strong>Ley de las XII Tablas en Roma:</strong> Ratificación jurídica de la <em>patria potestas</em> sobre la descendencia y permiso expreso para la eliminación de infantes que nacieran con deformidades notorias (Tabla IV).
+                        </div>
+                      </div>
+                      <div class="milestone-item">
+                        <span class="milestone-year">374 d.C.</span>
+                        <div class="milestone-text">
+                          <strong>Edicto del emperador Valentiniano I:</strong> Bajo la creciente influencia del cristianismo imperial romano, se prohíbe formalmente por ley el infanticidio y la exposición de recién nacidos, equiparándolo penalmente al homicidio.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </article>
+
+            <!-- ----------------------------------------
+                 PANEL 2: EDAD MEDIA
+                 ---------------------------------------- -->
+            <article class="era-panel" id="panel-media" role="tabpanel" aria-labelledby="step-media">
+              <div class="era-panel-header">
+                <div class="era-header-content">
+                  <div class="era-tag">Periodo Histórico &bull; Teocentrismo y Feudalismo</div>
+                  <h3 class="era-name">Edad Media: El "adulto en miniatura" y la disciplina para la salvación</h3>
+                  <p class="era-dates-highlight">Desde la disolución del Imperio Romano (476 d.C.) hasta la caída de Constantinopla (1453 d.C.)</p>
+                  <p class="era-summary">
+                    En la Europa medieval, la vida cotidiana estaba impregnada por la fe religiosa y la precariedad material. Tan pronto como el niño superaba la primera infancia biológica (alrededor de los 7 años, cuando dejaba de requerir nodriza y aprendía el lenguaje básico), era arrojado de lleno a la comunidad de los adultos, compartiendo sus faenas, festividades, indumentaria y castigos.
+                  </p>
+                  <div class="era-audio-widget">
+                    <button class="btn-audio-narrate" data-tts-era="media" aria-label="Escuchar síntesis de la Edad Media en voz alta">
+                      <span class="audio-btn-icon">
+                        <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" class="icon-play"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd"/></svg>
+                        <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" class="icon-stop" style="display:none;"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8 7a1 1 0 00-1 1v4a1 1 0 001 1h4a1 1 0 001-1V8a1 1 0 00-1-1H8z" clip-rule="evenodd"/></svg>
+                      </span>
+                      <span class="audio-btn-text">Escuchar Síntesis (Audio)</span>
+                      <div class="soundwave-bars" aria-hidden="true">
+                        <span class="bar bar-1"></span>
+                        <span class="bar bar-2"></span>
+                        <span class="bar bar-3"></span>
+                        <span class="bar bar-4"></span>
+                      </div>
+                    </button>
+                    <span class="audio-status-tag">Voz en español &bull; Accesible</span>
+                  </div>
+                </div>
+                <div class="era-header-illustration">
+                  <svg viewBox="0 0 240 180" fill="none" xmlns="http://www.w3.org/2000/svg" class="era-illustration-svg" aria-hidden="true">
+                    <rect width="240" height="180" rx="12" fill="#FDF3E7"/>
+                    <!-- Medieval Gothic Graphic -->
+                    <path d="M120 20C90 50 60 90 60 140H180C180 90 150 50 120 20Z" fill="#FFFFFF" stroke="#E67E22" stroke-width="2"/>
+                    <path d="M120 50C100 70 80 100 80 140H160C160 100 140 70 120 50Z" stroke="#E67E22" stroke-width="1.5"/>
+                    <line x1="120" y1="20" x2="120" y2="140" stroke="#E67E22" stroke-width="1.5"/>
+                    <line x1="60" y1="140" x2="180" y2="140" stroke="#E67E22" stroke-width="2"/>
+                    <!-- Rosette -->
+                    <circle cx="120" cy="80" r="14" fill="#FDF3E7" stroke="#003366" stroke-width="1.5"/>
+                    <circle cx="120" cy="80" r="6" fill="#E67E22"/>
+                  </svg>
+                </div>
+              </div>
+
+              <!-- Subtabs Navigation for Middle Ages -->
+              <div class="subtabs-wrapper">
+                <div class="subtabs-nav" role="tablist" aria-label="Aspectos temáticos de la Edad Media">
+                  <button class="subtab-btn active" data-subtab="media-social" role="tab" aria-selected="true">
+                    <svg class="subtab-icon" viewBox="0 0 20 20" fill="currentColor"><path d="M9 6a3 3 0 11-6 0 3 3 0 016 0zM17 6a3 3 0 11-6 0 3 3 0 016 0zM12.93 17c.046-.327.07-.66.07-1a6.97 6.97 0 00-1.5-4.33A5 5 0 0119 16v1h-6.07zM6 11a5 5 0 015 5v1H1v-1a5 5 0 015-5z"/></svg>
+                    <span>Contexto Social</span>
+                  </button>
+                  <button class="subtab-btn" data-subtab="media-cultural" role="tab" aria-selected="false">
+                    <svg class="subtab-icon" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd"/></svg>
+                    <span>Contexto Cultural</span>
+                  </button>
+                  <button class="subtab-btn" data-subtab="media-concepcion" role="tab" aria-selected="false">
+                    <svg class="subtab-icon" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-6-3a2 2 0 11-4 0 2 2 0 014 0zm-2 4a5 5 0 00-4.546 2.916A5.986 5.986 0 0010 16a5.986 5.986 0 004.546-2.084A5 5 0 0010 11z" clip-rule="evenodd"/></svg>
+                    <span>Concepción de Niñez</span>
+                  </button>
+                  <button class="subtab-btn" data-subtab="media-autores" role="tab" aria-selected="false">
+                    <svg class="subtab-icon" viewBox="0 0 20 20" fill="currentColor"><path d="M13.586 3.586a2 2 0 112.828 2.828l-.793.793-2.828-2.828.793-.793zM11.379 5.793L3 14.172V17h2.828l8.38-8.379-2.83-2.828z"/></svg>
+                    <span>Autores y Aportes</span>
+                  </button>
+                  <button class="subtab-btn" data-subtab="media-hitos" role="tab" aria-selected="false">
+                    <svg class="subtab-icon" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd"/></svg>
+                    <span>Transformaciones e Hitos</span>
+                  </button>
+                </div>
+
+                <!-- Cápsula de Debate Historiográfico (Reemplazo del Teatro) -->
+                <div class="epistemic-capsule-card capsule-media">
+                  <div class="capsule-header">
+                    <div class="capsule-tag tag-amber">
+                      <span class="capsule-dot dot-amber"></span>
+                      <span>Eje de Análisis Pedagógico &bull; Edad Media</span>
+                    </div>
+                    <button class="capsule-audio-btn" data-audio-capsule="media" aria-label="Escuchar síntesis del análisis histórico de la Edad Media">
+                      <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd"/></svg>
+                      <span>Escuchar Análisis</span>
+                    </button>
+                  </div>
+                  <h4 class="capsule-title">🏰 El Paradigma Medieval: La Doctrina Salvífica y el Niño como "Adulto en Miniatura"</h4>
+                  <p class="capsule-question"><strong>Pregunta orientadora:</strong> ¿Por qué la teología del pecado de origen y la alta mortalidad infantil produjeron una relación de frialdad afectiva y disciplina punitiva?</p>
+                  
+                  <div class="capsule-perspectives-grid">
+                    <div class="perspective-box">
+                      <div class="perspective-badge badge-purple">Doctrina Eclesiástica &bull; Moral Salvífica</div>
+                      <div class="perspective-speaker"><strong>La Mirada del Monje y Teólogo:</strong></div>
+                      <p class="perspective-quote">«La debilidad del cuerpo infantil es frágil, pero su ánimo porta la mácula del pecado original. La vara y la corrección constante son actos de caridad necesarios para doblegar su voluntad y salvar su alma.»</p>
+                    </div>
+                    <div class="perspective-box">
+                      <div class="perspective-badge badge-amber">Historiografía de las Mentalidades &bull; Ariès</div>
+                      <div class="perspective-speaker"><strong>La Tesis de Philippe Ariès:</strong></div>
+                      <p class="perspective-quote">«No existía un "sentimiento de infancia": una vez destetado, el infante se integraba a la vida cotidiana de adultos en talleres y tabernas, vestido con ropajes idénticos a los mayores sin diferenciación psicológica.»</p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Subtab Contents for Middle Ages -->
+                <div class="subtab-content-area">
+                  
+                  <!-- 1. Contexto Social -->
+                  <div class="subtab-panel active" id="subtab-media-social">
+                    <h4 class="subtab-heading">El orden feudal y la disolución del espacio privado</h4>
+                    <p>
+                      La vida medieval se desarrollaba en comunidades abiertas sin la noción de intimidad familiar moderna. Las viviendas campesinas constaban usualmente de una sola estancia donde convivían adultos, niños, criados e incluso animales de labranza.
+                    </p>
+                    <div class="content-cards-grid">
+                      <div class="info-card">
+                        <h5 class="info-card-title">Aprendizaje gremial y servidumbre</h5>
+                        <p>Hacia los 7 o 9 años, los niños de sectores populares o artesanos eran enviados a otros hogares en régimen de aprendizaje (<em>apprenticeship</em>) o servidumbre doméstica. Se aprendía por imitación directa de los oficios de los mayores, sin instituciones pedagógicas intermedias.</p>
+                      </div>
+                      <div class="info-card">
+                        <h5 class="info-card-title">Oblatidumbre monástica</h5>
+                        <p>Entre las clases nobiliarias se practicaba con frecuencia la oblación: entrega formal e irrevocable de niños de corta edad (<em>oblati</em>) a los monasterios para ser criados y consagrados a Dios, funcionando como una vía de salvación espiritual para el linaje y control de herencias.</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- 2. Contexto Cultural -->
+                  <div class="subtab-panel" id="subtab-media-cultural">
+                    <h4 class="subtab-heading">Teocentrismo, doctrina del pecado y moralización</h4>
+                    <p>
+                      Toda la cosmovisión medieval estaba vertebrada por la doctrina cristiana de la salvación ultraterrena. El nacimiento físico de un infante traía consigo la mácula del pecado original heredado de Adán y Eva, por lo cual el bautismo inmediato era vital para evitar que el alma del infante quedara atrapada en el limbo ante la constante amenaza de muerte.
+                    </p>
+                    <div class="content-cards-grid">
+                      <div class="info-card">
+                        <h5 class="info-card-title">Representación iconográfica del niño</h5>
+                        <p>En el arte medieval románico y bizantino, el niño Jesús y los infantes eran retratados como <em>homúnculos</em>: hombres adultos miniaturizados, con musculatura desarrollada, facciones envejecidas y calvicie senil. La iconografía no reflejaba ternura infantil, sino dignidad mayestática.</p>
+                      </div>
+                      <div class="info-card">
+                        <h5 class="info-card-title">Fajamiento y restricciones corporales</h5>
+                        <p>Durante los primeros meses de vida, los bebés eran completamente vendados e inmovilizados con vendas apretadas (fajamiento o <em>swaddling</em>) para que sus extremidades "crecieran rectas" y no gatearan como bestias, práctica que restringía drásticamente la exploración sensorio-motriz.</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- 3. Concepción de Niñez -->
+                  <div class="subtab-panel" id="subtab-media-concepcion">
+                    <h4 class="subtab-heading">La inexistencia del "sentimiento de infancia"</h4>
+                    <p>
+                      El aporte medular de los estudios de Philippe Ariès radica en evidenciar que la sociedad medieval no tenía conciencia de la particularidad infantil: el niño no era percibido como un ser diferente cualitativamente del adulto, sino solo de menor estatura y menor fuerza física.
+                    </p>
+                    <div class="highlight-quote-box">
+                      <p class="quote-text">
+                        "En la sociedad medieval, el sentimiento de la infancia no existía; esto no significa que se descuidara a los niños, sino que no había conciencia de una particularidad infantil, esa particularidad que distingue esencialmente al niño del adulto."
+                      </p>
+                      <span class="quote-author">&mdash; Philippe Ariès, El niño y la vida familiar en el Antiguo Régimen (1960)</span>
+                    </div>
+                    <ul class="analytic-list">
+                      <li><strong>Fragilidad moral inherente:</strong> La inclinación natural del niño se consideraba torcida hacia la indisciplina y la concupiscencia, justificando la severidad punitiva del maestro y del padre para "salvar su alma".</li>
+                      <li><strong>Indiferencia afectiva de supervivencia:</strong> Debido a la recurrencia de pestes, hambrunas y fiebres que segaban la vida de uno de cada dos niños, los padres evitaban forjar un vínculo afectivo temprano demasiado profundo hasta que la criatura sobreviviera al periodo crítico.</li>
+                    </ul>
+                  </div>
+
+                  <!-- 4. Autores y Aportes -->
+                  <div class="subtab-panel" id="subtab-media-autores">
+                    <h4 class="subtab-heading">Teólogos, pensadores y la historiografía de la época</h4>
+                    <div class="authors-grid">
+                      <!-- San Agustín -->
+                      <div class="author-card">
+                        <div class="author-header">
+                          <div class="author-avatar-badge" title="San Agustín de Hipona">
+                            <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                              <circle cx="18" cy="18" r="16" fill="#fef2f2"/>
+                              <path d="M12 24V14C12 12.8954 12.8954 12 14 12H22C23.1046 12 24 12.8954 24 14V24L18 21L12 24Z" fill="#003366" stroke="#b45309" stroke-width="1.2"/>
+                              <path d="M18 7C16 9 15.5 10.5 16.5 11.5C17.5 12.5 19 12 19.5 10.5C20.5 12 22 11.5 21.5 9.5C21 7.5 19 7 18 7Z" fill="#dc2626"/>
+                              <line x1="15" y1="16" x2="21" y2="16" stroke="#fde047" stroke-width="1.2" stroke-linecap="round"/>
+                            </svg>
+                          </div>
+                          <div>
+                            <h5 class="author-name">San Agustín de Hipona (354 &mdash; 430 d.C.)</h5>
+                            <span class="author-role">Padre de la Iglesia &bull; Confesiones</span>
+                          </div>
+                        </div>
+                        <p class="author-bio">
+                          En sus <em>Confesiones</em>, Agustín reflexionó con asombro sobre la malicia e ira que observaba en los infantes de pecho (los celos ante la leche materna). Formuló la doctrina teológica de que la debilidad de los miembros infantiles es lo único inocente, pero no su ánimo, pues nacen impregnados del pecado de origen y requieren regeneración por la gracia y la corrección constante.
+                        </p>
+                      </div>
+
+                      <!-- Tomás de Aquino -->
+                      <div class="author-card">
+                        <div class="author-header">
+                          <div class="author-avatar-badge" title="Santo Tomás de Aquino">
+                            <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                              <circle cx="18" cy="18" r="16" fill="#fffbeb"/>
+                              <circle cx="18" cy="14" r="5" fill="#f59e0b"/>
+                              <path d="M18 6V7.5M18 20.5V22M10 14H11.5M24.5 14H26M12.3 8.3L13.4 9.4M22.6 18.6L23.7 19.7M12.3 19.7L13.4 18.6M22.6 9.4L23.7 8.3" stroke="#d97706" stroke-width="1.5" stroke-linecap="round"/>
+                              <path d="M11 23C14 21.5 18 22 18 22C18 22 22 21.5 25 23V27C22 25.5 18 26 18 26C18 26 14 25.5 11 27V23Z" fill="#003366" stroke="#155e9e" stroke-width="1"/>
+                            </svg>
+                          </div>
+                          <div>
+                            <h5 class="author-name">Santo Tomás de Aquino (1225 &mdash; 1274 d.C.)</h5>
+                            <span class="author-role">Doctor Angélico &bull; Suma Teológica</span>
+                          </div>
+                        </div>
+                        <p class="author-bio">
+                          Concilió la teología cristiana con el pensamiento aristotélico. Planteó que el infante nace con la potencia de la razón, pero que esta solo se actualiza paulatinamente con el crecimiento corporal. Reconoció la obligación moral de los padres de alimentar, proteger y educar religiosamente a los hijos como deber natural derivado del matrimonio cristiano.
+                        </p>
+                      </div>
+
+                      <!-- Philippe Ariès -->
+                      <div class="author-card">
+                        <div class="author-header">
+                          <div class="author-avatar-badge" title="Philippe Ariès">
+                            <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                              <circle cx="18" cy="18" r="16" fill="#f0f9ff"/>
+                              <rect x="9" y="11" width="13" height="15" rx="1.5" fill="#155e9e" stroke="#002b55" stroke-width="1.2"/>
+                              <line x1="12" y1="15" x2="19" y2="15" stroke="#bae6fd" stroke-width="1.2" stroke-linecap="round"/>
+                              <line x1="12" y1="18" x2="18" y2="18" stroke="#bae6fd" stroke-width="1.2" stroke-linecap="round"/>
+                              <circle cx="22" cy="19" r="5" fill="#ffffff" stroke="#b45309" stroke-width="1.8"/>
+                              <line x1="25.5" y1="22.5" x2="29" y2="26" stroke="#b45309" stroke-width="2.2" stroke-linecap="round"/>
+                            </svg>
+                          </div>
+                          <div>
+                            <h5 class="author-name">Philippe Ariès (1914 &mdash; 1984)</h5>
+                            <span class="author-role">Historiador francés &bull; Pionero de la historia de las mentalidades</span>
+                          </div>
+                        </div>
+                        <p class="author-bio">
+                          Aunque autor contemporáneo, su obra <em>L'Enfant et la vie familiale sous l'Ancien Régime</em> (1960) revolucionó la comprensión académica del medioevo al estudiar pinturas, sepulcros y textos, demostrando que la categoría "infancia" es una invención histórica reciente y no una realidad transhistórica fija.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- 5. Hitos -->
+                  <div class="subtab-panel" id="subtab-media-hitos">
+                    <h4 class="subtab-heading">Transformaciones e hitos históricos de la Edad Media</h4>
+                    <div class="milestones-timeline">
+                      <div class="milestone-item">
+                        <span class="milestone-year">Siglo VI d.C.</span>
+                        <div class="milestone-text">
+                          <strong>Regla de San Benito y escuelas monásticas:</strong> Se normaliza la acogida de niños oblados en monasterios benedictinos bajo estricto voto de obediencia, silencio y lectura de las Sagradas Escrituras.
+                        </div>
+                      </div>
+                      <div class="milestone-item">
+                        <span class="milestone-year">789 d.C.</span>
+                        <div class="milestone-text">
+                          <strong>Admonitio Generalis de Carlomagno:</strong> Mandato del emperador carolingio ordenando que cada monasterio y sede episcopal sostenga una escuela para instruir a niños libres y nobles en salmos, notas, cantos y gramática.
+                        </div>
+                      </div>
+                      <div class="milestone-item">
+                        <span class="milestone-year">1198 d.C.</span>
+                        <div class="milestone-text">
+                          <strong>Creación del torno de los expósitos (Inocencio III):</strong> En el Hospital Santo Spirito de Roma, el Papa institucionaliza el torno giratorio de acogida para evitar que madres desesperadas ahogaran a sus hijos en el río Tíber.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </article>
+
+            <!-- ----------------------------------------
+                 PANEL 3: EDAD MODERNA
+                 ---------------------------------------- -->
+            <article class="era-panel" id="panel-moderna" role="tabpanel" aria-labelledby="step-moderna">
+              <div class="era-panel-header">
+                <div class="era-header-content">
+                  <div class="era-tag">Periodo Histórico &bull; Humanismo e Ilustración</div>
+                  <h3 class="era-name" style="color: #002b55; font-weight: 800;">Edad Moderna: El nacimiento de la pedagogía y la invención del sentimiento de infancia</h3>
+                  <p class="era-dates-highlight" style="color: #b45309; font-weight: 700;">Desde el Renacimiento (Siglo XV) hasta la Revolución Francesa y la Ilustración (1789 d.C.)</p>
+                  <p class="era-summary" style="color: #1e293b; font-size: 1.05rem; line-height: 1.75;">
+                    Durante la Modernidad se produce una mutación civilizatoria de magnitud histórica: la familia burguesa nuclear se retira de la plaza comunal hacia la intimidad del hogar, y el niño se sitúa en el centro neurálgico del afecto familiar y la vigilancia institucional. Surge la escuela como dispositivo disciplinario especializado y la noción de que la infancia posee un valor y ritmo propios.
+                  </p>
+                  <div class="era-audio-widget">
+                    <button class="btn-audio-narrate" data-tts-era="moderna" aria-label="Escuchar síntesis de la Edad Moderna en voz alta">
+                      <span class="audio-btn-icon">
+                        <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" class="icon-play"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd"/></svg>
+                        <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" class="icon-stop" style="display:none;"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8 7a1 1 0 00-1 1v4a1 1 0 001 1h4a1 1 0 001-1V8a1 1 0 00-1-1H8z" clip-rule="evenodd"/></svg>
+                      </span>
+                      <span class="audio-btn-text">Escuchar Síntesis (Audio)</span>
+                      <div class="soundwave-bars" aria-hidden="true">
+                        <span class="bar bar-1"></span>
+                        <span class="bar bar-2"></span>
+                        <span class="bar bar-3"></span>
+                        <span class="bar bar-4"></span>
+                      </div>
+                    </button>
+                    <span class="audio-status-tag">Voz en español &bull; Accesible</span>
+                  </div>
+                </div>
+                <div class="era-header-illustration">
+                  <svg viewBox="0 0 240 180" fill="none" xmlns="http://www.w3.org/2000/svg" class="era-illustration-svg" role="img" aria-label="Ilustración pedagógica de la Edad Moderna">
+                    <rect width="240" height="180" rx="12" fill="#FFFFFF"/>
+                    <rect x="6" y="6" width="228" height="168" rx="8" fill="#F0F7FF" stroke="#BCDDF7" stroke-width="1.5"/>
+                    <!-- Sol radiante de la Ilustración -->
+                    <circle cx="120" cy="46" r="22" fill="#FEF3C7" stroke="#D97706" stroke-width="2"/>
+                    <circle cx="120" cy="46" r="14" fill="#FDE68A"/>
+                    <line x1="120" y1="16" x2="120" y2="8" stroke="#D97706" stroke-width="2.5" stroke-linecap="round"/>
+                    <line x1="120" y1="76" x2="120" y2="84" stroke="#D97706" stroke-width="2.5" stroke-linecap="round"/>
+                    <line x1="90" y1="46" x2="82" y2="46" stroke="#D97706" stroke-width="2.5" stroke-linecap="round"/>
+                    <line x1="150" y1="46" x2="158" y2="46" stroke="#D97706" stroke-width="2.5" stroke-linecap="round"/>
+                    <line x1="98" y1="24" x2="92" y2="18" stroke="#D97706" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="142" y1="24" x2="148" y2="18" stroke="#D97706" stroke-width="2" stroke-linecap="round"/>
+                    <!-- Libro abierto: Didáctica Magna / Orbis Pictus -->
+                    <path d="M46 142C76 130 108 130 120 140C132 130 164 130 194 142V90C164 78 132 78 120 88C108 78 76 78 46 90V142Z" fill="#FFFFFF" stroke="#003366" stroke-width="2.5"/>
+                    <line x1="120" y1="88" x2="120" y2="140" stroke="#003366" stroke-width="2.5"/>
+                    <!-- Ilustración y texto en el libro -->
+                    <rect x="58" y="96" width="22" height="18" rx="2" fill="#E0F2FE" stroke="#1D70B8" stroke-width="1.2"/>
+                    <circle cx="69" cy="103" r="4" fill="#E67E22"/>
+                    <line x1="86" y1="99" x2="108" y2="99" stroke="#003366" stroke-width="2"/>
+                    <line x1="86" y1="106" x2="108" y2="106" stroke="#1D70B8" stroke-width="1.8"/>
+                    <line x1="86" y1="113" x2="104" y2="113" stroke="#1D70B8" stroke-width="1.8"/>
+                    <line x1="58" y1="122" x2="108" y2="122" stroke="#475569" stroke-width="1.5"/>
+                    <line x1="58" y1="128" x2="100" y2="128" stroke="#475569" stroke-width="1.5"/>
+                    
+                    <line x1="132" y1="98" x2="182" y2="98" stroke="#003366" stroke-width="2"/>
+                    <line x1="132" y1="106" x2="182" y2="106" stroke="#1D70B8" stroke-width="1.8"/>
+                    <line x1="132" y1="114" x2="182" y2="114" stroke="#1D70B8" stroke-width="1.8"/>
+                    <line x1="132" y1="122" x2="176" y2="122" stroke="#475569" stroke-width="1.5"/>
+                    <line x1="132" y1="128" x2="168" y2="128" stroke="#475569" stroke-width="1.5"/>
+                    <!-- Insignia pedagógica dorada -->
+                    <circle cx="120" cy="148" r="10" fill="#F59E0B" stroke="#B45309" stroke-width="1.5"/>
+                    <path d="M120 144L122 148L126 148L123 150L124 154L120 151L116 154L117 150L114 148L118 148Z" fill="#FFFFFF"/>
+                  </svg>
+                </div>
+              </div>
+
+              <!-- Subtabs Navigation for Modern Age -->
+              <div class="subtabs-wrapper">
+                <div class="subtabs-nav" role="tablist" aria-label="Aspectos temáticos de la Edad Moderna">
+                  <button class="subtab-btn active" data-subtab="moderna-social" role="tab" aria-selected="true">
+                    <svg class="subtab-icon" viewBox="0 0 20 20" fill="currentColor"><path d="M9 6a3 3 0 11-6 0 3 3 0 016 0zM17 6a3 3 0 11-6 0 3 3 0 016 0zM12.93 17c.046-.327.07-.66.07-1a6.97 6.97 0 00-1.5-4.33A5 5 0 0119 16v1h-6.07zM6 11a5 5 0 015 5v1H1v-1a5 5 0 015-5z"/></svg>
+                    <span>Contexto Social</span>
+                  </button>
+                  <button class="subtab-btn" data-subtab="moderna-cultural" role="tab" aria-selected="false">
+                    <svg class="subtab-icon" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd"/></svg>
+                    <span>Contexto Cultural</span>
+                  </button>
+                  <button class="subtab-btn" data-subtab="moderna-concepcion" role="tab" aria-selected="false">
+                    <svg class="subtab-icon" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-6-3a2 2 0 11-4 0 2 2 0 014 0zm-2 4a5 5 0 00-4.546 2.916A5.986 5.986 0 0010 16a5.986 5.986 0 004.546-2.084A5 5 0 0010 11z" clip-rule="evenodd"/></svg>
+                    <span>Concepción de Niñez</span>
+                  </button>
+                  <button class="subtab-btn" data-subtab="moderna-autores" role="tab" aria-selected="false">
+                    <svg class="subtab-icon" viewBox="0 0 20 20" fill="currentColor"><path d="M13.586 3.586a2 2 0 112.828 2.828l-.793.793-2.828-2.828.793-.793zM11.379 5.793L3 14.172V17h2.828l8.38-8.379-2.83-2.828z"/></svg>
+                    <span>Autores y Aportes</span>
+                  </button>
+                  <button class="subtab-btn" data-subtab="moderna-hitos" role="tab" aria-selected="false">
+                    <svg class="subtab-icon" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd"/></svg>
+                    <span>Transformaciones e Hitos</span>
+                  </button>
+                </div>
+
+                <!-- Subtab Contents for Modern Age -->
+                <div class="subtab-content-area">
+                  
+                  <!-- 1. Contexto Social -->
+                  <div class="subtab-panel active" id="subtab-moderna-social">
+                    <h4 class="subtab-heading">El ascenso burgués, la familia conyugal y la privatización de la vida</h4>
+                    <p>
+                      Con el auge del mercantilismo, la imprenta y la consolidación de la burguesía urbana, la estructura de la familia cambia radicalmente: pasa de ser un clan abierto a un núcleo cerrado enfocado en el cuidado y porvenir de los descendientes.
+                    </p>
+                    <div class="content-cards-grid">
+                      <div class="info-card">
+                        <h5 class="info-card-title">Aparición de indumentaria y juguetes específicos</h5>
+                        <p>A partir del siglo XVI y XVII, los niños dejan de vestir exactamente igual que los adultos. Surge por primera vez ropa confeccionada exclusivamente para ellos (vestidos infantiles, marineritos) y proliferan juguetes comerciales concebidos para el desarrollo simbólico infantil.</p>
+                      </div>
+                      <div class="info-card">
+                        <h5 class="info-card-title">Disminución progresiva de la mortalidad</h5>
+                        <p>Los avances iniciales en higiene, la paulatina condena médica al fajamiento opresivo y el fomento de la lactancia materna por parte de las propias madres permiten que más niños alcancen la edad adulta, consolidando lazos emocionales intensos e insustituibles.</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- 2. Contexto Cultural -->
+                  <div class="subtab-panel" id="subtab-moderna-cultural">
+                    <h4 class="subtab-heading">La Ilustración, la ciencia y la institución escolar</h4>
+                    <p>
+                      El pensamiento ilustrado desplazó el dogma teológico colocando la razón humana y la perfectibilidad terrenal en el centro. El niño se convierte en la mayor esperanza de progreso social, lo que justifica la creación de un dispositivo institucional masivo: el colegio o escuela moderna.
+                    </p>
+                    <div class="content-cards-grid">
+                      <div class="info-card">
+                        <h5 class="info-card-title">Encierro y disciplinamiento institucional</h5>
+                        <p>Como advertiría Michel Foucault, la escuela moderna funcionó como un dispositivo de clausura y encierro: apartó al niño del mundo adulto laboral y lo confinó en aulas graduadas por edad, vigilado permanentemente para moldear su cuerpo y sus hábitos morales.</p>
+                      </div>
+                      <div class="info-card">
+                        <h5 class="info-card-title">El mignotage o "mimoseo"</h5>
+                        <p>Ariès describe el fenómeno del <em>mignotage</em>: el nuevo placer de consentir, jugar y hacer gracias con los niños pequeños dentro del hogar, considerándolos fuentes de alegría y entretenimiento afectivo, algo impensable en los siglos precedentes.</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- 3. Concepción de Niñez -->
+                  <div class="subtab-panel" id="subtab-moderna-concepcion">
+                    <h4 class="subtab-heading">De la tabula rasa al reconocimiento de la naturaleza infantil</h4>
+                    <p>
+                      La Modernidad debate dos concepciones filosóficas centrales sobre la infancia: por un lado, la visión empirista de la mente infantil como papel en blanco que la educación debe escribir (Locke); por el otro, la visión rousseauniana de la bondad original que la sociedad corrompe.
+                    </p>
+                    <div class="highlight-quote-box">
+                      <p class="quote-text">
+                        "La naturaleza quiere que los niños sean niños antes de ser hombres. Si queremos alterar este orden, produciremos frutos precoces que no tendrán ni madurez ni sabor y no tardarán en corromperse [...]. La infancia tiene sus propias formas de ver, pensar y sentir."
+                      </p>
+                      <span class="quote-author">&mdash; Jean-Jacques Rousseau, Emilio o De la educación (1762)</span>
+                    </div>
+                    <ul class="analytic-list">
+                      <li><strong>Giro puerocéntrico:</strong> La pedagogía empieza a situar al infante en el centro del proceso formativo, demandando adaptar la enseñanza a sus capacidades cognitivas y biológicas reales.</li>
+                      <li><strong>Estatuto de inocencia y fragilidad:</strong> El niño ya no es un ser perverso portador de malicia, sino un ser indefenso que debe ser resguardado de las crudezas y vicios del mundo adulto.</li>
+                    </ul>
+                  </div>
+
+                  <!-- 4. Autores y Aportes -->
+                  <div class="subtab-panel" id="subtab-moderna-autores">
+                    <h4 class="subtab-heading">Fundadores de la pedagogía moderna y la Ilustración</h4>
+                    <div class="authors-grid">
+                      <!-- Comenio -->
+                      <div class="author-card">
+                        <div class="author-header">
+                          <div class="author-avatar-badge" title="Juan Amós Comenio">
+                            <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                              <circle cx="18" cy="18" r="16" fill="#fef3c7"/>
+                              <path d="M8 14C12 13 18 14 18 14C18 14 24 13 28 14V24C24 23 18 24 18 24C18 24 12 23 8 24V14Z" fill="#ffffff" stroke="#003366" stroke-width="1.5"/>
+                              <line x1="18" y1="14" x2="18" y2="24" stroke="#003366" stroke-width="1.5"/>
+                              <rect x="10.5" y="15.5" width="5" height="4" rx="0.5" fill="#fde047" stroke="#b45309" stroke-width="0.8"/>
+                              <line x1="20" y1="16.5" x2="25.5" y2="16.5" stroke="#155e9e" stroke-width="1"/>
+                              <line x1="20" y1="19" x2="24.5" y2="19" stroke="#155e9e" stroke-width="1"/>
+                              <line x1="20" y1="21.5" x2="25.5" y2="21.5" stroke="#155e9e" stroke-width="1"/>
+                              <path d="M18 7V9M14 8L15 9.5M22 8L21 9.5" stroke="#d97706" stroke-width="1.5" stroke-linecap="round"/>
+                            </svg>
+                          </div>
+                          <div>
+                            <h5 class="author-name">Juan Amós Comenio (1592 &mdash; 1670)</h5>
+                            <span class="author-role">Padre de la pedagogía moderna &bull; Didáctica Magna</span>
+                          </div>
+                        </div>
+                        <p class="author-bio">
+                          En su <em>Didáctica Magna</em> (1632) formuló el principio de la pansofía: "enseñar todo a todos" (<em>omnes omnia docendi</em>). Propuso la primera escuela materna en el hogar y escuelas graduadas por niveles de edad cronológica. Creó el <em>Orbis Sensualium Pictus</em> (1658), considerado el primer libro de texto ilustrado para niños en la historia.
+                        </p>
+                      </div>
+
+                      <!-- Locke -->
+                      <div class="author-card">
+                        <div class="author-header">
+                          <div class="author-avatar-badge" title="John Locke">
+                            <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                              <circle cx="18" cy="18" r="16" fill="#e0f2fe"/>
+                              <rect x="9" y="11" width="16" height="15" rx="1.5" fill="#f8fafc" stroke="#003366" stroke-width="1.5"/>
+                              <line x1="12" y1="15" x2="20" y2="15" stroke="#94a3b8" stroke-width="1" stroke-dasharray="1.5 1.5"/>
+                              <line x1="12" y1="18.5" x2="22" y2="18.5" stroke="#94a3b8" stroke-width="1" stroke-dasharray="1.5 1.5"/>
+                              <line x1="12" y1="22" x2="18" y2="22" stroke="#94a3b8" stroke-width="1" stroke-dasharray="1.5 1.5"/>
+                              <path d="M27 7C24 8 20 12 18 16L17 21L21 19C24 16 27 10 27 7Z" fill="#b45309"/>
+                            </svg>
+                          </div>
+                          <div>
+                            <h5 class="author-name">John Locke (1632 &mdash; 1704)</h5>
+                            <span class="author-role">Filósofo empirista &bull; Pensamientos sobre la educación</span>
+                          </div>
+                        </div>
+                        <p class="author-bio">
+                          Concibió la mente del infante como una <em>tabula rasa</em> (papel en blanco o cera blanda) que adquiere ideas exclusivamente a través de la experiencia sensorial. Desaconsejó severamente el castigo físico por inútil y perjudicial, recomendando en su lugar la formación de hábitos a través del elogio, la estima y el razonamiento guiado.
+                        </p>
+                      </div>
+
+                      <!-- Rousseau -->
+                      <div class="author-card">
+                        <div class="author-header">
+                          <div class="author-avatar-badge" title="Jean-Jacques Rousseau">
+                            <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                              <circle cx="18" cy="18" r="16" fill="#ecfdf5"/>
+                              <path d="M18 8C13 8 10 13 10 18C15 18 19 16 20 12C20.5 10 19.5 8.5 18 8Z" fill="#10b981" stroke="#047857" stroke-width="1.2"/>
+                              <path d="M10 18C12 21 15 22 19 21" stroke="#047857" stroke-width="1.2"/>
+                              <rect x="13" y="19" width="14" height="10" rx="1" fill="#ffffff" stroke="#003366" stroke-width="1.2"/>
+                              <line x1="15.5" y1="22" x2="24" y2="22" stroke="#155e9e" stroke-width="1"/>
+                              <line x1="15.5" y1="25" x2="21" y2="25" stroke="#b45309" stroke-width="1"/>
+                            </svg>
+                          </div>
+                          <div>
+                            <h5 class="author-name">Jean-Jacques Rousseau (1712 &mdash; 1778)</h5>
+                            <span class="author-role">Filósofo de la Ilustración &bull; Emilio o De la educación</span>
+                          </div>
+                        </div>
+                        <p class="author-bio">
+                          Obra cumbre que inaugura la pedagogía contemporánea al proclamar la bondad natural del niño ("el hombre nace libre y bueno, pero la sociedad lo encadena"). Defendió la "educación negativa" hasta los 12 años: proteger los sentidos y el cuerpo del infante en contacto con la naturaleza antes de saturarlo de conceptos abstractos y moralinas adultas.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- 5. Hitos -->
+                  <div class="subtab-panel" id="subtab-moderna-hitos">
+                    <h4 class="subtab-heading">Transformaciones e hitos históricos de la Edad Moderna</h4>
+                    <div class="milestones-timeline">
+                      <div class="milestone-item">
+                        <span class="milestone-year">1658 d.C.</span>
+                        <div class="milestone-text">
+                          <strong>Publicación del Orbis Pictus de Comenio:</strong> Revolución pedagógica basada en asociar la imagen visual al concepto escrito, inaugurando el material didáctico infantil.
+                        </div>
+                      </div>
+                      <div class="milestone-item">
+                        <span class="milestone-year">1717 d.C.</span>
+                        <div class="milestone-text">
+                          <strong>Decreto de obligatoriedad escolar en Prusia:</strong> Federico Guillermo I instaura el primer sistema de educación elemental obligatoria supervisada por el Estado, arrebatando a la familia la discrecionalidad absoluta.
+                        </div>
+                      </div>
+                      <div class="milestone-item">
+                        <span class="milestone-year">1762 d.C.</span>
+                        <div class="milestone-text">
+                          <strong>Publicación del Emilio de Rousseau:</strong> Aunque condenado y quemado en París y Ginebra, consagra mundialmente la especificidad irreductible de la niñez como etapa con valor propio e indiscutible.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </article>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- Section: Laboratorio de Fichas Conceptuales 3D -->
+      <section class="section flashcards-section" id="fichas-conceptuales">
+        <div class="container">
+          <div class="section-header text-center">
+            <span class="section-badge">Interactividad 3D</span>
+            <h2 class="section-title">Laboratorio Conceptual: Categorías Nodales</h2>
+            <p class="section-desc">Haz clic o presiona Enter sobre cada ficha para voltearla y contrastar su fundamento histórico y vigencia pedagógica.</p>
+            <div class="flashcards-toolbar">
+              <button class="btn btn-outline btn-sm" id="btnFlipAllFlashcards" aria-label="Voltear todas las fichas interactivas">
+                <svg viewBox="0 0 20 20" fill="currentColor" class="btn-icon" aria-hidden="true"><path fill-rule="evenodd" d="M4 2a1 1 0 011 1v2.101a7.002 7.002 0 0111.601 2.566 1 1 0 11-1.885.666A5.002 5.002 0 005.999 7H9a1 1 0 010 2H4a1 1 0 01-1-1V3a1 1 0 011-1zm.008 9.057a1 1 0 011.276.61A5.002 5.002 0 0014.001 13H11a1 1 0 110-2h5a1 1 0 011 1v5a1 1 0 11-2 0v-2.101a7.002 7.002 0 01-11.601-2.566 1 1 0 01.61-1.276z" clip-rule="evenodd"/></svg>
+                <span>Voltear todas las fichas</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="flashcards-grid">
+            <!-- Card 1: Adultocentrismo -->
+            <div class="flashcard-card" tabindex="0" role="button" aria-label="Ficha conceptual: Adultocentrismo. Presiona para voltear.">
+              <div class="flashcard-inner">
+                <div class="flashcard-front">
+                  <div class="flashcard-badge badge-antigua">Matriz Histórica</div>
+                  <div class="flashcard-icon-box">
+                    <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                      <circle cx="24" cy="24" r="22" fill="#EBF3FB" stroke="#003366" stroke-width="2"/>
+                      <circle cx="24" cy="16" r="6" fill="#003366"/>
+                      <path d="M12 36C12 28 17 25 24 25C31 25 36 28 36 36" stroke="#003366" stroke-width="2.5" stroke-linecap="round"/>
+                      <circle cx="36" cy="18" r="3.5" fill="#E67E22"/>
+                      <path d="M30 33C30 29 33 27 36 27C39 27 42 29 42 33" stroke="#E67E22" stroke-width="1.8" stroke-linecap="round"/>
+                    </svg>
+                  </div>
+                  <h3 class="flashcard-title">Adultocentrismo</h3>
+                  <p class="flashcard-teaser">Relación asimétrica de poder donde la mirada adulta se instituye como modelo universal.</p>
+                  <span class="flashcard-prompt">Girar ficha 🔄</span>
+                </div>
+                <div class="flashcard-back">
+                  <span class="flashcard-back-title">Adultocentrismo</span>
+                  <p class="flashcard-desc">
+                    Paradigma que concibe al adulto como la cúspide acabada de la evolución racional y moral, subordinando las necesidades, ritmos y opiniones infantiles a los mandatos adultos.
+                  </p>
+                  <div class="flashcard-back-meta">
+                    <strong>Tensión actual:</strong> Pervive en currículos rígidos y autoritarismo familiar. La UNAD propone desplazarlo hacia el reconocimiento de la agencia infantil.
+                  </div>
+                  <span class="flashcard-prompt-back">Volver al frente ↩</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 2: Homúnculo -->
+            <div class="flashcard-card" tabindex="0" role="button" aria-label="Ficha conceptual: El niño como Homúnculo. Presiona para voltear.">
+              <div class="flashcard-inner">
+                <div class="flashcard-front">
+                  <div class="flashcard-badge badge-media">Edad Media &bull; Ariès</div>
+                  <div class="flashcard-icon-box">
+                    <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                      <circle cx="24" cy="24" r="22" fill="#FDF3E7" stroke="#E67E22" stroke-width="2"/>
+                      <path d="M16 16L24 8L32 16V38H16V16Z" fill="#FFFFFF" stroke="#E67E22" stroke-width="2"/>
+                      <circle cx="24" cy="20" r="4" fill="#003366"/>
+                      <path d="M20 28H28M24 24V34" stroke="#003366" stroke-width="2"/>
+                    </svg>
+                  </div>
+                  <h3 class="flashcard-title">Homúnculo</h3>
+                  <p class="flashcard-teaser">El infante entendido como "adulto en miniatura", carente de identidad psicosocial propia.</p>
+                  <span class="flashcard-prompt">Girar ficha 🔄</span>
+                </div>
+                <div class="flashcard-back">
+                  <span class="flashcard-back-title">El niño "Homúnculo"</span>
+                  <p class="flashcard-desc">
+                    Término acuñado por Philippe Ariès para describir cómo el arte y las costumbres medievales representaban al niño: con rostro envejecido, ropas adultas y sin especificidad lúdica.
+                  </p>
+                  <div class="flashcard-back-meta">
+                    <strong>Hito clave:</strong> A los 7 años el niño ingresaba al mundo laboral y penal del adulto, sin instituciones protectoras intermedias.
+                  </div>
+                  <span class="flashcard-prompt-back">Volver al frente ↩</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 3: Tabula Rasa -->
+            <div class="flashcard-card" tabindex="0" role="button" aria-label="Ficha conceptual: Tabula Rasa de John Locke. Presiona para voltear.">
+              <div class="flashcard-inner">
+                <div class="flashcard-front">
+                  <div class="flashcard-badge badge-moderna">Edad Moderna &bull; Locke</div>
+                  <div class="flashcard-icon-box">
+                    <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                      <circle cx="24" cy="24" r="22" fill="#EBF3FB" stroke="#1D70B8" stroke-width="2"/>
+                      <rect x="14" y="12" width="20" height="24" rx="3" fill="#FFFFFF" stroke="#1D70B8" stroke-width="2"/>
+                      <line x1="18" y1="18" x2="30" y2="18" stroke="#1D70B8" stroke-width="1.5"/>
+                      <line x1="18" y1="23" x2="30" y2="23" stroke="#1D70B8" stroke-width="1.5"/>
+                      <line x1="18" y1="28" x2="26" y2="28" stroke="#E67E22" stroke-width="1.5"/>
+                    </svg>
+                  </div>
+                  <h3 class="flashcard-title">Tabula Rasa</h3>
+                  <p class="flashcard-teaser">La mente infantil como cera blanda o papel en blanco moldeado por la experiencia.</p>
+                  <span class="flashcard-prompt">Girar ficha 🔄</span>
+                </div>
+                <div class="flashcard-back">
+                  <span class="flashcard-back-title">Tabula Rasa (1693)</span>
+                  <p class="flashcard-desc">
+                    John Locke postuló que no existen ideas innatas ni maldad originaria. La educación, las sensaciones y el hábito escriben el carácter del infante, transformando la crianza en responsabilidad social.
+                  </p>
+                  <div class="flashcard-back-meta">
+                    <strong>Aporte pedagógico:</strong> Rechazo contundente al castigo físico; fomento de la curiosidad y la estima racional.
+                  </div>
+                  <span class="flashcard-prompt-back">Volver al frente ↩</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 4: Pansofía -->
+            <div class="flashcard-card" tabindex="0" role="button" aria-label="Ficha conceptual: Pansofía de Juan Amós Comenio. Presiona para voltear.">
+              <div class="flashcard-inner">
+                <div class="flashcard-front">
+                  <div class="flashcard-badge badge-moderna">Didáctica Magna &bull; Comenio</div>
+                  <div class="flashcard-icon-box">
+                    <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                      <circle cx="24" cy="24" r="22" fill="#EBF3FB" stroke="#003366" stroke-width="2"/>
+                      <path d="M14 30C18 28 22 28 24 30C26 28 30 28 34 30V18C30 16 26 16 24 18C22 16 18 16 14 18V30Z" fill="#FFFFFF" stroke="#003366" stroke-width="2"/>
+                      <circle cx="24" cy="13" r="3" fill="#E67E22"/>
+                      <line x1="24" y1="18" x2="24" y2="30" stroke="#003366" stroke-width="2"/>
+                    </svg>
+                  </div>
+                  <h3 class="flashcard-title">Pansofía</h3>
+                  <p class="flashcard-teaser">"Enseñar todo a todos": democratización y didáctica graduada para todas las infancias.</p>
+                  <span class="flashcard-prompt">Girar ficha 🔄</span>
+                </div>
+                <div class="flashcard-back">
+                  <span class="flashcard-back-title">Pansofía y Graduación</span>
+                  <p class="flashcard-desc">
+                    Juan Amós Comenio (1632) propuso educar a niñas y niños de todas las clases sociales sin distinción, articulando la escuela en ciclos acordes al desarrollo biológico y sensorial.
+                  </p>
+                  <div class="flashcard-back-meta">
+                    <strong>Innovación:</strong> Creación del primer manual ilustrado (<em>Orbis Pictus</em>) asociando la palabra a la imagen visual.
+                  </div>
+                  <span class="flashcard-prompt-back">Volver al frente ↩</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 5: Educación Negativa -->
+            <div class="flashcard-card" tabindex="0" role="button" aria-label="Ficha conceptual: Educación Negativa de Rousseau. Presiona para voltear.">
+              <div class="flashcard-inner">
+                <div class="flashcard-front">
+                  <div class="flashcard-badge badge-moderna">Ilustración &bull; Rousseau</div>
+                  <div class="flashcard-icon-box">
+                    <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                      <circle cx="24" cy="24" r="22" fill="#FDF3E7" stroke="#E67E22" stroke-width="2"/>
+                      <path d="M24 12V34M16 26C16 20 24 16 24 16C24 16 32 20 32 26C32 30 28 34 24 34C20 34 16 30 16 26Z" fill="#FDF3E7" stroke="#E67E22" stroke-width="2"/>
+                    </svg>
+                  </div>
+                  <h3 class="flashcard-title">Educación Negativa</h3>
+                  <p class="flashcard-teaser">Proteger el tiempo infantil y los sentidos antes de inculcar doctrinas morales adultas.</p>
+                  <span class="flashcard-prompt">Girar ficha 🔄</span>
+                </div>
+                <div class="flashcard-back">
+                  <span class="flashcard-back-title">La Infancia en Rousseau (1762)</span>
+                  <p class="flashcard-desc">
+                    En <em>Emilio</em>, Rousseau defiende que "el niño tiene maneras de ver, de pensar y de sentir que le son propias". La educación debe preservar la bondad natural en contacto con el entorno.
+                  </p>
+                  <div class="flashcard-back-meta">
+                    <strong>Principio cardinal:</strong> No apurar el crecimiento; permitir que el niño juegue, experimente y viva plenamente su infancia.
+                  </div>
+                  <span class="flashcard-prompt-back">Volver al frente ↩</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 6: Sujeto de Derechos -->
+            <div class="flashcard-card" tabindex="0" role="button" aria-label="Ficha conceptual: Sujeto Pleno de Derechos. Presiona para voltear.">
+              <div class="flashcard-inner">
+                <div class="flashcard-front">
+                  <div class="flashcard-badge badge-antigua" style="background:var(--color-sky-light);color:var(--color-primary);">Contemporaneidad &bull; CDN</div>
+                  <div class="flashcard-icon-box">
+                    <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                      <circle cx="24" cy="24" r="22" fill="#EBF3FB" stroke="#003366" stroke-width="2"/>
+                      <path d="M24 14L27 21H34L28.5 25.5L30.5 32.5L24 28L17.5 32.5L19.5 25.5L14 21H21L24 14Z" fill="#E67E22"/>
+                    </svg>
+                  </div>
+                  <h3 class="flashcard-title">Sujeto de Derechos</h3>
+                  <p class="flashcard-teaser">Ciudadanía activa, dignidad inviolable y prohibición legal del castigo físico.</p>
+                  <span class="flashcard-prompt">Girar ficha 🔄</span>
+                </div>
+                <div class="flashcard-back">
+                  <span class="flashcard-back-title">Sujeto Pleno de Derechos</span>
+                  <p class="flashcard-desc">
+                    Consagrado por la Convención sobre los Derechos del Niño (1989) y en Colombia por el Código de la Infancia (Ley 1098/2006) y la prohibición del castigo físico (Ley 2089/2021).
+                  </p>
+                  <div class="flashcard-back-meta">
+                    <strong>Compromiso UNAD:</strong> Formar pedagogos que respeten la diversidad de voces territoriales, étnicas y rurales de la niñez.
+                  </div>
+                  <span class="flashcard-prompt-back">Volver al frente ↩</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- Section: Matriz comparativa de evolución histórica -->
+      <section class="section comparison-section">
+        <div class="container">
+          <div class="section-header text-center">
+            <span class="section-badge">Análisis Comparativo</span>
+            <h2 class="section-title">¿Cómo cambió la concepción de infancia a través de los siglos?</h2>
+            <p class="section-desc">Cuadro sinóptico de la metamorfosis en los criterios fundamentales de comprensión de la niñez occidental.</p>
+          </div>
+
+          <!-- Interactive Table Filter Toolbar -->
+          <div class="table-interactive-toolbar">
+            <div class="toolbar-filter-section">
+              <span class="toolbar-label">Filtrar por Criterio:</span>
+              <div class="toolbar-buttons" role="group" aria-label="Filtrar filas por criterio">
+                <button class="table-filter-btn active" data-filter-row="all">Todos (5)</button>
+                <button class="table-filter-btn" data-filter-row="estatuto">Estatuto Jurídico</button>
+                <button class="table-filter-btn" data-filter-row="vinculo">Vínculo Afectivo</button>
+                <button class="table-filter-btn" data-filter-row="disciplina">Prácticas y Disciplina</button>
+                <button class="table-filter-btn" data-filter-row="espacio">Espacio Social</button>
+                <button class="table-filter-btn" data-filter-row="aporte">Aporte Clave</button>
+              </div>
+            </div>
+            <div class="toolbar-highlight-section">
+              <span class="toolbar-label">Destacar Época:</span>
+              <div class="toolbar-buttons" role="group" aria-label="Destacar columna de época">
+                <button class="table-highlight-btn" data-highlight-col="col-antigua">🏛️ Antigua</button>
+                <button class="table-highlight-btn" data-highlight-col="col-media">⛪ Media</button>
+                <button class="table-highlight-btn" data-highlight-col="col-moderna">📖 Moderna</button>
+                <button class="table-highlight-btn active" data-highlight-col="none">Normal</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="table-responsive-wrapper">
+            <table class="comparison-table" aria-label="Tabla comparativa de la concepción de infancia en Edad Antigua, Media y Moderna">
+              <thead>
+                <tr>
+                  <th scope="col" class="th-criterion">Criterio Histórico</th>
+                  <th scope="col" class="th-era col-antigua">Edad Antigua</th>
+                  <th scope="col" class="th-era col-media">Edad Media</th>
+                  <th scope="col" class="th-era col-moderna">Edad Moderna</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr data-row-key="estatuto">
+                  <th scope="row" class="td-criterion">Estatuto Jurídico y Ontológico</th>
+                  <td class="td-era col-antigua">
+                    <strong>Objeto de posesión:</strong> Bajo patria potestad ilimitada. Infanticidio y exposición permitidos sin reproche penal originario.
+                  </td>
+                  <td class="td-era col-media">
+                    <strong>Adulto en miniatura:</strong> Homúnculo. Portador de la herencia del pecado original que debe ser purificado.
+                  </td>
+                  <td class="td-era col-moderna">
+                    <strong>Sujeto en desarrollo:</strong> Ser inocente, maleable y con requerimientos biológicos y psíquicos diferenciales.
+                  </td>
+                </tr>
+                <tr data-row-key="vinculo">
+                  <th scope="row" class="td-criterion">Vínculo y Afectividad Familiar</th>
+                  <td class="td-era col-antigua">
+                    <strong>Distanciamiento preventivo:</strong> Crianza delegada en nodrizas y esclavos. Prioridad a la utilidad militar o dinástica.
+                  </td>
+                  <td class="td-era col-media">
+                    <strong>Frialdad afectiva defensiva:</strong> Desapego ante la descomunal mortalidad infantil; salida temprana del hogar por pupilaje.
+                  </td>
+                  <td class="td-era col-moderna">
+                    <strong>Afecto e intimidad conyugal:</strong> Mignotage (mimoseo); el hijo se convierte en el centro del hogar burgués y la herencia.
+                  </td>
+                </tr>
+                <tr data-row-key="disciplina">
+                  <th scope="row" class="td-criterion">Prácticas Pedagógicas y Disciplina</th>
+                  <td class="td-era col-antigua">
+                    <strong>Castigo corporal severo:</strong> Domesticación mediante el dolor y la disciplina férrea; memorización y retórica.
+                  </td>
+                  <td class="td-era col-media">
+                    <strong>Corrección moral salvífica:</strong> Doblegar la voluntad para evitar la condenación eterna; aprendizaje por oficio.
+                  </td>
+                  <td class="td-era col-moderna">
+                    <strong>Escolarización graduada:</strong> Didáctica progresiva, formación de hábitos morales, didáctica visual y estímulo de la razón.
+                  </td>
+                </tr>
+                <tr data-row-key="espacio">
+                  <th scope="row" class="td-criterion">Espacio Social Predominante</th>
+                  <td class="td-era col-antigua">
+                    <strong>La Polis y el Gineceo:</strong> Separación tajante entre lo público ciudadano y el ámbito doméstico invisible.
+                  </td>
+                  <td class="td-era col-media">
+                    <strong>La Plaza y el Taller:</strong> El niño comparte promiscuamente todos los espacios del adulto sin pudor ni censura.
+                  </td>
+                  <td class="td-era col-moderna">
+                    <strong>La Escuela y el Cuarto Propio:</strong> Espacio de reclusión institucional creado expresamente para aislar y formar al menor.
+                  </td>
+                </tr>
+                <tr data-row-key="aporte">
+                  <th scope="row" class="td-criterion">Aporte Conceptual Clave</th>
+                  <td class="td-era col-antigua">
+                    <em>Paideia:</em> Formación integral del ciudadano virtuoso (Platón, Aristóteles, Quintiliano).
+                  </td>
+                  <td class="td-era col-media">
+                    <em>Bautismo e Institución:</em> El infante como alma que rescatar y torno de expósitos (Agustín, Aquino).
+                  </td>
+                  <td class="td-era col-moderna">
+                    <em>Puerocentrismo y Tabula Rasa:</em> Respeto a los tiempos de la niñez y educación universal (Comenio, Locke, Rousseau).
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section: Reflexión Crítica del Grupo Colaborativo -->
+      <section class="section reflection-section" id="reflexion-critica">
+        <div class="container">
+          <div class="reflection-container">
+            <div class="reflection-header">
+              <div class="reflection-icon-box">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+                </svg>
+              </div>
+              <div>
+                <span class="section-badge">Ejercicio Colaborativo</span>
+                <h2 class="reflection-title">Reflexión crítica: Concepciones históricas y praxis docente hoy</h2>
+                <p class="reflection-subtitle">Espacio académico formulado por el equipo colaborativo para debatir la vigencia de los paradigmas históricos en las realidades actuales.</p>
+                <div class="era-audio-widget reflection-audio-widget">
+                  <button class="btn-audio-narrate" data-tts-era="reflexion" aria-label="Escuchar síntesis de la reflexión crítica en voz alta">
+                    <span class="audio-btn-icon">
+                      <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" class="icon-play"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd"/></svg>
+                      <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" class="icon-stop" style="display:none;"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8 7a1 1 0 00-1 1v4a1 1 0 001 1h4a1 1 0 001-1V8a1 1 0 00-1-1H8z" clip-rule="evenodd"/></svg>
+                    </span>
+                    <span class="audio-btn-text">Escuchar Reflexión en Audio</span>
+                    <div class="soundwave-bars" aria-hidden="true">
+                      <span class="bar bar-1"></span>
+                      <span class="bar bar-2"></span>
+                      <span class="bar bar-3"></span>
+                      <span class="bar bar-4"></span>
+                    </div>
+                  </button>
+                  <span class="audio-status-tag">Lectura crítica guiada</span>
+                </div>
+              </div>
+            </div>
+
+            <p class="reflection-lead">
+              El estudio de la historia de las infancias no es una simple reconstrucción de datos anclados en el pasado; constituye una herramienta analítica indispensable para desvelar cómo muchas de las prácticas de crianza, castigo y escolarización que hoy consideramos "normales" o "tradicionales" son en realidad rezagos de matrices de dominación de la Antigüedad o de la disciplina punitiva del medioevo. A continuación, el grupo presenta sus reflexiones frente a tres interrogantes nodales:
+            </p>
+
+            <div class="reflection-cards-grid">
+              
+              <!-- Reflection Area 1 -->
+              <div class="reflection-card">
+                <div class="reflection-card-top">
+                  <div class="reflection-card-number">01</div>
+                  <div class="reflection-card-badge-icon" aria-hidden="true" title="Diálogo y voz infantil">
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="12" cy="12" r="10" fill="#e0f2fe"/>
+                      <path d="M9 10C9 8.34315 10.3431 7 12 7C13.6569 7 15 8.34315 15 10C15 11.22 14.28 12.28 13.25 12.75V14H10.75V12.75C9.72 12.28 9 11.22 9 10Z" stroke="#003366" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                      <line x1="11" y1="16" x2="13" y2="16" stroke="#b45309" stroke-width="1.8" stroke-linecap="round"/>
+                      <line x1="12" y1="4" x2="12" y2="5" stroke="#f59e0b" stroke-width="1.5" stroke-linecap="round"/>
+                      <line x1="16" y1="5.5" x2="15.2" y2="6.3" stroke="#f59e0b" stroke-width="1.5" stroke-linecap="round"/>
+                      <line x1="8" y1="5.5" x2="8.8" y2="6.3" stroke="#f59e0b" stroke-width="1.5" stroke-linecap="round"/>
+                    </svg>
+                  </div>
+                </div>
+                <h3 class="reflection-card-title">¿Cómo perviven las concepciones adultocéntricas en las escuelas y hogares contemporáneos?</h3>
+                <div class="reflection-card-body">
+                  <p>
+                    A pesar de que los marcos normativos contemporáneos y la Convención sobre los Derechos del Niño proclaman al infante como sujeto activo, en la cotidianidad de las aulas colombianas persiste con fuerza la mirada del niño como un "recipiente vacío" que el maestro debe llenar (la <em>tabula rasa</em> pasiva) o como un adulto incompleto al que le falta criterio y raciocinio.
+                  </p>
+                  <p>
+                    El adultocentrismo se manifiesta cuando las opiniones de los niños son desestimadas en los consejos escolares, cuando los espacios arquitectónicos se diseñan a la medida exclusiva del adulto o cuando la evaluación escolar premia la obediencia sumisa por encima de la creatividad, el asombro y la autonomía crítica.
+                  </p>
+                </div>
+                <div class="reflection-card-meta">
+                  <span>Reflexión concertada &bull; Equipo UNAD</span>
+                </div>
+              </div>
+
+              <!-- Reflection Area 2 -->
+              <div class="reflection-card">
+                <div class="reflection-card-top">
+                  <div class="reflection-card-number">02</div>
+                  <div class="reflection-card-badge-icon" aria-hidden="true" title="Crianza amorosa y protección">
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="12" cy="12" r="10" fill="#fef3c7"/>
+                      <path d="M12 5L17 7V12C17 15.5 14.5 18 12 19C9.5 18 7 15.5 7 12V7L12 5Z" fill="#ffffff" stroke="#b45309" stroke-width="1.5"/>
+                      <path d="M12 9.5C11.5 8.5 10 8.5 9.5 9.5C9 10.5 12 13 12 13C12 13 15 10.5 14.5 9.5C14 8.5 12.5 8.5 12 9.5Z" fill="#dc2626"/>
+                    </svg>
+                  </div>
+                </div>
+                <h3 class="reflection-card-title">La tensión entre disciplina punitiva y crianza respetuosa: desafíos vigentes</h3>
+                <div class="reflection-card-body">
+                  <p>
+                    En Colombia, aunque la Ley 2089 de 2021 prohibió explícitamente el uso del castigo físico, los tratos crueles, humillantes o degradantes en la crianza, persiste en amplios sectores sociales la convicción de raigambre medieval de que "la letra con sangre entra" y de que el golpe o la humillación verbal son métodos legítimos para corregir la conducta.
+                  </p>
+                  <p>
+                    El reto pedagógico consiste en trascender tanto el autoritarismo violento heredado del <em>pater familias</em> como la permisividad negligente, consolidando una pedagogía del afecto, de los límites reflexivos y de la escucha sensible, donde el error infantil sea concebido como una oportunidad de aprendizaje cognitivo y emocional, tal como vislumbraban Quintiliano y Rousseau.
+                  </p>
+                </div>
+                <div class="reflection-card-meta">
+                  <span>Reflexión concertada &bull; Equipo UNAD</span>
+                </div>
+              </div>
+
+              <!-- Reflection Area 3 -->
+              <div class="reflection-card">
+                <div class="reflection-card-top">
+                  <div class="reflection-card-number">03</div>
+                  <div class="reflection-card-badge-icon" aria-hidden="true" title="Infancias diversas y territorio UNAD">
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="12" cy="12" r="10" fill="#ecfdf5"/>
+                      <path d="M12 18V12" stroke="#047857" stroke-width="1.8" stroke-linecap="round"/>
+                      <path d="M12 14C12 11 16 10.5 17 12C17 14 14 15 12 14Z" fill="#10b981" stroke="#047857" stroke-width="1.2"/>
+                      <path d="M12 13C12 10.5 8 10 7 11.5C7 13.5 10 14.5 12 13Z" fill="#34d399" stroke="#047857" stroke-width="1.2"/>
+                      <path d="M7 19H17" stroke="#003366" stroke-width="1.6" stroke-linecap="round"/>
+                    </svg>
+                  </div>
+                </div>
+                <h3 class="reflection-card-title">Hacia una pedagogía de las infancias situadas desde la perspectiva UNAD</h3>
+                <div class="reflection-card-body">
+                  <p>
+                    Desde la Escuela de Ciencias de la Educación de la UNAD, se nos convoca a no hablar de una "infancia universal" abstracta (típicamente eurocéntrica, blanca y de clase media urbana), sino a reconocer las <strong>infancias en plural</strong>: infancias rurales, campesinas, afrodescendientes, indígenas y aquellas marcadas por la violencia armada y las desigualdades estructurales de nuestros territorios.
+                  </p>
+                  <p>
+                    El futuro pedagogo infantil egresado de la UNAD debe ser un agente de transformación territorial que reconozca los saberes ancestrales de crianza comunitaria, reivindique el juego y la literatura vernácula, y defienda con vehemencia las voces y la agencia política de los niños y niñas como constructores de paz y memoria histórica en sus comunidades.
+                  </p>
+                </div>
+                <div class="reflection-card-meta">
+                  <span>Reflexión concertada &bull; Equipo UNAD</span>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Customization Notice for Students -->
+            <div class="reflection-notice-box">
+              <svg class="notice-icon" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"/>
+              </svg>
+              <div class="notice-text">
+                <strong>Nota para el grupo de trabajo colaborativo:</strong> Los tres bloques reflexivos superiores cuentan con fundamentación teórica de acuerdo con la guía de actividades. Si el grupo desea incorporar conclusiones adicionales surgidas del debate en el foro de aprendizaje colaborativo, puede editarlas directamente en el archivo <code>index.html</code> (líneas correspondientes a <code>#reflexion-critica</code>) o enriquecerlas para la entrega final.
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- Section: Trivia Gamificada del Saber Histórico -->
+      <section class="section trivia-section" id="trivia-reto2">
+        <div class="container">
+          <div class="trivia-container-wrapper">
+            <div class="trivia-header text-center">
+              <span class="section-badge badge-accent">Gamificación &bull; Reto 2</span>
+              <h2 class="section-title">Desafío del Saber Histórico: ¿Cuánto aprendiste?</h2>
+              <p class="section-desc">Pon a prueba tu comprensión epistemológica sobre la construcción histórica de las infancias en este test interactivo formativo.</p>
+            </div>
+
+            <div class="trivia-card" id="triviaCard">
+              <!-- Trivia Active Game Screen -->
+              <div class="trivia-game-view" id="triviaGameView">
+                <div class="trivia-meta-bar">
+                  <div class="trivia-progress-info">
+                    <span class="trivia-step-indicator">Pregunta <strong id="triviaCurrentNum">1</strong> de <span id="triviaTotalNum">5</span></span>
+                    <div class="trivia-bar-track">
+                      <div class="trivia-bar-fill" id="triviaProgressBarFill" style="width: 20%;"></div>
+                    </div>
+                  </div>
+                  <div class="trivia-score-box">
+                    <span class="trivia-score-label">Puntaje:</span>
+                    <span class="trivia-score-value" id="triviaLiveScore">0 pts</span>
+                  </div>
+                </div>
+
+                <div class="trivia-question-box">
+                  <span class="trivia-question-tag" id="triviaEraBadge">Edad Media</span>
+                  <h3 class="trivia-question-text" id="triviaQuestionText">
+                    Cargando pregunta...
+                  </h3>
+                </div>
+
+                <!-- Answer options -->
+                <div class="trivia-options-grid" id="triviaOptionsContainer" role="radiogroup" aria-label="Opciones de respuesta">
+                  <!-- Generated by JS -->
+                </div>
+
+                <!-- Feedback card -->
+                <div class="trivia-feedback-box" id="triviaFeedbackBox" style="display:none;" aria-live="polite">
+                  <div class="feedback-status-row">
+                    <div class="feedback-icon" id="feedbackIcon"></div>
+                    <strong class="feedback-title" id="feedbackTitle"></strong>
+                  </div>
+                  <p class="feedback-explanation" id="feedbackExplanation"></p>
+                  <div class="feedback-action">
+                    <button class="btn btn-primary" id="btnNextQuestion">
+                      <span>Siguiente Pregunta</span>
+                      <svg class="btn-icon" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Trivia Completion Summary Screen -->
+              <div class="trivia-results-view" id="triviaResultsView" style="display:none;">
+                <div class="results-trophy-circle">
+                  <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" class="trophy-svg" aria-hidden="true">
+                    <circle cx="32" cy="32" r="30" fill="#FDF3E7" stroke="#E67E22" stroke-width="2"/>
+                    <path d="M22 18H42V28C42 33.5228 37.5228 38 32 38C26.4772 38 22 33.5228 22 28V18Z" fill="#E67E22"/>
+                    <path d="M16 22C16 25 18 28 22 28V22H16ZM48 22C48 25 46 28 42 28V22H48Z" stroke="#E67E22" stroke-width="2"/>
+                    <rect x="28" y="38" width="8" height="10" fill="#003366"/>
+                    <rect x="20" y="48" width="24" height="6" rx="3" fill="#003366"/>
+                  </svg>
+                </div>
+                <h3 class="results-title">¡Desafío Histórico Completado!</h3>
+                <p class="results-subtitle" id="resultsFeedbackComment">Has demostrado un conocimiento sobresaliente de la historiografía de las infancias.</p>
+                
+                <div class="results-score-display">
+                  <div class="score-circle">
+                    <span class="score-big" id="resultsFinalScore">5/5</span>
+                    <span class="score-text">Aciertos</span>
+                  </div>
+                  <div class="results-rank-badge" id="resultsRankBadge">
+                    Pedagogo Historiador Experto
+                  </div>
+                </div>
+
+                <div class="results-actions">
+                  <button class="btn btn-primary" id="btnRestartTrivia">
+                    <svg viewBox="0 0 20 20" fill="currentColor" class="btn-icon"><path fill-rule="evenodd" d="M4 2a1 1 0 011 1v2.101a7.002 7.002 0 0111.601 2.566 1 1 0 11-1.885.666A5.002 5.002 0 005.999 7H9a1 1 0 010 2H4a1 1 0 01-1-1V3a1 1 0 011-1zm.008 9.057a1 1 0 011.276.61A5.002 5.002 0 0014.001 13H11a1 1 0 110-2h5a1 1 0 011 1v5a1 1 0 11-2 0v-2.101a7.002 7.002 0 01-11.601-2.566 1 1 0 01.61-1.276z" clip-rule="evenodd"/></svg>
+                    <span>Intentar de nuevo</span>
+                  </button>
+                  <a href="#fichas-conceptuales" class="btn btn-outline" id="btnGoFlashcardsFromQuiz">
+                    <span>Repasar Fichas 3D</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+    </section>
+
+    <!-- ==========================================
+         TAB 3: INFANCIAS EN PERSPECTIVA (RETO 3)
+         ========================================== -->
+    <section class="tab-panel" id="tab-infancias-perspectiva" role="tabpanel" aria-labelledby="tab-infancias-perspectiva-label">
+      <div class="container future-challenge-container">
+        <div class="future-card">
+          <div class="future-badge-wrapper">
+            <span class="badge badge-accent">Próxima Etapa Académica</span>
+            <span class="future-phase-number">Fase Siguiente &bull; Reto 3</span>
+          </div>
+          <div class="future-icon-circle">
+            <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <circle cx="32" cy="32" r="30" stroke="#003366" stroke-width="2.5" stroke-dasharray="6 6"/>
+              <path d="M22 28C22 22.4772 26.4772 18 32 18C37.5228 18 42 22.4772 42 28C42 33.5228 32 46 32 46C32 46 22 33.5228 22 28Z" fill="#EBF3FB" stroke="#003366" stroke-width="2"/>
+              <circle cx="32" cy="28" r="4" fill="#E67E22"/>
+            </svg>
+          </div>
+          <h1 class="future-title">Reto 3: Infancias en Perspectiva</h1>
+          <p class="future-subtitle">Aproximaciones contemporáneas, diversidad sociocultural y paradigmas del desarrollo</p>
+          <div class="future-content-text">
+            <p>
+              Esta sección corresponderá al desarrollo del <strong>Reto 3</strong> según el cronograma oficial del curso <em>Infancias: Historias y Perspectivas</em>. En esta fase, el equipo profundizará en las teorías contemporáneas del desarrollo humano (psicogenética de Piaget, enfoque sociocultural de Vygotsky, bioecología de Bronfenbrenner) y contrastará los modelos universales con las vivencias plurales de las infancias en contextos indígenas, afrocolombianos y rurales.
+            </p>
+          </div>
+          <div class="future-topics-preview">
+            <div class="future-topic-tag">Perspectiva sociológica de la niñez</div>
+            <div class="future-topic-tag">Infancias y diversidad étnica</div>
+            <div class="future-topic-tag">Paradigmas psicológicos contemporáneos</div>
+            <div class="future-topic-tag">Enfoque de género en la primera infancia</div>
+          </div>
+          <div class="future-actions">
+            <a href="#construccion-historica" class="btn btn-outline" data-jump-tab="construccion-historica">
+              <span>Volver a la Construcción Histórica (Reto 2)</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         TAB 4: REALIDADES Y DESAFÍOS (RETO 4)
+         ========================================== -->
+    <section class="tab-panel" id="tab-realidades-desafios" role="tabpanel" aria-labelledby="tab-realidades-desafios-label">
+      <div class="container future-challenge-container">
+        <div class="future-card">
+          <div class="future-badge-wrapper">
+            <span class="badge badge-accent">Próxima Etapa Académica</span>
+            <span class="future-phase-number">Fase Siguiente &bull; Reto 4</span>
+          </div>
+          <div class="future-icon-circle">
+            <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <circle cx="32" cy="32" r="30" stroke="#E67E22" stroke-width="2.5" stroke-dasharray="6 6"/>
+              <path d="M32 16V40M32 46V48" stroke="#E67E22" stroke-width="3.5" stroke-linecap="round"/>
+              <rect x="20" y="14" width="24" height="38" rx="4" stroke="#003366" stroke-width="2"/>
+            </svg>
+          </div>
+          <h1 class="future-title">Reto 4: Comprendiendo las Realidades y Desafíos de las Infancias</h1>
+          <p class="future-subtitle">Contexto socioeconómico, vulnerabilidad, conflicto armado y garantías estatales en Colombia</p>
+          <div class="future-content-text">
+            <p>
+              En el <strong>Reto 4</strong>, el grupo investigará las realidades situadas de las niñas y niños en Colombia: factores de exclusión social, desnutrición, reclutamiento forzado, trabajo infantil y brechas digitales educativas. Se examinarán las políticas públicas del Estado colombiano (Código de Infancia y Adolescencia - Ley 1098 de 2006, Política Nacional De Cero a Siempre) y los desafíos para su implementación efectiva en las regiones más apartadas.
+            </p>
+          </div>
+          <div class="future-topics-preview">
+            <div class="future-topic-tag">Ley 1098 de 2006 (Código de Infancia)</div>
+            <div class="future-topic-tag">Impacto del conflicto armado</div>
+            <div class="future-topic-tag">Desnutrición y seguridad alimentaria</div>
+            <div class="future-topic-tag">Educación rural inclusiva</div>
+          </div>
+          <div class="future-actions">
+            <a href="#construccion-historica" class="btn btn-outline" data-jump-tab="construccion-historica">
+              <span>Volver a la Construcción Histórica (Reto 2)</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         TAB 5: VOCES PARA LA TRANSFORMACIÓN (RETO 5)
+         ========================================== -->
+    <section class="tab-panel" id="tab-voces-transformacion" role="tabpanel" aria-labelledby="tab-voces-transformacion-label">
+      <div class="container future-challenge-container">
+        <div class="future-card">
+          <div class="future-badge-wrapper">
+            <span class="badge badge-accent">Etapa Final Integradora</span>
+            <span class="future-phase-number">Fase Siguiente &bull; Reto 5</span>
+          </div>
+          <div class="future-icon-circle">
+            <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <circle cx="32" cy="32" r="30" stroke="#1D70B8" stroke-width="2.5" stroke-dasharray="6 6"/>
+              <path d="M22 26L34 18V46L22 38H16V26H22Z" fill="#EBF3FB" stroke="#003366" stroke-width="2"/>
+              <path d="M40 24C43 27 43 37 40 40M45 20C50 25 50 39 45 44" stroke="#1D70B8" stroke-width="2.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h1 class="future-title">Reto 5: Voces para la Transformación de las Infancias</h1>
+          <p class="future-subtitle">Propuestas pedagógicas comunitarias, agencia infantil y construcción de paz</p>
+          <div class="future-content-text">
+            <p>
+              El <strong>Reto 5</strong> representa el producto final integrador de la asignatura. El equipo colaborativo consolidará una propuesta pedagógica innovadora y contextualizada, centrada en fortalecer la voz, el protagonismo y la participación ciudadana de los niños y niñas en sus entornos comunitarios y escolares, reconociéndolos como agentes activos del cambio social.
+            </p>
+          </div>
+          <div class="future-topics-preview">
+            <div class="future-topic-tag">Agencia y participación infantil genuina</div>
+            <div class="future-topic-tag">Pedagogías para la paz y la memoria</div>
+            <div class="future-topic-tag">Incidencia comunitaria desde la UNAD</div>
+            <div class="future-topic-tag">Sistematización de experiencias pedagógicas</div>
+          </div>
+
+          <!-- Coro Interactivo de Niños Sujetos de Derechos -->
+          <div class="rights-chorus-section">
+            <div class="rights-chorus-header">
+              <span class="badge badge-accent">🎈 Galería Interactiva de Voces</span>
+              <h2 class="rights-chorus-title">El Coro de Niños Sujetos de Derechos</h2>
+              <p class="rights-chorus-desc">¡Haz clic o toca a cada uno de nuestros amiguitos para escuchar cómo ejercen y defienden sus derechos en los diversos territorios de Colombia!</p>
+            </div>
+
+            <div class="chorus-grid">
+              <!-- Niño 1: Nayeli -->
+              <div class="chorus-kid-card" data-kid-name="Nayeli" data-kid-right="Identidad y Territorio" data-kid-audio="¡Hola! Soy Nayeli, del pueblo Wayuu en La Guajira. ¡Tengo derecho a mi lengua wayuunaiki, a mis tradiciones y a aprender en mi propia cultura!">
+                <div class="kid-avatar-svg-box">
+                  <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="50" cy="50" r="45" fill="#FEF3C7"/>
+                    <ellipse cx="50" cy="50" rx="26" ry="25" fill="#D97706"/>
+                    <path d="M24 50C24 24 38 20 50 20C62 20 76 24 76 50Z" fill="#1E293B"/>
+                    <path d="M26 40C38 32 62 32 74 40" stroke="#EF4444" stroke-width="4"/>
+                    <circle cx="40" cy="50" r="4" fill="#0F172A"/>
+                    <circle cx="60" cy="50" r="4" fill="#0F172A"/>
+                    <path d="M44 58Q50 64 56 58" stroke="#78350F" stroke-width="2" fill="none"/>
+                  </svg>
+                </div>
+                <h3 class="kid-name">Nayeli</h3>
+                <span class="kid-identity">Niña Indígena Wayuu</span>
+                <span class="kid-right-pill">📜 Identidad Cultural</span>
+                <p class="kid-quote">«¡Tengo derecho a preservar mi lengua materna, mis raíces ancestrales y a una educación propia!»</p>
+                <span class="kid-click-hint">👆 ¡Tócame para escucharme!</span>
+              </div>
+
+              <!-- Niño 2: Mateo -->
+              <div class="chorus-kid-card" data-kid-name="Mateo" data-kid-right="No Discriminación y Juego" data-kid-audio="¡Hola, soy Mateo del Chocó! ¡Tengo derecho a crecer en libertad, sin discriminación, jugando fútbol y tocando la marimba con alegría!">
+                <div class="kid-avatar-svg-box">
+                  <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="50" cy="50" r="45" fill="#E0F2FE"/>
+                    <ellipse cx="50" cy="50" rx="26" ry="25" fill="#78350F"/>
+                    <path d="M26 44C26 26 36 20 50 20C64 20 74 26 74 44Z" fill="#1C1917"/>
+                    <circle cx="40" cy="50" r="4" fill="#0F172A"/>
+                    <circle cx="60" cy="50" r="4" fill="#0F172A"/>
+                    <ellipse cx="36" cy="56" rx="4" ry="2" fill="#991B1B" opacity="0.4"/>
+                    <ellipse cx="64" cy="56" rx="4" ry="2" fill="#991B1B" opacity="0.4"/>
+                    <path d="M42 58Q50 66 58 58" stroke="#FEF08A" stroke-width="2.5" fill="#B91C1C"/>
+                  </svg>
+                </div>
+                <h3 class="kid-name">Mateo</h3>
+                <span class="kid-identity">Niño Afrocolombiano</span>
+                <span class="kid-right-pill">⚽ Recreación e Igualdad</span>
+                <p class="kid-quote">«¡Tengo derecho a la alegría, al deporte, a la música y a una vida libre de cualquier discriminación!»</p>
+                <span class="kid-click-hint">👆 ¡Tócame para escucharme!</span>
+              </div>
+
+              <!-- Niño 3: Sofía -->
+              <div class="chorus-kid-card" data-kid-name="Sofía" data-kid-right="Educación Rural y Paz" data-kid-audio="¡Hola! Soy Sofía, vivo en el campo de Boyacá. ¡Tengo derecho a escuelas rurales con internet, a caminos seguros y a crecer en un campo en paz!">
+                <div class="kid-avatar-svg-box">
+                  <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="50" cy="50" r="45" fill="#DCFCE7"/>
+                    <ellipse cx="50" cy="32" rx="34" ry="9" fill="#FDE68A" stroke="#D97706" stroke-width="1.5"/>
+                    <ellipse cx="50" cy="52" rx="25" ry="24" fill="#F8D3B7"/>
+                    <circle cx="40" cy="52" r="3.5" fill="#0F172A"/>
+                    <circle cx="60" cy="52" r="3.5" fill="#0F172A"/>
+                    <ellipse cx="34" cy="57" rx="4" ry="2" fill="#FF8A80" opacity="0.6"/>
+                    <ellipse cx="66" cy="57" rx="4" ry="2" fill="#FF8A80" opacity="0.6"/>
+                    <path d="M43 60Q50 66 57 60" stroke="#B91C1C" stroke-width="2" fill="none"/>
+                  </svg>
+                </div>
+                <h3 class="kid-name">Sofía</h3>
+                <span class="kid-identity">Niña Campesina</span>
+                <span class="kid-right-pill">🌱 Educación Rural Digna</span>
+                <p class="kid-quote">«¡Tengo derecho a estudiar cerca de mi vereda, con maestros cariñosos y un ambiente sano para florecer!»</p>
+                <span class="kid-click-hint">👆 ¡Tócame para escucharme!</span>
+              </div>
+
+              <!-- Niño 4: Camilo -->
+              <div class="chorus-kid-card" data-kid-name="Camilo" data-kid-right="Participación y Expresión" data-kid-audio="¡Hola! Soy Camilo de Bogotá. ¡Tengo derecho a que mi voz sea escuchada en la escuela, a opinar en las decisiones que me afectan y a ser respetado!">
+                <div class="kid-avatar-svg-box">
+                  <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="50" cy="50" r="45" fill="#FCE7F3"/>
+                    <ellipse cx="50" cy="50" rx="25" ry="24" fill="#F8D3B7"/>
+                    <path d="M26 38C26 22 36 18 50 18C64 18 74 22 74 38Z" fill="#1D70B8"/>
+                    <rect x="50" y="34" width="28" height="6" rx="3" fill="#E67E22"/>
+                    <rect x="32" y="44" width="16" height="12" rx="3" fill="none" stroke="#003366" stroke-width="2"/>
+                    <rect x="52" y="44" width="16" height="12" rx="3" fill="none" stroke="#003366" stroke-width="2"/>
+                    <line x1="48" y1="49" x2="52" y2="49" stroke="#003366" stroke-width="2"/>
+                    <circle cx="40" cy="50" r="3" fill="#0F172A"/>
+                    <circle cx="60" cy="50" r="3" fill="#0F172A"/>
+                    <path d="M44 60Q50 65 56 60" stroke="#B91C1C" stroke-width="2" fill="none"/>
+                  </svg>
+                </div>
+                <h3 class="kid-name">Camilo</h3>
+                <span class="kid-identity">Niño Urbano &bull; Participación</span>
+                <span class="kid-right-pill">📢 Libertad de Opinión</span>
+                <p class="kid-quote">«¡Tengo derecho a expresar mis ideas, a participar en mi comunidad y a que los adultos tomen en serio mi voz!»</p>
+                <span class="kid-click-hint">👆 ¡Tócame para escucharme!</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="future-actions">
+            <a href="#construccion-historica" class="btn btn-outline" data-jump-tab="construccion-historica">
+              <span>Volver a la Construcción Histórica (Reto 2)</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         TAB 6: REFERENCIAS BIBLIOGRÁFICAS
+         ========================================== -->
+    <section class="tab-panel" id="tab-referencias" role="tabpanel" aria-labelledby="tab-referencias-label">
+      <div class="container references-container">
+        
+        <div class="references-header">
+          <span class="section-badge">Rigor Epistemológico</span>
+          <h1 class="references-title">Referencias Bibliográficas</h1>
+          <p class="references-subtitle">Fuentes documentales primarias y secundarias con base en las Normas APA (7ma edición)</p>
+        </div>
+
+        <div class="references-card">
+          <div class="references-intro">
+            <p>
+              A continuación se listan las fuentes académicas citadas y consultadas para el desarrollo analítico del <strong>Reto 2: Construcción histórica de las infancias</strong>. Todas las referencias aplican sangría francesa (hanging indent) y siguen estrictamente los estándares internacionales APA de citación:
+            </p>
+          </div>
+
+          <div class="apa-list">
+            
+            <p class="apa-item">
+              Ariès, P. (1987). <em>El niño y la vida familiar en el Antiguo Régimen</em> (A. Bixio, Trad.). Taurus. (Obra original publicada en 1960).
+            </p>
+
+            <p class="apa-item">
+              Aristóteles. (1988). <em>Política</em> (M. García Valdés, Trad.). Gredos. (Obra original redactada ca. 330 a.C.).
+            </p>
+
+            <p class="apa-item">
+              Baquero, R., y Narodowski, M. (1994). ¿Existe la infancia? <em>Revista del Instituto de Investigaciones en Ciencias de la Educación</em>, <em>3</em>(4), 61&ndash;67.
+            </p>
+
+            <p class="apa-item">
+              Comenio, J. A. (1998). <em>Didáctica Magna</em> (S. López-Peces, Trad.). Porrúa. (Obra original publicada en 1632).
+            </p>
+
+            <p class="apa-item">
+              Delval, J. (2000). <em>El desarrollo humano</em> (2.ª ed.). Siglo XXI de España Editores.
+            </p>
+
+            <p class="apa-item">
+              DeMause, L. (1982). <em>Historia de la infancia</em> (J. J. Utrilla, Trad.). Alianza Editorial. (Obra original publicada en 1974).
+            </p>
+
+            <p class="apa-item">
+              Locke, J. (1986). <em>Pensamientos sobre la educación</em> (R. Alcoberro, Trad.). Akal. (Obra original publicada en 1693).
+            </p>
+
+            <p class="apa-item">
+              Ministerio de Educación Nacional de Colombia [MEN]. (2014). <em>Sentido de la educación inicial</em> (Documento No. 20 - Serie de orientaciones pedagógicas para la educación inicial). Rey Naranjo Editores.
+            </p>
+
+            <p class="apa-item">
+              Platón. (1988). <em>Diálogos VIII: Las Leyes (Libros VII-XII)</em> (F. Lisi, Trad.). Gredos. (Obra original redactada ca. 347 a.C.).
+            </p>
+
+            <p class="apa-item">
+              Quintiliano, M. F. (1999). <em>Sobre la formación del orador (Institutio Oratoria)</em> (A. Ortega Carmona, Trad.). Universidad Pontificia de Salamanca. (Obra original publicada ca. 95 d.C.).
+            </p>
+
+            <p class="apa-item">
+              Rousseau, J.-J. (1998). <em>Emilio, o De la educación</em> (M. Armiño, Trad.). Alianza Editorial. (Obra original publicada en 1762).
+            </p>
+
+            <p class="apa-item">
+              San Agustín de Hipona. (2010). <em>Las Confesiones</em> (A. C. Vega, Trad.). Biblioteca de Autores Cristianos (BAC). (Obra original redactada ca. 398 d.C.).
+            </p>
+
+            <p class="apa-item">
+              Tomás de Aquino. (2001). <em>Suma de Teología</em> (Directores F. Barbado Viejo &amp; T. Urdanoz). Biblioteca de Autores Cristianos (BAC). (Obra original redactada ca. 1265-1274).
+            </p>
+
+            <p class="apa-item">
+              Universidad Nacional Abierta y a Distancia [UNAD]. (2023). <em>Syllabus del curso Infancias: Historias y Perspectivas (Código 514517)</em>. Escuela de Ciencias de la Educación - ECEDU.
+            </p>
+
+          </div>
+
+          <!-- Customizable block for students to add new sources -->
+          <div class="references-custom-box">
+            <h3 class="custom-box-title">Espacio para fuentes adicionales del grupo colaborativo</h3>
+            <p class="custom-box-desc">
+              Si el grupo consultó artículos de revistas indexadas (Redalyc, Scielo, Dialnet) o lecturas complementarias de la unidad 1 de la UNAD, pueden añadirlas en formato APA en esta sección dentro del código fuente:
+            </p>
+            <div class="apa-item custom-placeholder-item">
+              [Apellido del Autor, Inicial del Nombre]. (Año). <em>[Título del libro o artículo complementario]</em>. [Editorial o Revista científica]. [Enlace DOI o URL si aplica].
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Institutional Footer -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      
+      <div class="footer-col-main">
+        <div class="footer-brand">
+          <svg class="footer-brand-svg" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <circle cx="18" cy="18" r="16" fill="#003366" stroke="#E67E22" stroke-width="2"/>
+            <path d="M18 7L21 15H30L23 20L25 28L18 23L11 28L13 20L6 15H15L18 7Z" fill="#E67E22"/>
+          </svg>
+          <span class="footer-brand-title">Universidad Nacional Abierta y a Distancia</span>
+        </div>
+        <p class="footer-brand-desc">
+          Escuela de Ciencias de la Educación &mdash; ECEDU.<br>
+          Licenciatura en Pedagogía Infantil.<br>
+          Curso: <strong>Infancias: Historias y Perspectivas</strong> (Código 514517).
+        </p>
+        <p class="footer-period">
+          Año Académico 2026 &bull; Colombia
+        </p>
+      </div>
+
+      <div class="footer-col-nav">
+        <h3 class="footer-heading">Navegación del recurso</h3>
+        <ul class="footer-links">
+          <li><a href="#inicio">Página de inicio</a></li>
+          <li><a href="#construccion-historica">Reto 2: Construcción histórica</a></li>
+          <li><a href="#infancias-perspectiva">Reto 3: Perspectivas contemporáneas</a></li>
+          <li><a href="#realidades-desafios">Reto 4: Realidades y desafíos</a></li>
+          <li><a href="#voces-transformacion">Reto 5: Voces para la transformación</a></li>
+          <li><a href="#referencias">Referencias bibliográficas (APA 7)</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col-collab">
+        <h3 class="footer-heading">Equipo de trabajo</h3>
+        <ul class="footer-team-roles">
+          <li><strong>Investigadora:</strong> María del Pilar</li>
+          <li><strong>Investigadora:</strong> Fernanda</li>
+        </ul>
+        <div class="footer-campus-badge">
+          <span>Campus Virtual UNAD &bull; Grupo Colaborativo</span>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <p class="footer-disclaimer">
+          Recurso educativo digital elaborado exclusivamente para fines académicos y formativos en el marco del curso Infancias: Historias y Perspectivas de la UNAD. Licencia con propósitos pedagógicos.
+        </p>
+        <p class="footer-back-to-top">
+          <a href="#topHeader" class="back-top-link" id="backToTop">
+            <span>Volver arriba</span>
+            <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M8 12a.5.5 0 00.5-.5V3.707l2.646 2.647a.5.5 0 00.708-.708l-3.5-3.5a.5.5 0 00-.708 0l-3.5 3.5a.5.5 0 10.708.708L7.5 3.707V11.5a.5.5 0 00.5.5z"/></svg>
+          </a>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Fullscreen Celebration Confetti Canvas -->
+  <canvas id="confettiCanvas" class="confetti-canvas" aria-hidden="true"></canvas>
+
+  <!-- Quick Concept & Author Search Modal (Ctrl + K) -->
+  <div class="search-modal-backdrop" id="searchModal" role="dialog" aria-modal="true" aria-labelledby="searchModalTitle" style="display:none;">
+    <div class="search-modal-window">
+      <div class="search-modal-header">
+        <div class="search-input-wrapper">
+          <svg class="search-modal-icon" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+            <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd"/>
+          </svg>
+          <input type="text" id="searchInput" class="search-modal-input" placeholder="Buscar autores, conceptos o leyes (ej: Locke, Rousseau, Ariès, Tabula Rasa)..." autocomplete="off" spellcheck="false" aria-label="Campo de búsqueda">
+          <button class="search-modal-clear" id="btnSearchClear" aria-label="Limpiar búsqueda" style="display:none;">&times;</button>
+        </div>
+        <button class="search-modal-close" id="btnSearchClose" aria-label="Cerrar modal (Esc)">&times;</button>
+      </div>
+
+      <div class="search-modal-body">
+        <div class="search-quick-tags">
+          <span class="quick-tags-label">Sugerencias rápidas:</span>
+          <button class="quick-tag-chip" data-query="Philippe Ariès">Philippe Ariès</button>
+          <button class="quick-tag-chip" data-query="Rousseau">Rousseau</button>
+          <button class="quick-tag-chip" data-query="John Locke">John Locke</button>
+          <button class="quick-tag-chip" data-query="Comenio">Comenio</button>
+          <button class="quick-tag-chip" data-query="Adultocentrismo">Adultocentrismo</button>
+          <button class="quick-tag-chip" data-query="Ley 2089">Ley 2089 (Castigo)</button>
+        </div>
+
+        <div class="search-results-list" id="searchResultsList" role="listbox" aria-label="Resultados de búsqueda">
+          <!-- Populated by JS -->
+        </div>
+      </div>
+
+      <div class="search-modal-footer">
+        <span class="search-shortcut-hint"><kbd>Esc</kbd> para cerrar</span>
+        <span class="search-shortcut-hint"><kbd>&uarr;</kbd> <kbd>&darr;</kbd> para navegar</span>
+        <span class="search-shortcut-hint"><kbd>Enter</kbd> para seleccionar</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Floating Interactive Mascot: Tomi el Guía del Tiempo -->
+  <aside class="floating-mascot-widget" id="floatingMascotWidget" aria-label="Mascota interactiva Tomi">
+    <!-- Burbuja de diálogo cómica de Tomi -->
+    <div class="mascot-bubble active" id="mascotBubble" role="status" aria-live="polite">
+      <div class="mascot-bubble-tail"></div>
+      <div class="bubble-header">
+        <span class="bubble-badge" id="mascotBadge">💡 ¡Dato Curioso de Tomi!</span>
+        <button class="bubble-close-btn" id="btnMascotClose" title="Cerrar globo de diálogo" aria-label="Cerrar diálogo">&times;</button>
+      </div>
+      <p class="bubble-text" id="mascotBubbleText">
+        ¡Hola! Soy <strong>Tomi</strong>. ¿Sabías que en la Edad Media no existían los parques ni los juguetes especiales para niños? ¡Hazme clic para ver más curiosidades o escucharme hablar!
+      </p>
+      <div class="bubble-actions">
+        <button class="bubble-btn" id="btnMascotSpeak" title="Escuchar la voz de Tomi">
+          <span>🔊 Escuchar</span>
+        </button>
+        <button class="bubble-btn bubble-btn-accent" id="btnMascotNext" title="Ver otro dato divertido">
+          <span>🎲 ¡Otro dato!</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Botón Avatar del Muñequito Flotante -->
+    <button class="mascot-avatar-btn" id="btnMascotAvatar" title="¡Hola! Haz clic sobre mí para hablar" aria-label="Interactuar con la mascota Tomi">
+      <span class="mascot-callout-pill">⭐ ¡Tócame!</span>
+      <div class="mascot-svg-wrapper">
+        <svg class="mascot-svg" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Carita animada de Tomi">
+          <!-- Fondo círculo suave -->
+          <circle cx="50" cy="50" r="48" fill="#F8FAFC"/>
+          <!-- Cuello -->
+          <rect x="42" y="68" width="16" height="12" rx="4" fill="#EDB694"/>
+          <!-- Cabeza -->
+          <ellipse cx="50" cy="48" rx="30" ry="28" fill="#F8D3B7"/>
+          <!-- Orejas -->
+          <circle cx="21" cy="48" r="7" fill="#F8D3B7"/>
+          <circle cx="79" cy="48" r="7" fill="#F8D3B7"/>
+          <!-- Cabello -->
+          <path d="M22 42C22 22 34 16 50 16C66 16 78 22 78 42C74 38 68 36 50 36C32 36 26 38 22 42Z" fill="#5C3A21"/>
+          <!-- Gorra de explorador UNAD -->
+          <path d="M22 32C22 18 36 12 50 12C64 12 78 18 78 32Z" fill="#003366"/>
+          <path d="M20 32H80L84 36H16L20 32Z" fill="#E67E22"/>
+          <circle cx="50" cy="12" r="3.5" fill="#F39C12"/>
+          <!-- Ojos animados -->
+          <ellipse cx="38" cy="48" rx="5.5" ry="6" fill="#0F172A"/>
+          <circle cx="36" cy="46" r="2" fill="#FFFFFF"/>
+          <circle cx="39.5" cy="50" r="1" fill="#FFFFFF"/>
+          
+          <ellipse cx="62" cy="48" rx="5.5" ry="6" fill="#0F172A"/>
+          <circle cx="60" cy="46" r="2" fill="#FFFFFF"/>
+          <circle cx="63.5" cy="50" r="1" fill="#FFFFFF"/>
+          <!-- Sonrojo en mejillas -->
+          <ellipse cx="31" cy="56" rx="5" ry="3" fill="#FF8A80" opacity="0.7"/>
+          <ellipse cx="69" cy="56" rx="5" ry="3" fill="#FF8A80" opacity="0.7"/>
+          <!-- Sonrisa alegre -->
+          <path id="mascotSmile" d="M42 56 Q50 64 58 56" stroke="#B91C1C" stroke-width="2.5" fill="#FECACA" stroke-linecap="round"/>
+        </svg>
+      </div>
+    </button>
+  </aside>
+
+  <script src="app.js"></script>
+</body>
+</html>
