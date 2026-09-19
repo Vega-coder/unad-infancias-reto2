@@ -917,9 +917,9 @@ img, svg {
 
 .team-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
-  max-width: 860px;
+  max-width: 1140px;
   margin: 0 auto;
 }
 
@@ -948,16 +948,31 @@ img, svg {
 }
 
 .team-avatar-placeholder {
-  width: 110px;
-  height: 110px;
+  width: 124px;
+  height: 124px;
   border-radius: 50%;
   overflow: hidden;
   box-shadow: 0 8px 24px rgba(0, 51, 102, 0.16);
-  border: 3px solid var(--color-primary-light);
+  border: 4px solid #0284c7;
   background: linear-gradient(135deg, #ebf3fb 0%, #ffffff 100%);
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
+}
+
+.team-avatar-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 20%;
+  display: block;
+  border-radius: 50%;
+  transition: transform var(--transition-normal);
+}
+
+.team-card:hover .team-avatar-img {
+  transform: scale(1.08);
 }
 
 .team-avatar-placeholder svg {
