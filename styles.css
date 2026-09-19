@@ -1220,7 +1220,306 @@ img, svg {
 }
 
 /* --------------------------------------------------------------------------
-   13. Era Panels & Subtabs (Antigua, Media, Moderna)
+   Timeline Infographic & 4-Stage Flow Enhancements
+   -------------------------------------------------------------------------- */
+.timeline-infographic-showcase {
+  background: linear-gradient(135deg, #ffffff 0%, #f0f7ff 100%);
+  border: 2px solid #bae6fd;
+  border-radius: var(--radius-lg);
+  padding: 1.75rem;
+  margin-bottom: var(--spacing-3xl);
+  box-shadow: 0 10px 30px rgba(0, 51, 102, 0.08);
+}
+
+.timeline-showcase-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1.25rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.showcase-title-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.showcase-title {
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: var(--color-primary-dark);
+  margin: 0;
+}
+
+.showcase-actions {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.timeline-showcase-media {
+  position: relative;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  border: 2px solid #cbd5e1;
+  background-color: #ffffff;
+  cursor: pointer;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.timeline-showcase-media:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 14px 32px rgba(0, 51, 102, 0.16);
+  border-color: #0284c7;
+}
+
+.timeline-main-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.showcase-overlay-hint {
+  position: absolute;
+  bottom: 12px;
+  right: 12px;
+  background: rgba(0, 43, 85, 0.85);
+  color: #ffffff;
+  font-size: 0.825rem;
+  font-weight: 600;
+  padding: 0.35rem 0.85rem;
+  border-radius: var(--radius-full);
+  backdrop-filter: blur(4px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  pointer-events: none;
+  transition: opacity 0.2s ease;
+}
+
+.timeline-showcase-media:hover .showcase-overlay-hint {
+  background: var(--color-primary);
+}
+
+/* 4-Stage Flow Grid */
+.timeline-cards-flow {
+  margin-bottom: var(--spacing-3xl);
+}
+
+.flow-section-title {
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: var(--color-primary-dark);
+  text-align: center;
+  margin-bottom: 1.75rem;
+}
+
+.flow-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.25rem;
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.flow-col {
+  display: flex;
+  flex-direction: column;
+  border-radius: var(--radius-md);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  cursor: pointer;
+}
+
+.flow-col:hover {
+  transform: translateY(-5px);
+}
+
+.flow-step-badge {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  color: #ffffff;
+  font-size: 1.25rem;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 0.75rem auto;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  position: relative;
+}
+
+.flow-badge-1 { background-color: #e67e22; }
+.flow-badge-2 { background-color: #e17055; }
+.flow-badge-3 { background-color: #f39c12; }
+.flow-badge-4 { background-color: #0d9488; }
+
+.flow-header {
+  background-color: #334155;
+  color: #ffffff;
+  font-size: 0.95rem;
+  font-weight: 800;
+  text-align: center;
+  padding: 0.6rem 0.5rem;
+  border-radius: var(--radius-sm) var(--radius-sm) 0 0;
+  letter-spacing: 0.03em;
+}
+
+.flow-card-body {
+  background-color: #ffffff;
+  border: 2px solid #cbd5e1;
+  border-top: none;
+  border-radius: 0 0 var(--radius-md) var(--radius-md);
+  padding: 1.25rem 1rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.flow-antigua .flow-card-body { border-color: #e67e22; }
+.flow-media .flow-card-body { border-color: #e17055; }
+.flow-moderna .flow-card-body { border-color: #f39c12; }
+.flow-contemporanea .flow-card-body { border-color: #0d9488; }
+
+.flow-bullets {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1rem 0;
+  flex-grow: 1;
+}
+
+.flow-bullets li {
+  position: relative;
+  padding-left: 1.25rem;
+  margin-bottom: 0.65rem;
+  font-size: 0.9375rem;
+  color: #1e293b;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+.flow-bullets li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  font-weight: 800;
+  font-size: 1.2rem;
+  color: var(--color-primary);
+}
+
+.flow-antigua .flow-bullets li::before { color: #e67e22; }
+.flow-media .flow-bullets li::before { color: #e17055; }
+.flow-moderna .flow-bullets li::before { color: #f39c12; }
+.flow-contemporanea .flow-bullets li::before { color: #0d9488; }
+
+.flow-author-cite {
+  font-size: 0.825rem;
+  color: #475569;
+  padding-top: 0.75rem;
+  border-top: 1px dashed #cbd5e1;
+  margin-bottom: 1rem;
+  text-align: center;
+  font-style: italic;
+}
+
+.flow-action-btn {
+  background: #f8fafc;
+  border: 1px solid #cbd5e1;
+  color: var(--color-primary);
+  font-weight: 700;
+  font-size: 0.8125rem;
+  padding: 0.5rem 0.75rem;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  width: 100%;
+}
+
+.flow-action-btn:hover {
+  background-color: var(--color-primary);
+  color: #ffffff;
+  border-color: var(--color-primary);
+}
+
+@media (max-width: 992px) {
+  .flow-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .flow-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Lightbox Modal */
+.image-lightbox-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(15, 23, 42, 0.88);
+  backdrop-filter: blur(6px);
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  animation: fadeIn 0.2s ease forwards;
+}
+
+.image-lightbox-content {
+  position: relative;
+  max-width: 1100px;
+  max-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.image-lightbox-img {
+  max-width: 100%;
+  max-height: 80vh;
+  object-fit: contain;
+  border-radius: var(--radius-md);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+}
+
+.image-lightbox-close {
+  position: absolute;
+  top: -40px;
+  right: 0;
+  background: #ffffff;
+  border: none;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #0f172a;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.image-lightbox-caption {
+  color: #ffffff;
+  margin-top: 0.75rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+/* --------------------------------------------------------------------------
+   13. Era Panels & Subtabs (Antigua, Media, Moderna, Contemporanea)
    -------------------------------------------------------------------------- */
 .era-panels-container {
   max-width: 1100px;

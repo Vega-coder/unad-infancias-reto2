@@ -338,8 +338,10 @@ document.addEventListener('DOMContentLoaded', () => {
     if (era === 'antigua') {
       timelineProgressBar.style.width = '0%';
     } else if (era === 'media') {
-      timelineProgressBar.style.width = '50%';
+      timelineProgressBar.style.width = '33.33%';
     } else if (era === 'moderna') {
+      timelineProgressBar.style.width = '66.66%';
+    } else if (era === 'contemporanea') {
       timelineProgressBar.style.width = '100%';
     }
   };
@@ -531,6 +533,7 @@ document.addEventListener('DOMContentLoaded', () => {
     antigua: "En la Edad Antigua, marcada por Grecia y Roma, la infancia estaba subordinada a la patria potestad del padre de familia y a los requerimientos de la polis. El niño era visto como posesión del clan familiar y futuro guerrero o continuador del linaje, sin valor intrínseco. Pensadores como Platón, Aristóteles y Quintiliano sentaron las bases de la paideia y los primeros debates sobre la educación infantil.",
     media: "En la Edad Media, el niño fue concebido como un homúnculo, es decir, un adulto en miniatura. Tan pronto superaba la primera infancia a los siete años, era introducido directamente al trabajo y a la vida de los mayores. La doctrina del pecado original exigía una disciplina severa para salvar su alma. El historiador Philippe Ariès demostró que en este periodo no existía aún una conciencia o sentimiento de infancia.",
     moderna: "En la Edad Moderna nace la pedagogía y se forja el sentimiento de infancia. La familia burguesa nuclear y la escuela se consolidan como espacios protectores y formativos. Se reconoce que los niños tienen formas propias de pensar y sentir. Figuras como Juan Amós Comenio con la didáctica universal, John Locke con la tabula rasa, y Rousseau con Emilio revolucionaron para siempre la mirada sobre la niñez.",
+    contemporanea: "En la época contemporánea, la concepción de infancia se transforma radicalmente hacia el paradigma de derechos humanos consagrado en la Convención Internacional sobre los Derechos del Niño de 1989. Se transita de ver al niño como objeto de tutela a reconocerlo como sujeto activo de derechos con agencia participativa. Autores como Satriano y Chica y Rasero destacan la necesidad de hablar de infancias en plural, reconociendo su contingencia histórica y su diversidad territorial y cultural.",
     reflexion: "En nuestra reflexión para la UNAD, evidenciamos cómo el adultocentrismo pervive hoy cuando se desestima la voz de los niños. En Colombia, la Ley 2089 de 2021 prohíbe el castigo físico y nos convoca a una crianza respetuosa. Como pedagogos de la UNAD, debemos construir una pedagogía situada que dignifique la diversidad territorial y étnica de las infancias."
   };
 
@@ -966,7 +969,9 @@ document.addEventListener('DOMContentLoaded', () => {
     { title: "Tabula Rasa", type: "Categoría Teórica", era: "Edad Moderna", tab: "construccion-historica", targetId: "fichas-conceptuales", desc: "Metáfora del papel en blanco moldeado por la experiencia sensible y el hábito." },
     { title: "Pansofía", type: "Categoría Teórica", era: "Edad Moderna", tab: "construccion-historica", targetId: "fichas-conceptuales", desc: "Principio de Comenio: Enseñar todo a todos de forma natural y gradual." },
     { title: "Educación Negativa", type: "Categoría Teórica", era: "Edad Moderna", tab: "construccion-historica", targetId: "fichas-conceptuales", desc: "Preservar la naturaleza y sentidos del niño antes de imponer conceptos abstractos." },
-    { title: "Sujeto de Derechos", type: "Categoría Teórica", era: "Contemporánea", tab: "construccion-historica", targetId: "fichas-conceptuales", desc: "Paradigma de la CDN de 1989: el niño como ciudadano con voz vinculante." },
+    { title: "Satriano (2008)", type: "Autor Clave", era: "Contemporánea", tab: "construccion-historica", eraPanel: "contemporanea", subtab: "contemporanea-autores", desc: "Plantea la contingencia sociohistórica de las infancias y la necesidad de pensar las infancias en plural." },
+    { title: "Chica & Rasero", type: "Autor Clave", era: "Contemporánea", tab: "construccion-historica", eraPanel: "contemporanea", subtab: "contemporanea-autores", desc: "Enfoque crítico decolonial sobre las infancias situadas y el protagonismo infantil." },
+    { title: "Sujeto de Derechos", type: "Categoría Teórica", era: "Contemporánea", tab: "construccion-historica", eraPanel: "contemporanea", subtab: "contemporanea-crianza", desc: "Paradigma de la CDN de 1989: el niño como ciudadano activo con voz vinculante." },
     { title: "Ley 2089 de 2021", type: "Normativa Colombiana", era: "Contemporánea", tab: "construccion-historica", targetId: "reflexion-critica", desc: "Ley que prohíbe el castigo físico, los tratos crueles, humillantes o degradantes en Colombia." },
     { title: "Matriz Comparativa", type: "Herramienta", era: "Comparativa", tab: "construccion-historica", targetId: "fichas-conceptuales", desc: "Cuadro comparativo entre Edad Antigua, Media y Moderna." },
     { title: "Trivia del Reto 2", type: "Evaluación Lúdica", era: "Gamificación", tab: "construccion-historica", targetId: "trivia-reto2", desc: "Cuestionario interactivo de 5 preguntas para evaluar el conocimiento del Reto 2." }
@@ -1577,6 +1582,56 @@ document.addEventListener('DOMContentLoaded', () => {
         window.speechSynthesis.speak(utterance);
       }
     });
+  });
+
+  // ==========================================================================
+  // 13. Lightbox Modal para Infografía de Línea de Tiempo
+  // ==========================================================================
+  const timelineLightboxModal = document.getElementById('timelineLightboxModal');
+  const btnZoomTimeline = document.getElementById('btnZoomTimeline');
+  const timelineMediaClickable = document.getElementById('timelineMediaClickable');
+  const btnCloseLightbox = document.getElementById('btnCloseLightbox');
+
+  const openTimelineLightbox = () => {
+    if (!timelineLightboxModal) return;
+    soundFX.click();
+    timelineLightboxModal.style.display = 'flex';
+    document.body.style.overflow = 'hidden';
+  };
+
+  const closeTimelineLightbox = () => {
+    if (!timelineLightboxModal) return;
+    timelineLightboxModal.style.display = 'none';
+    document.body.style.overflow = '';
+  };
+
+  if (btnZoomTimeline) btnZoomTimeline.addEventListener('click', openTimelineLightbox);
+  if (timelineMediaClickable) timelineMediaClickable.addEventListener('click', openTimelineLightbox);
+  if (btnCloseLightbox) btnCloseLightbox.addEventListener('click', closeTimelineLightbox);
+
+  if (timelineLightboxModal) {
+    timelineLightboxModal.addEventListener('click', (e) => {
+      if (e.target === timelineLightboxModal) {
+        closeTimelineLightbox();
+      }
+    });
+  }
+
+  window.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && timelineLightboxModal && timelineLightboxModal.style.display === 'flex') {
+      closeTimelineLightbox();
+    }
+  });
+
+  // Delegated handler for all data-jump-era buttons (including 4 flow cards)
+  document.addEventListener('click', (e) => {
+    const jumpEraBtn = e.target.closest('[data-jump-era]');
+    if (jumpEraBtn) {
+      soundFX.click();
+      const targetEra = jumpEraBtn.getAttribute('data-jump-era');
+      switchTab('construccion-historica');
+      selectTimelineEra(targetEra, true);
+    }
   });
 
   updateTimelineProgress('antigua');

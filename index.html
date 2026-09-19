@@ -859,12 +859,117 @@
         <div class="container">
           
           <div class="timeline-navigation-header">
-            <h2 class="timeline-nav-title">Línea de tiempo interactiva</h2>
-            <p class="timeline-nav-subtitle">Selecciona una etapa histórica para desplegar el análisis contextual, autores e hitos pedagógicos</p>
+            <span class="section-badge">Infografía y Evolución Histórica</span>
+            <h2 class="timeline-nav-title">Línea de Tiempo: Evolución de la Infancia</h2>
+            <p class="timeline-nav-subtitle">Construcción sociohistórica, concepciones de niñez, hitos normativos y autores cardinales</p>
           </div>
 
-          <!-- Timeline Stepper Track -->
-          <nav class="timeline-stepper" aria-label="Línea de tiempo de etapas históricas">
+          <!-- Official Infographic Showcase Card -->
+          <div class="timeline-infographic-showcase">
+            <div class="timeline-showcase-header">
+              <div class="showcase-title-wrap">
+                <span class="badge badge-accent">Infografía Colaborativa</span>
+                <h3 class="showcase-title">Línea de Tiempo Oficial del Reto 2</h3>
+              </div>
+              <div class="showcase-actions">
+                <button class="btn btn-primary btn-sm" id="btnZoomTimeline" aria-label="Ampliar infografía a tamaño completo">
+                  <svg viewBox="0 0 20 20" fill="currentColor" class="btn-icon" aria-hidden="true"><path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd"/><path fill-rule="evenodd" d="M8 6a1 1 0 011 1v1h1a1 1 0 110 2H9v1a1 1 0 11-2 0v-1H6a1 1 0 110-2h1V7a1 1 0 011-1z" clip-rule="evenodd"/></svg>
+                  <span>Ampliar infografía</span>
+                </button>
+                <a href="img/linea-de-tiempo.png" download="Linea-de-tiempo-infancias-UNAD.png" class="btn btn-outline btn-sm" aria-label="Descargar infografía">
+                  <svg viewBox="0 0 20 20" fill="currentColor" class="btn-icon" aria-hidden="true"><path fill-rule="evenodd" d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm3.293-7.707a1 1 0 011.414 0L9 10.586V3a1 1 0 112 0v7.586l1.293-1.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>
+                  <span>Descargar PNG</span>
+                </a>
+              </div>
+            </div>
+
+            <div class="timeline-showcase-media" id="timelineMediaClickable" title="Haz clic para ampliar la infografía">
+              <img src="img/linea-de-tiempo.png" alt="Infografía oficial: Línea de tiempo de la evolución de la infancia (Edad Antigua, Edad Media, Edad Moderna y Contemporánea)" class="timeline-main-img">
+              <div class="showcase-overlay-hint">
+                <span>🔍 Haz clic para ver en alta resolución</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Interactive 4-Column Timeline Flow -->
+          <div class="timeline-cards-flow">
+            <h3 class="flow-section-title">Estructura Detallada de las 4 Etapas</h3>
+            <div class="flow-grid">
+              
+              <!-- Column 1: EDAD ANTIGUA -->
+              <div class="flow-col flow-antigua" data-jump-era="antigua">
+                <div class="flow-step-badge flow-badge-1">1</div>
+                <div class="flow-header flow-hdr-antigua">EDAD ANTIGUA</div>
+                <div class="flow-card-body">
+                  <ul class="flow-bullets">
+                    <li>Niño como propiedad</li>
+                    <li>Sin derechos</li>
+                    <li>Alta mortalidad</li>
+                  </ul>
+                  <div class="flow-author-cite">
+                    <strong>Referente:</strong> Ariès (1987)
+                  </div>
+                  <button class="flow-action-btn" data-jump-era="antigua">Ver análisis histórico &rarr;</button>
+                </div>
+              </div>
+
+              <!-- Column 2: EDAD MEDIA -->
+              <div class="flow-col flow-media" data-jump-era="media">
+                <div class="flow-step-badge flow-badge-2">2</div>
+                <div class="flow-header flow-hdr-media">EDAD MEDIA</div>
+                <div class="flow-card-body">
+                  <ul class="flow-bullets">
+                    <li>Adulto en miniatura</li>
+                    <li>Invisibilidad social</li>
+                    <li>Integración temprana al trabajo adulto</li>
+                  </ul>
+                  <div class="flow-author-cite">
+                    <strong>Referente:</strong> Ariès (1987)
+                  </div>
+                  <button class="flow-action-btn" data-jump-era="media">Ver análisis histórico &rarr;</button>
+                </div>
+              </div>
+
+              <!-- Column 3: EDAD MODERNA -->
+              <div class="flow-col flow-moderna" data-jump-era="moderna">
+                <div class="flow-step-badge flow-badge-3">3</div>
+                <div class="flow-header flow-hdr-moderna">EDAD MODERNA</div>
+                <div class="flow-card-body">
+                  <ul class="flow-bullets">
+                    <li>Descubrimiento de la infancia</li>
+                    <li>Surge escuela y familia nuclear</li>
+                    <li>Ideas de inocencia y protección</li>
+                  </ul>
+                  <div class="flow-author-cite">
+                    <strong>Referentes:</strong> Ariès (1987), Enesco (2010)
+                  </div>
+                  <button class="flow-action-btn" data-jump-era="moderna">Ver análisis histórico &rarr;</button>
+                </div>
+              </div>
+
+              <!-- Column 4: CONTEMPORÁNEA -->
+              <div class="flow-col flow-contemporanea" data-jump-era="contemporanea">
+                <div class="flow-step-badge flow-badge-4">4</div>
+                <div class="flow-header flow-hdr-contemporanea">CONTEMPORÁNEA</div>
+                <div class="flow-card-body">
+                  <ul class="flow-bullets">
+                    <li>Infancia en plural</li>
+                    <li>Infancia en contingencia</li>
+                    <li>Convención de Derechos del Niño en 1989</li>
+                    <li>Sujeto activo de derecho</li>
+                  </ul>
+                  <div class="flow-author-cite">
+                    <strong>Referentes:</strong> Satriano (2008), Chica &amp; Rasero
+                  </div>
+                  <button class="flow-action-btn" data-jump-era="contemporanea">Ver análisis contemporáneo &rarr;</button>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Timeline Stepper Track (4 Steps) -->
+          <nav class="timeline-stepper" aria-label="Línea de tiempo interactiva de etapas históricas">
             <div class="timeline-progress-bar" id="timelineProgressBar"></div>
             
             <!-- Step 1: Edad Antigua -->
@@ -897,6 +1002,17 @@
               <span class="step-content">
                 <span class="step-era-title">Edad Moderna</span>
                 <span class="step-era-dates">Siglo XV &mdash; Siglo XVIII d.C.</span>
+              </span>
+            </button>
+
+            <!-- Step 4: Contemporánea -->
+            <button class="timeline-step" data-era="contemporanea" id="step-contemporanea" aria-controls="panel-contemporanea" aria-selected="false" role="tab">
+              <span class="step-marker">
+                <span class="step-number">4</span>
+              </span>
+              <span class="step-content">
+                <span class="step-era-title">Contemporánea</span>
+                <span class="step-era-dates">Siglo XX &mdash; Siglo XXI (CDN 1989)</span>
               </span>
             </button>
           </nav>
@@ -1669,6 +1785,187 @@
                         <span class="milestone-year">1762 d.C.</span>
                         <div class="milestone-text">
                           <strong>Publicación del Emilio de Rousseau:</strong> Aunque condenado y quemado en París y Ginebra, consagra mundialmente la especificidad irreductible de la niñez como etapa con valor propio e indiscutible.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </article>
+
+            <!-- ----------------------------------------
+                 PANEL 4: ÉPOCA CONTEMPORÁNEA
+                 ---------------------------------------- -->
+            <article class="era-panel" id="panel-contemporanea" role="tabpanel" aria-labelledby="step-contemporanea">
+              <div class="era-panel-header">
+                <div class="era-header-content">
+                  <div class="era-tag" style="background-color: #0d9488;">Periodo Histórico &bull; Contemporaneidad</div>
+                  <h3 class="era-name">Época Contemporánea: Las Infancias en Plural y el Sujeto Activo de Derechos</h3>
+                  <p class="era-dates-highlight" style="color: #0d9488;">Siglo XX &mdash; Siglo XXI &bull; Convención Internacional sobre los Derechos del Niño (1989)</p>
+                  <p class="era-summary">
+                    La contemporaneidad redefine la niñez superando el adultocentrismo tutelar para reconocer a las <strong>infancias en plural</strong> y en contingencia histórica (Satriano, 2008; Chica &amp; Rasero). Con la adopción de la <strong>Convención sobre los Derechos del Niño (1989)</strong>, los infantes dejan de ser tratados como objetos de compasión o mano de obra subordinada para ser reconocidos como <strong>sujetos activos y plenos de derecho</strong>, dotados de agencia, ciudadanía y capacidad transformadora en sus entornos comunitarios y territoriales.
+                  </p>
+                  <div class="era-audio-widget">
+                    <button class="btn-audio-narrate" data-tts-era="contemporanea" aria-label="Escuchar síntesis de la Época Contemporánea en voz alta">
+                      <span class="audio-btn-icon">
+                        <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" class="icon-play"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd"/></svg>
+                        <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" class="icon-stop" style="display:none;"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8 7a1 1 0 00-1 1v4a1 1 0 001 1h4a1 1 0 001-1V8a1 1 0 00-1-1H8z" clip-rule="evenodd"/></svg>
+                      </span>
+                      <span class="audio-btn-text">Escuchar Síntesis (Audio)</span>
+                      <div class="soundwave-bars" aria-hidden="true">
+                        <span class="bar bar-1"></span>
+                        <span class="bar bar-2"></span>
+                        <span class="bar bar-3"></span>
+                        <span class="bar bar-4"></span>
+                      </div>
+                    </button>
+                    <span class="audio-status-tag">Voz en español &bull; Accesible</span>
+                  </div>
+                </div>
+                <div class="era-header-illustration">
+                  <svg viewBox="0 0 240 180" fill="none" xmlns="http://www.w3.org/2000/svg" class="era-illustration-svg" aria-hidden="true">
+                    <rect width="240" height="180" rx="12" fill="#F0FDFA"/>
+                    <circle cx="120" cy="90" r="65" fill="#CCFBF1"/>
+                    <!-- CDN Rights Seal & Sun -->
+                    <circle cx="120" cy="90" r="45" stroke="#0D9488" stroke-width="2" stroke-dasharray="4 3"/>
+                    <circle cx="120" cy="65" r="14" fill="#0D9488"/>
+                    <!-- Child Figure with Wings/Heart -->
+                    <path d="M105 110C105 95 112 88 120 88C128 88 135 95 135 110Z" fill="#0284C7"/>
+                    <path d="M90 105C90 92 100 90 106 96" stroke="#F59E0B" stroke-width="3" stroke-linecap="round"/>
+                    <path d="M150 105C150 92 140 90 134 96" stroke="#F59E0B" stroke-width="3" stroke-linecap="round"/>
+                    <rect x="70" y="130" width="100" height="24" rx="12" fill="#003366"/>
+                    <text x="120" y="146" text-anchor="middle" font-family="'Outfit', sans-serif" font-size="10" font-weight="700" fill="#FFFFFF">CDN 1989 &bull; DERECHOS</text>
+                  </svg>
+                </div>
+              </div>
+
+              <!-- Subtabs Navigation -->
+              <div class="subtabs-wrapper">
+                <nav class="subtabs-nav" role="tablist" aria-label="Dimensiones de análisis de la Época Contemporánea">
+                  <button class="subtab-btn active" data-subtab="contemporanea-contexto" role="tab" aria-selected="true">
+                    <svg viewBox="0 0 20 20" fill="currentColor" class="subtab-icon"><path d="M9 4.804A7.968 7.968 0 005.5 4c-1.255 0-2.443.29-3.5.804v10A7.969 7.969 0 015.5 14c1.669 0 3.218.51 4.5 1.385A7.962 7.962 0 0114.5 14c1.255 0 2.443.29 3.5.804v-10A7.968 7.968 0 0014.5 4c-1.255 0-2.443.29-3.5.804V12a1 1 0 11-2 0V4.804z"/></svg>
+                    <span>Contexto Sociohistórico</span>
+                  </button>
+                  <button class="subtab-btn" data-subtab="contemporanea-autores" role="tab" aria-selected="false">
+                    <svg viewBox="0 0 20 20" fill="currentColor" class="subtab-icon"><path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd"/></svg>
+                    <span>Autores y Teorías</span>
+                  </button>
+                  <button class="subtab-btn" data-subtab="contemporanea-crianza" role="tab" aria-selected="false">
+                    <svg viewBox="0 0 20 20" fill="currentColor" class="subtab-icon"><path fill-rule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clip-rule="evenodd"/></svg>
+                    <span>Derechos y Crianza</span>
+                  </button>
+                  <button class="subtab-btn" data-subtab="contemporanea-preguntas" role="tab" aria-selected="false">
+                    <svg viewBox="0 0 20 20" fill="currentColor" class="subtab-icon"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 10-1-1zm0 8a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd"/></svg>
+                    <span>Preguntas Críticas</span>
+                  </button>
+                  <button class="subtab-btn" data-subtab="contemporanea-hitos" role="tab" aria-selected="false">
+                    <svg viewBox="0 0 20 20" fill="currentColor" class="subtab-icon"><path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd"/></svg>
+                    <span>Hitos Clave</span>
+                  </button>
+                </nav>
+
+                <div class="subtabs-content">
+                  <!-- 1. Contexto -->
+                  <div class="subtab-panel active" id="subtab-contemporanea-contexto">
+                    <h4 class="subtab-heading">De la Tutela Proteccionista al Paradigma del Sujeto de Derechos</h4>
+                    <p class="subtab-paragraph">
+                      Durante los siglos XIX y gran parte del XX, las políticas hacia la infancia estuvieron marcadas por la <em>doctrina de la situación irregular</em>, donde el Estado intervenía de manera punitiva y compasiva sobre los niños considerados "menores en peligro moral o material". Esta perspectiva reforzaba la idea del menor como objeto incompleto bajo tutela absoluta.
+                    </p>
+                    <p class="subtab-paragraph">
+                      El siglo XXI, respaldado por la Convención de 1989, consolida la transición hacia el <strong>enfoque de derechos</strong> y la noción de <strong>infancias en plural</strong>. No existe un único modelo universal de niño occidental; las infancias están atravesadas por contingencias geográficas, étnicas, de género y socioeconómicas que demandan pedagogías situadas y sensibles a cada contexto.
+                    </p>
+                  </div>
+
+                  <!-- 2. Autores -->
+                  <div class="subtab-panel" id="subtab-contemporanea-autores">
+                    <h4 class="subtab-heading">Referentes Epistemológicos Contemporáneos</h4>
+                    <div class="authors-grid">
+                      <div class="author-card">
+                        <div class="author-card-header">
+                          <span class="author-dates">Epistemología Contemporánea</span>
+                          <h5 class="author-name">Satriano (2008)</h5>
+                          <span class="author-work">La contingencia sociohistórica de las infancias</span>
+                        </div>
+                        <p class="author-bio">
+                          Postula que la infancia no es una esencia biológica universal, sino un concepto en permanente contingencia y reconstrucción sociohistórica. Analiza cómo las transformaciones de la familia, las tecnologías y las políticas públicas reconfiguran los modos de habitar la niñez hoy.
+                        </p>
+                      </div>
+
+                      <div class="author-card">
+                        <div class="author-card-header">
+                          <span class="author-dates">Enfoque Crítico Latinoamericano</span>
+                          <h5 class="author-name">Chica &amp; Rasero</h5>
+                          <span class="author-work">Infancias situadas y pluralidad de derechos</span>
+                        </div>
+                        <p class="author-bio">
+                          Enfatizan la necesidad de pensar las infancias en plural y desde los territorios, desafiando los discursos homogeneizadores. Resaltan el protagonismo infantil y la urgencia de descolonizar las prácticas pedagógicas frente al adultocentrismo.
+                        </p>
+                      </div>
+
+                      <div class="author-card">
+                        <div class="author-card-header">
+                          <span class="author-dates">Psicología del Desarrollo (2010)</span>
+                          <h5 class="author-name">Ileana Enesco</h5>
+                          <span class="author-work">El concepto de infancia a lo largo de la historia</span>
+                        </div>
+                        <p class="author-bio">
+                          Sintetiza la evolución psicológica y cultural de la infancia, contrastando la concepción clásica del niño dependiente con los paradigmas científicos actuales que validan la capacidad cognitiva, emocional y social activa desde los primeros años de vida.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- 3. Crianza y Derechos -->
+                  <div class="subtab-panel" id="subtab-contemporanea-crianza">
+                    <h4 class="subtab-heading">Superación del Castigo Físico y Crianza Respetuosa</h4>
+                    <p class="subtab-paragraph">
+                      Uno de los mayores avances normativos y culturales en la contemporaneidad es la erradicación del castigo físico como método disciplinario. En Colombia, la <strong>Ley 2089 de 2021</strong> prohíbe de forma explícita cualquier tipo de violencia física, tratos crueles, humillantes o degradantes contra niños, niñas y adolescentes.
+                    </p>
+                    <div class="info-callout" style="background-color: #f0fdfa; border-left: 4px solid #0d9488; padding: 1rem; border-radius: var(--radius-sm); margin-top: 1rem;">
+                      <strong>Compromiso Pedagógico UNAD:</strong> Fomentar una educación basada en el diálogo, la escucha activa y la resolución pacífica de conflictos, formando docentes capaces de transformar las prácticas de crianza punitivas en vínculos afectivos seguros y democratizadores.
+                    </div>
+                  </div>
+
+                  <!-- 4. Preguntas Reflexivas -->
+                  <div class="subtab-panel" id="subtab-contemporanea-preguntas">
+                    <h4 class="subtab-heading">Preguntas para la Reflexión y el Debate Colaborativo</h4>
+                    <div class="questions-accordion">
+                      <details class="qa-item" open>
+                        <summary class="qa-trigger">¿Cómo se manifiesta el adultocentrismo en las escuelas actuales a pesar del marco de derechos?</summary>
+                        <div class="qa-content">
+                          <p>Persiste cuando se planifican currículos rígidos sin consultar los intereses de los estudiantes, o cuando se asume que los niños 'no entienden' sobre problemáticas comunitarias o escolares, negando su derecho a la participación activa consagrado en el artículo 12 de la CDN.</p>
+                        </div>
+                      </details>
+                      <details class="qa-item">
+                        <summary class="qa-trigger">¿Por qué es fundamental hablar de 'infancias en plural' y no de 'la infancia' en singular?</summary>
+                        <div class="qa-content">
+                          <p>Porque el singular homogeniza y oculta las profundas desigualdades territoriales, étnicas, rurales y de género. Como investigadoras de la UNAD, reconocemos que un niño en la ruralidad colombiana vive una experiencia de infancia muy distinta a la de un niño urbano, y la pedagogía debe responder a esa realidad situada.</p>
+                        </div>
+                      </details>
+                    </div>
+                  </div>
+
+                  <!-- 5. Hitos -->
+                  <div class="subtab-panel" id="subtab-contemporanea-hitos">
+                    <h4 class="subtab-heading">Hitos Transformadores de la Época Contemporánea</h4>
+                    <div class="milestones-timeline">
+                      <div class="milestone-item">
+                        <span class="milestone-year" style="color: #0d9488; border-color: #0d9488;">1989</span>
+                        <div class="milestone-text">
+                          <strong>Convención sobre los Derechos del Niño (ONU):</strong> Tratado internacional de derechos humanos más ratificado de la historia; consagra formalmente al infante como sujeto de derechos civiles, políticos, económicos, sociales y culturales.
+                        </div>
+                      </div>
+                      <div class="milestone-item">
+                        <span class="milestone-year" style="color: #0d9488; border-color: #0d9488;">2006</span>
+                        <div class="milestone-text">
+                          <strong>Ley 1098 de Código de la Infancia y la Adolescencia (Colombia):</strong> Garantiza la protección integral y el principio del Interés Superior del Niño en todas las actuaciones estatales y familiares.
+                        </div>
+                      </div>
+                      <div class="milestone-item">
+                        <span class="milestone-year" style="color: #0d9488; border-color: #0d9488;">2021</span>
+                        <div class="milestone-text">
+                          <strong>Ley 2089 (Prohibición del Castigo Físico en Colombia):</strong> Hito legislativo que elimina la justificación pedagógica del castigo físico y promueve la crianza positiva y sin violencia.
                         </div>
                       </div>
                     </div>
@@ -2698,6 +2995,15 @@
       </div>
     </button>
   </aside>
+
+  <!-- Lightbox Modal for Timeline Infographic -->
+  <div class="image-lightbox-backdrop" id="timelineLightboxModal" style="display:none;" role="dialog" aria-modal="true" aria-label="Infografía de la Línea de Tiempo en pantalla completa">
+    <div class="image-lightbox-content">
+      <button class="image-lightbox-close" id="btnCloseLightbox" aria-label="Cerrar vista completa">&times;</button>
+      <img src="img/linea-de-tiempo.png" alt="Línea de tiempo: Evolución de la infancia - UNAD" class="image-lightbox-img">
+      <p class="image-lightbox-caption">Línea de Tiempo Oficial del Grupo Colaborativo: Evolución de la Infancia (UNAD)</p>
+    </div>
+  </div>
 
   <script src="app.js"></script>
 </body>
